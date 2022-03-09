@@ -37,3 +37,8 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Excel files are all large NTD files
+*.xlsx
+*.xls
+
