@@ -1,0 +1,173 @@
+---
+title: "Test Analysis"
+author: "Carole Voulgaris"
+date: "3/10/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(here)
+library(readxl)
+library(tidycensus)
+library(lubridate)
+library(tmaptools)
+library(sf)
+library(survival)
+library(survminer)
+library(knitr)
+library(gtsummary)
+```
+
+
+```{r}
+test_sites <- here("test-cases.csv") %>%
+  read_csv() %>%
+  filter(!is.na(Company_Nm)) %>%
+  mutate(status = ifelse(status == 1, 1, 0))
+
+agencies <- here("NTD_data",
+                 "2005_agency_info.xlsx") %>%
+  read_xlsx(sheet = "Sheet1")
+
+service <- here("NTD_data",
+                 "2005_Service.xlsx") %>%
+  read_xlsx(sheet = "Sheet1") %>%
+  filter(Time_Period_Desc == "Annual Total") %>%
+  filter((passenger_Car_Sched_Rev_Miles > 0) | (vehicle_Sched_Miles > 0)) %>%
+  group_by(Trs_Id) %>%
+  summarise(trips = sum(Unlinked_Passenger_Trips),
+            VOMS = sum(Vehicles_In_Operation),
+            VRM = sum(vehicle_Or_Train_Rev_Miles))
+```
+
+```{r}
+data <- inner_join(agencies, service) %>%
+  mutate(query = paste0(City_Nm, ", ", State_Desc)) %>%
+  select(Trs_Id, Agency_Type_Desc, Institution_Type_Desc, Company_Nm,
+         Service_Area, Service_Area_Population, Non_Uza_Served_Fl,
+         trips, VOMS, VRM, query)
+
+locs <- geocode_OSM(unique(data$query),
+                    as.sf = TRUE, geometry = "point") %>%
+  select(query) 
+  
+data_place <- locs %>%  
+  right_join(data) %>%
+  filter(Trs_Id != "0041") %>%
+  st_transform("WGS84")
+```
+
+```{r}
+vars <- c(
+  total_ = "B07204_001",
+  same_house_ = "B07204_002"
+)
+
+cbsas <- get_acs(geography = "metropolitan statistical area/micropolitan statistical area", 
+                variables = vars,
+                year = 2011,
+                output = "wide",
+                geometry = "true") %>%
+  mutate(pct_not_moved = same_house_E / total_E) %>%
+  st_transform("WGS84")
+
+full_data <- st_join(data_place, cbsas)
+```
+
+
+```{r}
+
+
+test_sites_all <- test_sites %>%
+  inner_join(full_data) %>%
+  mutate(date = dmy(date)) %>%
+  mutate(time_to_adopt = as.numeric(date - my("Dec 2005"))/365.25) %>%
+  mutate(inst_type = substr(Institution_Type_Desc, 1,2)) %>%
+  mutate(agency_type = substr(Agency_Type_Desc, 1, 2)) 
+
+portland_dist <- st_distance(test_sites_all$point, test_sites_all$point[34])
+
+test_sites_all <- test_sites_all %>%
+  mutate(portland_dist = portland_dist)
+```
+```{r}
+ggplot(test_sites_all) +
+  geom_point(aes(x = pct_not_moved, y = time_to_adopt))
+```
+
+```{r}
+ggplot(test_sites_all) +
+  geom_point(aes(x = as.numeric(portland_dist), y = time_to_adopt))
+```
+
+```{r}
+ggplot(test_sites_all) +
+  geom_point(aes(x = VRM, y = time_to_adopt)) +
+  scale_y_continuous(trans = "log")
+```
+
+linear model
+
+```{r}
+model <- lm(time_to_adopt ~ 
+              VRM +
+              pct_not_moved +
+              agency_type +
+              inst_type +
+              portland_dist,
+            data = test_sites_all)
+summary(model)
+```
+
+Set up survival object
+
+```{r}
+test_sites_all <- test_sites_all %>%
+  mutate(status = ifelse(status == 1, 1, 0))
+```
+
+```{r}
+f1 <- survfit(Surv(time_to_adopt, status) ~ 1, data = test_sites_all)
+
+ggsurvplot(f1, 
+     xlab = "Years", 
+     ylab = "Overall probability of no adoption")
+```
+
+Probability of holding out for 5 years
+
+```{r}
+summary(f1, times = c(5,10, 15, 20))
+```
+
+```{r}
+f1
+```
+
+```{r}
+f2 <- survdiff(Surv(time_to_adopt, status) ~ agency_type, data = test_sites_all)
+f2
+```
+
+
+
+
+```{r}
+test_sites_all <- test_sites_all %>%
+  mutate(M_VRM = VRM / 1000000,
+         kkm_from_Portland = as.numeric(portland_dist) / 1000000)
+
+coxph(Surv(time_to_adopt, status) ~ M_VRM +
+              pct_not_moved +
+              agency_type +
+              inst_type +
+              kkm_from_Portland, 
+        data = test_sites_all) %>%
+  tbl_regression()
+```
+
