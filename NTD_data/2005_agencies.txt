@@ -1,0 +1,502 @@
+Trs_Id,Company_Nm,trips,query,Agency,Adoption_or_today,Status
+0001,King County Department of Transportation - Metro Transit Division,94982735,"Seattle, WA",King County Department of Transportation - Metro Transit Division,Sep-06,1
+0002,Spokane Transit Authority,7688002,"Spokane, WA",NA,NA,NA
+0003,Pierce County Transportation Benefit Area Authority,12245514,"Tacoma, WA","Pierce County Transportation Benefit Area Authority, dba: Pierce Transit",Feb-15,1
+0005,Everett Transit,1957478,"Everett, WA",NA,NA,NA
+0006,Yakima Transit,1083488,"Yakima, WA",NA,NA,NA
+0007,Lane Transit District,8348879,"Eugene, OR",Lane Transit District,Sep-06,1
+0008,Tri-County Metropolitan Transportation District of Oregon,103519979,"Portland, OR","Tri-County Metropolitan Transportation District of Oregon, dba: TriMet",Dec-05,1
+0011,ValleyRide,1070708,"Meridian, ID",Ventura County Transportation Commission,Sep-16,1
+0012,Municipality of Anchorage - Public Transportation Department,3975074,"Anchorage, AK",NA,NA,NA
+0016,Community Urban Bus Service,322273,"Longview, WA",NA,NA,NA
+0018,Ben Franklin Transit,3066920,"Richland, WA",NA,NA,NA
+0019,Intercity Transit,2869758,"Olympia, WA",NA,NA,NA
+0020,Kitsap Transit,4580938,"Bremerton, WA",NA,NA,NA
+0021,Whatcom Transportation Authority,3382349,"Bellingham, WA",NA,NA,NA
+0022,City of Pocatello - Pocatello Regional Transit,431111,"Pocatello, ID",NA,NA,NA
+0023,City of Seattle - Seattle Center Monorail Transit,1506240,"Seattle, WA",NA,NA,NA
+0024,Clark County Public Transportation Benefit Area Authority,5614951,"Vancouver, WA",NA,NA,NA
+0025,Salem Area Mass Transit District,5412915,"Salem, OR",NA,NA,NA
+0028,Pierce County Ferry Operations,212541,"Tacoma, WA",NA,NA,NA
+0029,Snohomish County Transportation Benefit Area Corporation,8219785,"Everett, WA",NA,NA,NA
+0034,Rogue Valley Transportation District,1182925,"Medford, OR",NA,NA,NA
+0035,Washington State Ferries,23880997,"Seattle, WA",NA,NA,NA
+0040,Central Puget Sound Regional Transit Authority,10968661,"Seattle, WA",NA,NA,NA
+0041,Alaska Railroad Corporation,144620,"Anchorage, AK",NA,NA,NA
+0043,Link Transit,710952,"Wenatchee, WA",NA,NA,NA
+0044,Skagit Transit,269053,"Burlington, WA",NA,NA,NA
+0045,Fairbanks North Star Borough Transit,399056,"Fairbanks, AK",NA,NA,NA
+0046,South Metro Area Rapid Transit,247726,"Wilsonville, OR",NA,NA,NA
+1001,Rhode Island Public Transit Authority,18612675,"Providence, RI",NA,NA,NA
+1002,Manchester Transit Authority,412386,"Manchester, NH",NA,NA,NA
+1003,Massachusetts Bay Transportation Authority,393515140,"Boston, MA",NA,NA,NA
+1004,Brockton Area Transit Authority,3020216,"Brockton, MA",NA,NA,NA
+1005,Lowell Regional Transit Authority,1417934,"Lowell, MA",NA,NA,NA
+1006,Southeastern Regional Transit Authority,1610179,"New Bedford, MA",NA,NA,NA
+1007,Berkshire Regional Transit Authority,508776,"Pittsfield, MA",NA,NA,NA
+1008,Pioneer Valley Transit Authority,9746629,"Springfield, MA",NA,NA,NA
+1013,Merrimack Valley Regional Transit Authority,1603296,"Haverhill, MA",NA,NA,NA
+1014,Worcester Regional Transit Authority,2567983,"Worcester, MA",NA,NA,NA
+1016,Greater Portland Transit District,1360010,"Portland, ME",NA,NA,NA
+1040,Southeast Area Transit,931992,"Preston, CT",NA,NA,NA
+1048,Connecticut Transit - Hartford Division,12508700,"Hartford, CT",NA,NA,NA
+1049,The Greater New Haven Transit District,93029,"Hamden, CT",NA,NA,NA
+1050,Greater Bridgeport Transit Authority,4706885,"Bridgeport, CT",NA,NA,NA
+1051,Housatonic Area Regional Transit,773037,"Danbury, CT",NA,NA,NA
+1053,Cape Ann Transportation Authority,256958,"Gloucester, MA",NA,NA,NA
+1055,Connecticut Transit - New Haven Division,7734650,"Hartford, CT",NA,NA,NA
+1056,Connecticut Transit - Stamford Division,2809704,"Hartford, CT",NA,NA,NA
+1057,Norwalk Transit District,1700845,"Norwalk, CT",NA,NA,NA
+1061,Montachusett Regional Transit Authority,617134,"Fitchburg, MA",NA,NA,NA
+1063,Middletown Transit District,348768,"Middletown, CT",NA,NA,NA
+1064,Greater Attleboro-Taunton Regional Transit Authority,695352,"Attleboro, MA",NA,NA,NA
+1066,Chittenden County Transportation Authority,1887104,"Burlington, VT",NA,NA,NA
+1086,Cooperative Alliance for Seacoast Transportation,313897,"Dover, NH",NA,NA,NA
+1087,Nashua Transit System,315468,"Nashua, NH",NA,NA,NA
+1088,Casco Bay Island Transit District,852826,"Portland, ME",NA,NA,NA
+1095,"Northeast Transportation Company, Inc.",1806403,"Waterbury, CT",Northern Arizona Intergovernmental Public Transportation Authority,Jan-14,1
+1096,City of Bangor - BAT Community Connector,681173,"Bangor, ME",NA,NA,NA
+1098,"Western Maine Transportation Services, Inc.",198545,"Mexico, ME",NA,NA,NA
+1102,Connecticut Department of Transportation,600740,"Newington, CT",Connecticut Department of Transportation- CTTransit Waterbury- NET,Oct-11,1
+1105,Cape Cod Regional Transit Authority,279628,"Hyannis, MA",NA,NA,NA
+1107,Milford Transit District,299310,"Milford, CT",NA,NA,NA
+1115,Northern New England Passenger Rail Authority,250535,"Portland, ME",NA,NA,NA
+1116,Bonanza,257619,"Providence, RI",NA,NA,NA
+2002,Capital District Transportation Authority,11691153,"Albany, NY",Capital District Transportation Authority,Sep-13,1
+2003,Broome County Department of Public Transportation,2828981,"Vestal, NY",NA,NA,NA
+2004,Niagara Frontier Transportation Authority,23430551,"Buffalo, NY",NA,NA,NA
+2005,Chemung County Transit System,534746,"Elmira, NY",NA,NA,NA
+2007,"Metropolitan Suburban Bus Authority, dba: MTA Long Island Bus",31091738,"Garden City, NY",NA,NA,NA
+2008,MTA New York City Transit,2756452297,"New York, NY",MTA New York City Transit,Jan-10,1
+2009,City of Poughkeepsie,349572,"Poughkeepsie, NY",NA,NA,NA
+2010,Dutchess County Division of Mass Transportation,668673,"Poughkeepsie, NY",NA,NA,NA
+2018,"CNY Centro, Inc.",8081443,"Syracuse, NY",NA,NA,NA
+2040,"New York Bus Tours, Inc., dba: New York Bus Service",1790318,"Bronx, NY",NA,NA,NA
+2071,Huntington Area Rapid Transit,226905,"Huntington Station, NY",NA,NA,NA
+2072,Suffolk County Department of Public Works - Transportation Division,5312569,"Yaphank, NY",NA,NA,NA
+2075,Port Authority Transit Corporation,9362839,"Lindenwold, NJ",NA,NA,NA
+2076,Westchester County Bee-Line System,24947454,"Mount Vernon, NY",NA,NA,NA
+2078,"Metro-North Commuter Railroad Company, dba: MTA Metro-North Railroad",74652827,"New York, NY",NA,NA,NA
+2080,New Jersey Transit Corporation,242461980,"Newark, NJ",NA,NA,NA
+2082,New York City Department of Transportation,20034157,"New York, NY",NA,NA,NA
+2084,Transport of Rockland,2677098,"Pomona, NY",NA,NA,NA
+2085,Clarkstown Mini-Trans,155499,"Nanuet, NY",NA,NA,NA
+2089,Village of Spring Valley Bus,39950,"Spring Valley, NY",NA,NA,NA
+2096,Putnam County Transit,185328,"Carmel, NY",NA,NA,NA
+2098,Port Authority Trans-Hudson Corporation,71305202,"Jersey City, NJ",NA,NA,NA
+2099,"Staten Island Rapid Transit Operating Authority, dba: MTA Staten Island Railway",3482383,"Staten Island, NY",NA,NA,NA
+2100,MTA Long Island Rail Road,95519000,"Jamaica, NY",NA,NA,NA
+2113,"Regional Transit Service, Inc. and Lift Line, Inc.",12928234,"Rochester, NY",NA,NA,NA
+2116,"Centro of Cayuga, Inc.",402167,"Syracuse, NY",NA,NA,NA
+2120,Greater Glens Falls Transit System,285496,"Queensbury, NY",NA,NA,NA
+2122,"Academy Lines, Inc.",3627381,"Hoboken, NJ",NA,NA,NA
+2126,"Hudson Transit Lines, Inc.",3245893,"Mahwah, NJ",NA,NA,NA
+2128,Suburban Transit Corporation,3641316,"New Brunswick, NJ",NA,NA,NA
+2132,New Jersey Transit Corporation-45,3770760,"Newark, NJ",New Orleans Regional Transit Authority,Sep-14,1
+2135,Monsey New Square Trails Corporation,542835,"Spring Valley, NY",NA,NA,NA
+2136,Queens Surface Corporation,4052718,"Flushing, NY",NA,NA,NA
+2137,Monroe Bus Corporation,273409,"Brooklyn, NY",NA,NA,NA
+2145,Tompkins Consolidated Area Transit,3090978,"Ithaca, NY",NA,NA,NA
+2147,GTJC,65485749,"Lynbrook, NY",NA,NA,NA
+2148,Newburgh Beacon Bus Corporation,116213,"New Windsor, NY",NA,NA,NA
+2149,"Rockland Coaches, Inc.",4328619,"Westwood, NJ",NA,NA,NA
+2158,Tioga County,39388,"Owego, NY",NA,NA,NA
+2160,"Community Transit, Inc.",595943,"Passaic, NJ",NA,NA,NA
+2161,DeCamp Bus Lines,2195276,"Montclair, NJ",NA,NA,NA
+2163,"Lakeland Bus Lines, Inc.",1872086,"Dover, NJ",NA,NA,NA
+2165,"Olympia Trails Bus Company, Inc.",672454,"Elizabeth, NJ",NA,NA,NA
+2166,"Orange-Newark-Elizabeth, Inc.",12394405,"Elizabeth, NJ",NA,NA,NA
+2168,Trans-Hudson Express,7711260,"Jersey City, NJ",NA,NA,NA
+2169,"Trans-Bridge Lines, Inc.",996530,"Bethlehem, PA",NA,NA,NA
+2171,"Private One of New York, LLC, dba: New York Airport Service",947334,"Brooklyn, NY",NA,NA,NA
+2172,"Centro of Oswego, Inc.",407764,"Syracuse, NY",NA,NA,NA
+2175,Private Transportation Corporation,512283,"Brooklyn, NY",NA,NA,NA
+2177,"Adirondack Transit Lines, Inc,",467403,"Hurley, NY",NA,NA,NA
+2178,Ulster County Area Transit,194446,"Kingston, NY",NA,NA,NA
+2179,"Hendrick Hudson Bus Lines, Inc.",38015,"Newburgh, NY",NA,NA,NA
+2180,Atlantic Express,18356,"Staten Island, NY",NA,NA,NA
+2188,MTA Bus Company,24638749,"New York, NY",NA,NA,NA
+3001,Kanawha Valley Regional Transportation Authority,2125308,"Charleston, WV",NA,NA,NA
+3002,The Tri-State Transit Authority,684431,"Huntington, WV",NA,NA,NA
+3006,Greater Richmond Transit Company,12415055,"Richmond, VA",NA,NA,NA
+3007,Greater Roanoke Transit Company,1923317,"Roanoke, VA",NA,NA,NA
+3008,Greater Lynchburg Transit Company,1104263,"Lynchburg, VA",NA,NA,NA
+3009,Petersburg Area Transit,464797,"Petersburg, VA",NA,NA,NA
+3010,Lehigh and Northampton Transportation Authority,4401359,"Allentown, PA",NA,NA,NA
+3011,Altoona Metro Transit,663076,"Altoona, PA",NA,NA,NA
+3012,Cambria County Transit Authority,1251256,"Johnstown, PA",NA,NA,NA
+3013,Erie Metropolitan Transit Authority,2588887,"Erie, PA",NA,NA,NA
+3014,Capital Area Transit,1969069,"Harrisburg, PA",NA,NA,NA
+3015,Luzerne County Transportation Authority,2780392,"Kingston, PA",NA,NA,NA
+3018,Red Rose Transit Authority,1946006,"Lancaster, PA",NA,NA,NA
+3019,Southeastern Pennsylvania Transportation Authority,332892371,"Philadelphia, PA",NA,NA,NA
+3022,Port Authority of Allegheny County,67179046,"Pittsburgh, PA",Port Authority of Allegheny County,Sep-06,1
+3023,Beaver County Transit Authority,578666,"Rochester, PA",NA,NA,NA
+3024,Berks Area Reading Transportation Authority,2646408,"Reading, PA",NA,NA,NA
+3025,County of Lackawanna Transit System,1791552,"Scranton, PA","County of Nassau, dba: Nassau Inter County Express",Jan-13,1
+3025,County of Lackawanna Transit System,1791552,"Scranton, PA",County of Lackawanna Transit System,3/11/2022,1
+3025,County of Lackawanna Transit System,1791552,"Scranton, PA",Kalamazoo Metro Transit System,Sep-07,1
+3026,Williamsport Bureau of Transportation,1253920,"Williamsport, PA",NA,NA,NA
+3027,York County Transportation Authority,1458561,"York, PA",NA,NA,NA
+3030,Washington Metropolitan Area Transit Authority,412822055,"Washington, DC",NA,NA,NA
+3034,Maryland Transit Administration,102748973,"Baltimore, MD",NA,NA,NA
+3035,Ohio Valley Regional Transportation Authority,498054,"Wheeling, WV",NA,NA,NA
+3036,Charlottesville Transit Service,1385286,"Charlottesville, VA",NA,NA,NA
+3040,Annapolis Department of Transportation,1525900,"Annapolis, MD",NA,NA,NA
+3042,Washington County Transportation Department,298626,"Hagerstown, MD",NA,NA,NA
+3044,Westmoreland County Transit Authority,287932,"Greensburg, PA",NA,NA,NA
+3048,Howard Transit,679002,"Laurel, MD",NA,NA,NA
+3050,"G G and C Bus Company, Inc.",41070,"Washington, PA",NA,NA,NA
+3051,Ride-On Montgomery County Transit,24645238,"Rockville, MD",NA,NA,NA
+3054,Centre Area Transportation Authority,6008773,"State College, PA",NA,NA,NA
+3055,Shenango Valley Shuttle Service,122476,"Hermitage, PA",NA,NA,NA
+3057,Pennsylvania Department of Transportation,249913,"Harrisburg, PA",NA,NA,NA
+3058,City of Fairfax CUE Bus,1061500,"Fairfax, VA",NA,NA,NA
+3061,Mid Mon Valley Transit Authority,358673,"Charleroi, PA",NA,NA,NA
+3068,Fairfax Connector Bus System,8474143,"Fairfax, VA",NA,NA,NA
+3069,City of Danville Mass Transit System,204205,"Danville, VA",NA,NA,NA
+3070,Potomac and Rappahannock Transportation Commission,2086691,"Woodbridge, VA",NA,NA,NA
+3071,City of Alexandria - Alexandria Transit Company,3323021,"Alexandria, VA",NA,NA,NA
+3072,Transit Services of Frederick County,483304,"Frederick, MD",NA,NA,NA
+3073,Virginia Railway Express,3654271,"Alexandria, VA",NA,NA,NA
+3074,Harford Transit,221742,"Abingdon, MD",NA,NA,NA
+3075,Delaware Transit Corporation,8052454,"Dover, DE",NA,NA,NA
+3076,Williamsburg Area Transport,520488,"Williamsburg, VA",NA,NA,NA
+3079,Fredericksburg Regional Transit,328724,"Fredericksburg, VA",NA,NA,NA
+3081,Loudoun County Commuter Bus Service - Office of Transportation Services,515430,"Leesburg, VA",NA,NA,NA
+3083,"Transportation District Commission of Hampton Roads, dba: Hampton Roads Transit",23326705,"Hampton, VA",NA,NA,NA
+3085,Prince George's County Transit,2467659,"Largo, MD",NA,NA,NA
+3087,Fayette Area Coordinated Transportation,102515,"Lemont Furnace, PA",NA,NA,NA
+3088,"County Commissioners of Charles County, MD",382750,"Port Tobacco, MD",NA,NA,NA
+3089,Monongalia County Urban Transit,381250,"Morgantown, WV",NA,NA,NA
+3091,Blacksburg Transit,2385074,"Blacksburg, VA",NA,NA,NA
+3092,Carroll County Planning Department,12340,"Westminster, MD",NA,NA,NA
+3094,City of Harrisonburg Department of Public Transportation,1130165,"Harrisonburg, VA","City of Harrisonburg, dba: Harrisonburg Transit",Aug-15,1
+4001,Chattanooga Area Regional Transportation Authority,2471789,"Chattanooga, TN",NA,NA,NA
+4002,Knoxville Area Transit,3070487,"Knoxville, TN",NA,NA,NA
+4003,Memphis Area Transit Authority,11898331,"Memphis, TN",NA,NA,NA
+4004,Metropolitan Transit Authority,7372388,"Nashville, TN",NA,NA,NA
+4005,Asheville Transit System,1059265,"Asheville, NC",NA,NA,NA
+4006,Wilmington Transit Authority,1230017,"Wilmington, NC",NA,NA,NA
+4007,Capital Area Transit,3546761,"Raleigh, NC",NA,NA,NA
+4008,Charlotte Area Transit System,17312394,"Charlotte, NC",NA,NA,NA
+4009,Fayetteville Area System of Transit,1340098,"Fayetteville, NC",NA,NA,NA
+4011,High Point Transit,675883,"High Point, NC",NA,NA,NA
+4012,Winston-Salem Transit Authority - Trans-Aid of Forsyth County,2727650,"Winston-Salem, NC",NA,NA,NA
+4014,Coast Transit Authority,490705,"Gulfport, MS",Coast Transit Authority,3/11/2022,0
+4015,City of Jackson Transit System,761766,"Jackson, MS",NA,NA,NA
+4017,Lexington Transit Authority,2838102,"Lexington, KY",NA,NA,NA
+4018,Transit Authority of River City,15038337,"Louisville, KY",NA,NA,NA
+4019,Transit Authority of Northern Kentucky,3681086,"Fort Wright, KY",NA,NA,NA
+4021,Albany Transit System,662467,"Albany, GA",NA,NA,NA
+4022,Metropolitan Atlanta Rapid Transit Authority,142049871,"Atlanta, GA",NA,NA,NA
+4023,Augusta Richmond County Transit Department,923066,"Augusta, GA",NA,NA,NA
+4024,Metra Transit System,1109042,"Columbus, GA",NA,NA,NA
+4025,Chatham Area Transit Authority,3813154,"Savannah, GA",NA,NA,NA
+4026,Manatee County Area Transit,1304637,"Bradenton, FL","Manatee County Board of County Commissioners, dba: Manatee County Area Transit",Jan-12,1
+4027,Pinellas Suncoast Transit Authority,10204222,"St. Petersburg, FL",NA,NA,NA
+4028,Lee County Transit,2827240,"Fort Myers, FL",NA,NA,NA
+4029,Broward County Mass Transit Division,40496389,"Pompano Beach, FL",NA,NA,NA
+4030,Gainesville Regional Transit System,8041803,"Gainesville, FL",NA,NA,NA
+4031,Lakeland Area Mass Transit District,1538232,"Lakeland, FL",NA,NA,NA
+4032,"County of Volusia, dba: VOTRAN",3331041,"South Daytona, FL",NA,NA,NA
+4034,Miami-Dade Transit,103232388,"Miami, FL",NA,NA,NA
+4035,Central Florida Regional Transportation Authority,24059369,"Orlando, FL",NA,NA,NA
+4036,City of Tallahassee,4612725,"Tallahassee, FL",NA,NA,NA
+4037,"Board of County Commissioners, Palm Beach County, PalmTran, Inc.",8419477,"West Palm Beach, FL",NA,NA,NA
+4038,Escambia County Area Transit,1215737,"Pensacola, FL","Escambia County Board of County Commissioners, FL, dba: Escambia County Area Transit Authority",Aug-15,1
+4040,Jacksonville Transportation Authority,10502273,"Jacksonville, FL",NA,NA,NA
+4041,Hillsborough Area Regional Transit Authority,11606920,"Tampa, FL",NA,NA,NA
+4042,Birmingham-Jefferson County Transit Authority,3686392,"Birmingham, AL",NA,NA,NA
+4043,The Wave Transit System,793140,"Mobile, AL",NA,NA,NA
+4044,Montgomery Area Transit System,708351,"Montgomery, AL",NA,NA,NA
+4045,Tuscaloosa County Parking and Transit Authority,120878,"Tuscaloosa, AL",NA,NA,NA
+4046,Sarasota County Area Transit,1876245,"Sarasota, FL",NA,NA,NA
+4047,Athens Transit System,1482658,"Athens, GA",NA,NA,NA
+4051,Chapel Hill Transit,5711073,"Chapel Hill, NC",NA,NA,NA
+4053,Greenville Transit Authority,734863,"Greenville, SC",NA,NA,NA
+4054,Johnson City Transit System,370188,"Johnson City, TN",NA,NA,NA
+4056,Pee Dee Regional Transportation Authority,34840,"Florence, SC",NA,NA,NA
+4057,Jackson Transit Authority,421819,"Jackson, TN",NA,NA,NA
+4058,City of Rome Transit Department,815562,"Rome, GA",NA,NA,NA
+4063,Space Coast Area Transit,839510,"Cocoa, FL",NA,NA,NA
+4070,Puerto Rico Ports Authority,2066985,"San Juan, PR",NA,NA,NA
+4071,"City of Huntsville, Alabama - Public Transportation Division",277316,"Huntsville, AL",NA,NA,NA
+4073,Lee-Russell Council of Governments,57404,"Opelika, AL",NA,NA,NA
+4074,Pasco County Public Transportation,740918,"Port Richey, FL",NA,NA,NA
+4077,South Florida Regional Transportation Authority,3064074,"Pompano Beach, FL",NA,NA,NA
+4078,Cobb County Department of Transportation Authority,3793253,"Marietta, GA",NA,NA,NA
+4085,Bay County Council On Aging Bay Coordinated Transportation,242467,"Panama City, FL",NA,NA,NA
+4086,Metropolitan Bus Authority,28394288,"San Juan, PR",NA,NA,NA
+4087,Durham Area Transit Authority,4443568,"Durham, NC",NA,NA,NA
+4092,Clarksville Transit System,605835,"Clarksville, TN",NA,NA,NA
+4093,Greensboro Transit Authority,2736536,"Greensboro, NC",NA,NA,NA
+4094,Puerto Rico Highway and Transportation Authority,5270844,"San Juan, PR",NA,NA,NA
+4097,"Council on Aging of St. Lucie, Inc.",33457,"Fort Pierce, FL",NA,NA,NA
+4100,Santee Wateree Regional Transportation Authority,193960,"Sumter, SC",NA,NA,NA
+4101,Spartanburg Transit System,500942,"Spartanburg, SC",NA,NA,NA
+4102,Waccamaw Regional Transportation Authority,627254,"Conway, SC",NA,NA,NA
+4108,Research Triangle Regional Public Transportation Authority,780292,"Research Triangle Park, NC",Rhode Island Department of Transportation,Apr-12,1
+4110,Charleston Area Regional Transportation Authority,1038278,"Charleston, SC",NA,NA,NA
+4113,"Council on Aging of Martin County, Inc.",15977,"Stuart, FL",NA,NA,NA
+4120,"City of Ocala, Florida",296303,"Ocala, FL",NA,NA,NA
+4127,Polk County Transit Services Division - Polk County Board of County Commissioners,452607,"Bartow, FL",NA,NA,NA
+4128,Okaloosa County Board of County Commissioners,71193,"Fort Walton Beach, FL",NA,NA,NA
+4130,Macon-Bibb County Transit Authority,1050765,"Macon, GA",NA,NA,NA
+4135,Georgia Regional Transportation Authority,2070295,"Atlanta, GA",NA,NA,NA
+4138,Gwinnett County Board of Commissioners,1637237,"Lawrenceville, GA",NA,NA,NA
+4140,Collier Area Transit,3998260,"Naples, FL",NA,NA,NA
+4141,Central Midlands Regional Transit Authority,2659401,"Columbia, SC",NA,NA,NA
+4142,City of Canton Transit,41134,"Canton, GA",NA,NA,NA
+4146,Hernando County Board of County Commissioners,133750,"Brooksville, FL",NA,NA,NA
+4147,NC State University Transportation Department,1767209,"Raleigh, NC",NA,NA,NA
+5001,City of Appleton - Valley Transit,1030325,"Appleton, WI",NA,NA,NA
+5002,Green Bay Metro,1736118,"Green Bay, WI",NA,NA,NA
+5003,Kenosha Transit,1643671,"Kenosha, WI",NA,NA,NA
+5004,LaCrosse Municipal Transit Utility,1059544,"LaCrosse, WI",NA,NA,NA
+5005,Metro Transit System,11475597,"Madison, WI",NA,NA,NA
+5006,Belle Urban System - Racine,1503416,"Racine, WI",NA,NA,NA
+5008,Milwaukee County Transit System,50434805,"Milwaukee, WI",NA,NA,NA
+5009,Oshkosh Transit System,984625,"Oshkosh, WI",NA,NA,NA
+5010,Metro Regional Transit Authority,5534275,"Akron, OH",NA,NA,NA
+5011,Stark Area Regional Transit Authority,1878420,"Canton, OH",NA,NA,NA
+5012,Southwest Ohio Regional Transit Authority,25900339,"Cincinnati, OH",NA,NA,NA
+5015,The Greater Cleveland Regional Transit Authority,65096106,"Cleveland, OH",NA,NA,NA
+5016,Central Ohio Transit Authority,14625379,"Columbus, OH",NA,NA,NA
+5017,Greater Dayton Regional Transit Authority,11779951,"Dayton, OH",NA,NA,NA
+5019,City of Middletown - Middletown Transit System,220936,"Middletown, OH",NA,NA,NA
+5020,Springfield City Area Transit,299720,"Springfield, OH",NA,NA,NA
+5021,Portage Area Regional Transportation Authority,1096803,"Kent, OH",NA,NA,NA
+5022,Toledo Area Regional Transit Authority,5600427,"Toledo, OH",NA,NA,NA
+5024,Western Reserve Transit Authority,1403017,"Youngstown, OH",NA,NA,NA
+5025,Duluth Transit Authority,2709249,"Duluth, MN",NA,NA,NA
+5026,City of Moorhead Transit,319746,"Moorhead, MN",NA,NA,NA
+5027,Metro Transit,69698813,"Minneapolis, MN",NA,NA,NA
+5028,St. Cloud Metropolitan Transit Commission,1723166,"St. Cloud, MN",NA,NA,NA
+5029,Bay Metropolitan Transit Authority,525916,"Bay City, MI",NA,NA,NA
+5030,Battle Creek Transit,496648,"Battle Creek, MI",NA,NA,NA
+5031,Suburban Mobility Authority for Regional Transportation,9865876,"Detroit, MI",NA,NA,NA
+5032,Mass Transportation Authority,4081665,"Flint, MI",NA,NA,NA
+5033,Interurban Transit Partnership,6069439,"Grand Rapids, MI","Interurban Transit Partnership, dba: The Rapid",Dec-14,1
+5034,City of Jackson Transportation Authority,513072,"Jackson, MI","City of Jackson, MS, dba: JATRAN",Jan-15,1
+5035,Kalamazoo Metro Transit System,2821101,"Kalamazoo, MI",NA,NA,NA
+5036,Capital Area Transportation Authority,8932953,"Lansing, MI",NA,NA,NA
+5037,Muskegon Area Transit System,423706,"Muskegon Heights, MI",NA,NA,NA
+5039,Saginaw Transit Authority Regional Service,616650,"Saginaw, MI",NA,NA,NA
+5040,Ann Arbor Transportation Authority,4701100,"Ann Arbor, MI",NA,NA,NA
+5041,City of Anderson Transportation System,168387,"Anderson, IN",NA,NA,NA
+5043,Metropolitan Evansville Transit System,0,"Evansville, IN",NA,NA,NA
+5044,Fort Wayne Public Transportation Corporation,1713381,"Fort Wayne, IN",NA,NA,NA
+5045,Gary Public Transportation Corporation,1477528,"Gary, IN",NA,NA,NA
+5047,Bloomington-Normal Public Transit System,1294175,"Bloomington, IL",NA,NA,NA
+5050,Indianapolis and Marion County Public Transportation,8486044,"Indianapolis, IN",NA,NA,NA
+5051,Greater Lafayette Public Transportation Corporation,4231208,"Lafayette, IN",NA,NA,NA
+5052,South Bend Public Transportation Corporation,3072722,"South Bend, IN",NA,NA,NA
+5053,Terre Haute Transit Utility,177206,"Terre Haute, IN",NA,NA,NA
+5054,Muncie Indiana Transit System,1761657,"Muncie, IN",NA,NA,NA
+5056,Greater Peoria Mass Transit District,2266566,"Peoria, IL",NA,NA,NA
+5057,Rock Island County Metropolitan Mass Transit District,2346775,"Rock Island, IL",Rock Island County Metropolitan Mass Transit District,Jul-16,1
+5058,Rockford Mass Transit District,1249102,"Rockford, IL",NA,NA,NA
+5059,Springfield Mass Transit District,1286329,"Springfield, IL",NA,NA,NA
+5060,Champaign-Urbana Mass Transit District,10017606,"Urbana, IL",NA,NA,NA
+5061,Decatur Public Transit System,995887,"Decatur, IL",NA,NA,NA
+5066,Chicago Transit Authority,490003721,"Chicago, IL",NA,NA,NA
+5088,Sheboygan Transit System,515168,"Sheboygan, WI",NA,NA,NA
+5090,Richland County Transit,292449,"Mansfield, OH",NA,NA,NA
+5091,Wausau Area Transit System,809511,"Wausau, WI",NA,NA,NA
+5092,City of Rochester Public Transportation,1300793,"Rochester, MN",NA,NA,NA
+5095,Lorain County Transit,796547,"Lorain, OH",NA,NA,NA
+5096,City of Waukesha Transit Commission,1258629,"Waukesha, WI","City of Waukesha, dba: Waukesha Metro Transit",Nov-14,1
+5099,Eau Claire Transit,1177002,"Eau Claire, WI",NA,NA,NA
+5102,Hammond Transit System,412783,"Hammond, IN",NA,NA,NA
+5104,Northern Indiana Commuter Transportation District,3802391,"Chesterton, IN",NA,NA,NA
+5108,Janesville Transit System,513641,"Janesville, WI",NA,NA,NA
+5109,City of Beloit Transit System,271279,"Beloit, WI",NA,NA,NA
+5110,Bloomington Public Transportation Corporation,2148561,"Bloomington, IN",NA,NA,NA
+5113,Pace - Suburban Bus Division,33769583,"Arlington Heights, IL",Pace - Suburban Bus Division,Jan-11,1
+5117,Laketran,661603,"Grand River, OH",Laketran,Jan-16,1
+5118,Northeast Illinois Regional Commuter Railroad Corporation,68590955,"Chicago, IL",NA,NA,NA
+5119,City of Detroit Department of Transportation,35396882,"Detroit, MI",NA,NA,NA
+5132,Twin Cities Area Transportation Authority,20917,"Benton Harbor, MI",NA,NA,NA
+5141,Detroit Transportation Corporation,1340646,"Detroit, MI",NA,NA,NA
+5143,Brunswick Transit Alternative,23008,"Brunswick, OH",NA,NA,NA
+5146,Madison County Transit District,1885577,"Granite City, IL",Madison County Transit District,Jan-19,1
+5147,City of Holland Macatawa Area Express,82737,"Holland, MI",NA,NA,NA
+5148,Blue Water Area Transportation Commission,451794,"Port Huron, MI",NA,NA,NA
+5149,Michiana Area Council of Governments,136569,"South Bend, IN",NA,NA,NA
+5154,Metropolitan Council,9306149,"St. Paul, MN",NA,NA,NA
+5157,Butler County Regional Transit Authority,12900,"Hamilton, OH",NA,NA,NA
+5158,University of Michigan Parking and Transportation Services,5282764,"Ann Arbor, MI",NA,NA,NA
+5160,Washington County Transit,80468,"West Bend, WI",NA,NA,NA
+5161,Ozaukee County Transit Services,100981,"Port Washington, WI",NA,NA,NA
+5163,Licking County Transit Board,2979,"Newark, OH",NA,NA,NA
+5171,Fond du Lac Area Transit,127871,"Fond du Lac, WI",NA,NA,NA
+5174,City of Danville/Danville Mass Transit,341873,"Danville, IL",NA,NA,NA
+6001,Amarillo City Transit,358335,"Amarillo, TX",NA,NA,NA
+6006,Mass Transit Department - City of El Paso,12345370,"El Paso, TX",NA,NA,NA
+6007,Fort Worth Transportation Authority,7792556,"Fort Worth, TX",NA,NA,NA
+6008,"Metropolitan Transit Authority of Harris County, Texas",91780526,"Houston, TX",NA,NA,NA
+6009,"Laredo Transit Management, Inc.",3898147,"Laredo, TX",NA,NA,NA
+6010,"City Transit Management Company, Inc.",3709386,"Lubbock, TX",NA,NA,NA
+6011,VIA Metropolitan Transit,39697208,"San Antonio, TX",NA,NA,NA
+6012,"Waco Transit System, Inc.",545548,"Waco, TX",NA,NA,NA
+6013,Port Arthur Transit,116656,"Port Arthur, TX",NA,NA,NA
+6014,City of Brownsville - Brownsville Urban System,1632541,"Brownsville, TX",NA,NA,NA
+6015,Island Transit,886946,"Galveston, TX",NA,NA,NA
+6016,Beaumont Municipal Transit System,649315,"Beaumont, TX",NA,NA,NA
+6017,Central Oklahoma Transportation and Parking Authority,2607690,"Oklahoma City, OK",NA,NA,NA
+6018,Metropolitan Tulsa Transit Authority,2281375,"Tulsa, OK",NA,NA,NA
+6019,ABQ Ride,7686582,"Albuquerque, NM",NA,NA,NA
+6020,Crescent City Connection Division - Louisiana Department of Transportation,3133238,"New Orleans, LA",NA,NA,NA
+6022,Capital Area Transit System,4752816,"Baton Rouge, LA",NA,NA,NA
+6024,Shreveport Area Transit System,2814415,"Shreveport, LA",NA,NA,NA
+6025,City of Alexandria,623871,"Alexandria, LA",NA,NA,NA
+6026,City of Monroe Transit System,963547,"Monroe, LA",NA,NA,NA
+6033,Central Arkansas Transit Authority,2282456,"North Little Rock, AR",NA,NA,NA
+6037,City of San Angelo,152954,"San Angelo, TX",NA,NA,NA
+6038,Lafayette Transit System,1335222,"Lafayette, LA",NA,NA,NA
+6040,Abilene Transit System,497574,"Abilene, TX",NA,NA,NA
+6048,Capital Metropolitan Transportation Authority,32476217,"Austin, TX",NA,NA,NA
+6049,Las Cruces Area Transit,614579,"Las Cruces, NM",NA,NA,NA
+6051,Corpus Christi Regional Transportation Authority,5695078,"Corpus Christi, TX",NA,NA,NA
+6053,Texoma Council of Governments Transportation Department,16985,"Sherman, TX",NA,NA,NA
+6056,Dallas Area Rapid Transit,72206091,"Dallas, TX",NA,NA,NA
+6059,Brazos Transit District,600888,"Bryan, TX",NA,NA,NA
+6062,"University of Arkansas, Fayetteville",1311421,"Fayetteville, AR",NA,NA,NA
+6072,Ozark Regional Transit,23754,"Springdale, AR",NA,NA,NA
+6076,City of Denton Public Transportation Department,1265309,"Denton, TX",NA,NA,NA
+6077,Santa Fe Trails - City of Santa Fe,540637,"Santa Fe, NM",NA,NA,NA
+6086,Fort Smith Transit,178446,"Fort Smith, AR",NA,NA,NA
+6088,Jefferson Parish Department of Transit Administration,3058393,"Gretna, LA",NA,NA,NA
+6090,Lower Rio Grande Valley Development Council,35054,"McAllen, TX",NA,NA,NA
+6091,Hill Country Transit District,360619,"San Saba, TX",NA,NA,NA
+6094,The Lawton Area Transit System,258234,"Lawton, OK",NA,NA,NA
+6095,Golden Crescent Regional Planning Commssion,136282,"Victoria, TX",NA,NA,NA
+6096,Cleveland Area Rapid Transit,937668,"Norman, OK",NA,NA,NA
+6097,Midland-Odessa Urban Transit District,298606,"Odessa, TX",NA,NA,NA
+7001,StarTran,1599218,"Lincoln, NE",NA,NA,NA
+7002,Transit Authority of Omaha,4625658,"Omaha, NE",NA,NA,NA
+7003,City Utilities of Springfield Transit Services,1570375,"Springfield, MO",NA,NA,NA
+7005,Kansas City Area Transportation Authority,13615226,"Kansas City, MO",NA,NA,NA
+7006,Bi-State Development Agency,45762011,"St. Louis, MO",NA,NA,NA
+7007,Bettendorf Transit System,144712,"Bettendorf, IA",NA,NA,NA
+7008,Five Seasons Transportation and Parking,1047772,"Cedar Rapids, IA",NA,NA,NA
+7009,Davenport Public Transit,939758,"Davenport, IA",NA,NA,NA
+7010,Des Moines Metropolitan Transit Authority,3809648,"Des Moines, IA",NA,NA,NA
+7011,City of Dubuque,534546,"Dubuque, IA",NA,NA,NA
+7012,Sioux City Transit System,776394,"Sioux City, IA",NA,NA,NA
+7013,Metropolitan Transit Authority of Black Hawk County,340181,"Waterloo, IA",NA,NA,NA
+7014,Topeka Metropolitan Transit Authority,1311669,"Topeka, KS",NA,NA,NA
+7015,Wichita Transit,2070422,"Wichita, KS",NA,NA,NA
+7016,Columbia Transit,517010,"Columbia, MO",NA,NA,NA
+7018,Iowa City Transit,1516580,"Iowa City, IA",NA,NA,NA
+7019,University of Iowa,3572019,"Iowa City, IA",NA,NA,NA
+7030,Coralville Transit System,0,"Coralville, IA",NA,NA,NA
+7032,St. Joseph Transit,289616,"St. Joseph, MO",NA,NA,NA
+7033,City of Lawrence - Lawrence Transit System,455396,"Lawrence, KS",NA,NA,NA
+7035,"Johnson County Kansas, aka: Johnson County Transit",305779,"Olathe, KS","Johnson County Kansas, dba: Johnson County Transit",Jan-13,1
+7036,Missouri State University,756464,"Springfield, MO",NA,NA,NA
+7041,Ames Transit Agency,4283170,"Ames, IA",NA,NA,NA
+7043,City of Jefferson,347090,"Jefferson City, MO",NA,NA,NA
+8001,Utah Transit Authority,36688470,"Salt Lake City, UT",NA,NA,NA
+8002,Sioux Falls Transit,715480,"Sioux Falls, SD",NA,NA,NA
+8003,Fargo Metropolitan Area Transit,837651,"Fargo, ND",NA,NA,NA
+8004,Billings Metropolitan Transit,653866,"Billings, MT",NA,NA,NA
+8005,Colorado Springs Transit System,2259294,"Colorado Springs, CO",NA,NA,NA
+8006,Denver Regional Transportation District,85132424,"Denver, CO",NA,NA,NA
+8007,Pueblo Transit System,973968,"Pueblo, CO",NA,NA,NA
+8008,Cities Area Transit,256180,"Grand Forks, ND",Cities Area Transit,Apr-15,1
+8009,Missoula Urban Transportation District,644463,"Missoula, MT",NA,NA,NA
+8010,City of Greeley - Transit Services,431771,"Greeley, CO",NA,NA,NA
+8011,Transfort,1481472,"Fort Collins, CO",NA,NA,NA
+8012,Great Falls Transit District,431420,"Great Falls, MT",NA,NA,NA
+8013,"Casper Area Transportation Coalition, Inc.",10859,"Casper, WY",NA,NA,NA
+8014,Rapid Transit System,175140,"Rapid City, SD",NA,NA,NA
+8016,Mesa County,672394,"Grand Junction, CO",NA,NA,NA
+8019,Bis-Man Transit Board,90692,"Bismarck, ND",NA,NA,NA
+8020,The City of Cheyenne Transit Program,170500,"Cheyenne, WY",NA,NA,NA
+8021,"City of Logan, dba: The Logan Transit District",1489031,"Logan, UT",NA,NA,NA
+8025,City of Loveland Transit,63929,"Loveland, CO",NA,NA,NA
+9001,Regional Transportation Commission of Washoe County,8001999,"Reno, NV",NA,NA,NA
+9002,City and County of Honolulu Department of Transportation Services,67406827,"Honolulu, HI","City and County of Honolulu, dba: Department of Transportation Services",Sep-06,1
+9003,San Francisco Bay Area Rapid Transit District,99296028,"Oakland, CA",NA,NA,NA
+9004,Golden Empire Transit District,6825690,"Bakersfield, CA",NA,NA,NA
+9006,Santa Cruz Metropolitan Transit District,5523072,"Santa Cruz, CA",NA,NA,NA
+9007,Modesto Area Express,3610074,"Modesto, CA",NA,NA,NA
+9008,Santa Monica's Big Blue Bus,20543294,"Santa Monica, CA",NA,NA,NA
+9009,San Mateo County Transit District,14548496,"San Carlos, CA","San Mateo County Transit District, dba: SamTrans",Apr-07,1
+9010,Torrance Transit System,4612548,"Torrance, CA",NA,NA,NA
+9012,San Joaquin Regional Transit District,3922295,"Stockton, CA",San Joaquin Regional Transit District,Jan-11,1
+9013,Santa Clara Valley Transportation Authority,37564165,"San Jose, CA",NA,NA,NA
+9014,Alameda-Contra Costa Transit District,64600740,"Oakland, CA","Alameda-Contra Costa Transit District, dba: AC Transit",Jun-11,1
+9015,San Francisco Municipal Railway,216918351,"San Francisco, CA",NA,NA,NA
+9016,"Golden Gate Bridge, Highway and Transportation District",9370490,"San Francisco, CA",NA,NA,NA
+9017,City of Santa Rosa,2605975,"Santa Rosa, CA",City of Santa Rosa,Aug-10,1
+9019,Sacramento Regional Transit District,30937994,"Sacramento, CA","Sacramento Regional Transit District, dba: Sacramento RT",Aug-08,1
+9020,Santa Barbara Metropolitan Transit District,7189179,"Santa Barbara, CA",NA,NA,NA
+9022,Norwalk Transit System,2511590,"Norwalk, CA",NA,NA,NA
+9023,Long Beach Transit,26964674,"Long Beach, CA",NA,NA,NA
+9026,San Diego Metropolitan Transit System,24425116,"San Diego, CA",NA,NA,NA
+9027,Fresno Area Express,11241838,"Fresno, CA",NA,NA,NA
+9028,City of Vallejo Transportation Program,2892095,"Vallejo, CA",NA,NA,NA
+9029,Omnitrans,15038153,"San Bernardino, CA",NA,NA,NA
+9030,North San Diego County Transit District,11537291,"Oceanside, CA",NA,NA,NA
+9031,Riverside Transit Agency,7139831,"Riverside, CA",NA,NA,NA
+9032,City of Phoenix Public Transit Department,45219796,"Phoenix, AZ",NA,NA,NA
+9033,City of Tucson,16236219,"Tucson, AZ",NA,NA,NA
+9034,City of Glendale Transit,175638,"Glendale, AZ",NA,NA,NA
+9035,South Coast Area Transit,3145890,"Oxnard, CA",NA,NA,NA
+9036,Orange County Transportation Authority,67304135,"Orange, CA",NA,NA,NA
+9039,Culver City Municipal Bus Lines,5402335,"Culver City, CA",NA,NA,NA
+9041,Montebello Bus Lines,9566679,"Montebello, CA",NA,NA,NA
+9042,City of Gardena Transportation Department,4656211,"Gardena, CA",NA,NA,NA
+9043,City of Commerce Municipal Buslines,674652,"Commerce, CA",NA,NA,NA
+9045,Regional Transportation Commission of Southern Nevada,52810964,"Las Vegas, NV",NA,NA,NA
+9050,Simi Valley Transit,432714,"Simi Valley, CA",NA,NA,NA
+9052,City of Corona,162423,"Corona, CA",NA,NA,NA
+9054,"San Diego Trolley, Inc.",29334362,"San Diego, CA",NA,NA,NA
+9061,Yuba-Sutter Transit Authority,617655,"Marysville, CA",NA,NA,NA
+9062,Monterey-Salinas Transit,4738112,"Monterey, CA",NA,NA,NA
+9078,Central Contra Costa Transit Authority,4242249,"Concord, CA",NA,NA,NA
+9079,SunLine Transit Agency,3334540,"Thousand Palms, CA",NA,NA,NA
+9087,Santa Maria Area Transit,766779,"Santa Maria, CA",NA,NA,NA
+9088,Napa County Transportation Planning Agency,745331,"Napa, CA",NA,NA,NA
+9089,Sonoma County Transit,1259388,"Santa Rosa, CA",NA,NA,NA
+9090,Yolo County Transportation District,1230312,"Woodland, CA",NA,NA,NA
+9091,City of Visalia - Visalia City Coach,1280223,"Visalia, CA",NA,NA,NA
+9092,City of Fairfield - Fairfield-Suisun Transit,762714,"Fairfield, CA","City of Fresno, dba: Fresno Area Express",Jul-13,1
+9093,Redding Area Bus Authority,762404,"Redding, CA",NA,NA,NA
+9119,Laguna Beach Municipal Transit,103354,"Laguna Beach, CA",NA,NA,NA
+9121,Antelope Valley Transit Authority,2669356,"Lancaster, CA",Antelope Valley Transit Authority,May-21,0
+9127,Chico Area Transit System City of Chico,833982,"Chico, CA",NA,NA,NA
+9134,Peninsula Corridor Joint Powers Board,9184511,"San Carlos, CA",NA,NA,NA
+9136,"Regional Public Transportation Authority, dba: Valley Metro",6366799,"Phoenix, AZ","Regional Public Transportation Authority, dba: Valley Metro",Oct-13,1
+9142,"University of California, Davis",3416432,"Davis, CA",NA,NA,NA
+9144,Livermore / Amador Valley Transit Authority,1944493,"Livermore, CA",NA,NA,NA
+9146,Foothill Transit,14747521,"West Covina, CA",NA,NA,NA
+9147,City of Los Angeles Department of Transportation,29983363,"Los Angeles, CA",NA,NA,NA
+9148,Victor Valley Transit Authority,970968,"Hesperia, CA",NA,NA,NA
+9149,City of Lompoc - Lompoc Transit,307726,"Lompoc, CA","City of Long Beach, dba: Long Beach Bus",Feb-16,1
+9150,City of Alameda Ferry Services,464674,"Alameda, CA","City of Albany, dba: Albany Transit System",Jul-13,1
+9151,Southern California Regional Rail Authority,10693327,"Los Angeles, CA",NA,NA,NA
+9154,Los Angeles County Metropolitan Transportation Authority,451511323,"Los Angeles, CA",NA,NA,NA
+9156,City of San Luis Obispo,875354,"San Luis Obispo, CA",NA,NA,NA
+9159,Western Contra Costa Transit Authority,1162395,"Pinole, CA",NA,NA,NA
+9161,City of Union City Transit Division,380512,"Union City, CA",NA,NA,NA
+9162,Eastern Contra Costa Transit Authority,2319606,"Antioch, CA",NA,NA,NA
+9164,Ventura Intercity Service Transit Authority,442092,"Ventura, CA",NA,NA,NA
+9165,Thousand Oaks Transit,140123,"Thousand Oaks, CA",NA,NA,NA
+9166,LACMTA - Small Operators,10047080,"Los Angeles, CA",NA,NA,NA
+9168,Roseville Transit,345406,"Roseville, CA",NA,NA,NA
+9171,Santa Clarita Transit,3446513,"Santa Clarita, CA",NA,NA,NA
+9172,City of Tempe Transportation Planning and Transit Division,6909856,"Tempe, AZ",NA,NA,NA
+9173,Merced County Transit,903788,"Merced, CA",NA,NA,NA
+9175,City of Lodi - Transit Division,368692,"Lodi, CA",NA,NA,NA
+9180,Coconino County Transportation Services,426331,"Flagstaff, AZ",NA,NA,NA
+9182,Altamont Commuter Express,640596,"Stockton, CA",NA,NA,NA
+9185,MTS Contract Services,17883687,"San Diego, CA",NA,NA,NA
+9189,National City Transit,1633113,"National City, CA",NA,NA,NA
+9192,Yuma Metropolitan Planning Organization,100178,"Yuma, AZ",NA,NA,NA
+9193,Chula Vista Transit,3068544,"Chula Vista, CA",NA,NA,NA
+9196,Placer County Department of Public Works,569174,"Auburn, CA",NA,NA,NA
+9198,City of Porterville,423934,"Porterville, CA",NA,NA,NA
