@@ -1,495 +1,494 @@
-Company_Nm,trips,query,date,status
-Alameda-Contra Costa Transit District,64600740,"Oakland, CA",26-Jun-11,1
-Antelope Valley Transit Authority,2669356,"Lancaster, CA",3-May-21,1
-Capital District Transportation Authority,11691153,"Albany, NY",5-Sep-13,1
-Cities Area Transit,256180,"Grand Forks, ND",31-Dec-16,1
-City and County of Honolulu Department of Transportation Services,67406827,"Honolulu, HI",15-Sep-06,1
-City of Harrisonburg Department of Public Transportation,1130165,"Harrisonburg, VA",1-Aug-15,1
-City of Santa Rosa,2605975,"Santa Rosa, CA",5-Aug-10,1
-City of Waukesha Transit Commission,1258629,"Waukesha, WI",1-Nov-14,1
-Coast Transit Authority,490705,"Gulfport, MS",17-May-22,0
-Connecticut Department of Transportation,600740,"Newington, CT",24-Oct-11,1
-Escambia County Area Transit,1215737,"Pensacola, FL",1-Aug-15,1
-Interurban Transit Partnership,6069439,"Grand Rapids, MI",15-Dec-14,1
-"Johnson County Kansas, aka: Johnson County Transit",305779,"Olathe, KS",1-Jan-13,1
-King County Department of Transportation - Metro Transit Division,94982735,"Seattle, WA",15-Sep-06,1
-Laketran,661603,"Grand River, OH",1-Jan-16,1
-Lane Transit District,8348879,"Eugene, OR",15-Sep-06,1
-Madison County Transit District,1885577,"Granite City, IL",13-Jan-19,1
-Manatee County Area Transit,1304637,"Bradenton, FL",1-Jan-12,1
-MTA New York City Transit,2756452297,"New York, NY",3-Jan-10,1
-Pace - Suburban Bus Division,33769583,"Arlington Heights, IL",2-Jan-11,1
-Pierce County Transportation Benefit Area Authority,12245514,"Tacoma, WA",15-Feb-15,1
-"Regional Public Transportation Authority, dba: Valley Metro",6366799,"Phoenix, AZ",26-Oct-13,1
-Rock Island County Metropolitan Mass Transit District,2346775,"Rock Island, IL",25-Jul-16,1
-Sacramento Regional Transit District,30937994,"Sacramento, CA",31-Aug-08,1
-San Joaquin Regional Transit District,3922295,"Stockton, CA",23-Jan-11,1
-Tri-County Metropolitan Transportation District of Oregon,103519979,"Portland, OR",7-Dec-05,1
-Kalamazoo Metro Transit System,2821101,"Kalamazoo, MI",3-Sep-07,1
-Rhode Island Public Transit Authority,18612675,"Providence, RI",3-Apr-12,1
-Des Moines Metropolitan Transit Authority,3809648,"Des Moines, IA",22-Feb-15,1
-Long Beach Transit,26964674,"Long Beach, CA",7-Feb-16,1
-Fresno Area Express,11241838,"Fresno, CA",1-Jul-13,1
-Port Authority of Allegheny County,67179046,"Pittsburgh, PA",15-Sep-06,1
-Hillsborough Area Regional Transit Authority,11606920,"Tampa, FL",15-Sep-06,1
-City of Jackson Transit System,761766,"Jackson, MS",1-Jan-15,1
-City of Jackson Transportation Authority,513072,"Jackson, MI",17-May-22,0
-Eau Claire Transit,1177002,"Eau Claire, WI",1-Jan-13,1
-Beaver County Transit Authority,578666,"Rochester, PA",24-Mar-16,1
-"San Diego Trolley, Inc.",29334362,"San Diego, CA",1-Sep-13,1
-Suburban Mobility Authority for Regional Transportation,9865876,"Detroit, MI",5-Sep-16,1
-DeCamp Bus Lines,2195276,"Montclair, NJ",17-May-22,0
-Santa Cruz Metropolitan Transit District,5523072,"Santa Cruz, CA",1-Sep-11,1
-Central Ohio Transit Authority,14625379,"Columbus, OH",6-Sep-10,1
-"Olympia Trails Bus Company, Inc.",672454,"Elizabeth, NJ",17-May-22,0
-Santa Monica's Big Blue Bus,20543294,"Santa Monica, CA",16-Sep-12,1
-NC State University Transportation Department,1767209,"Raleigh, NC",1-Nov-10,1
-Westchester County Bee-Line System,24947454,"Mount Vernon, NY",22-Dec-09,1
-St. Joseph Transit,289616,"St. Joseph, MO",17-May-22,0
-Waccamaw Regional Transportation Authority,627254,"Conway, SC",17-May-22,0
-Northern New England Passenger Rail Authority,250535,"Portland, ME",17-May-22,0
-Missouri State University,756464,"Springfield, MO",17-May-22,0
-Lee-Russell Council of Governments,57404,"Opelika, AL",17-May-22,0
-Connecticut Transit - Stamford Division,2809704,"Hartford, CT",20-Jul-14,1
-Fort Smith Transit,178446,"Fort Smith, AR",17-May-22,0
-Chatham Area Transit Authority,3813154,"Savannah, GA",7-Nov-16,1
-Chemung County Transit System,534746,"Elmira, NY",29-Oct-18,1
-City of Dubuque,534546,"Dubuque, IA",14-Aug-17,1
-Putnam County Transit,185328,"Carmel, NY",1-Jun-20,1
-Fargo Metropolitan Area Transit,837651,"Fargo, ND",20-Apr-16,1
-Spokane Transit Authority,7688002,"Spokane, WA",19-Sep-10,1
-Butler County Regional Transit Authority,12900,"Hamilton, OH",19-May-19,1
-Shenango Valley Shuttle Service,122476,"Hermitage, PA",17-May-22,0
-Livermore / Amador Valley Transit Authority,1944493,"Livermore, CA",23-Jan-16,1
-Terre Haute Transit Utility,177206,"Terre Haute, IN",1-Jan-15,1
-The Tri-State Transit Authority,684431,"Huntington, WV",17-May-22,0
-Riverside Transit Agency,7139831,"Riverside, CA",30-Jun-11,1
-Greater Peoria Mass Transit District,2266566,"Peoria, IL",1-Sep-16,1
-Greater Roanoke Transit Company,1923317,"Roanoke, VA",1-Jan-13,1
-City of Tucson,16236219,"Tucson, AZ",3-Nov-15,1
-City of Middletown - Middletown Transit System,220936,"Middletown, OH",17-May-22,0
-"Hudson Transit Lines, Inc.",3245893,"Mahwah, NJ",12-Oct-09,1
-Great Falls Transit District,431420,"Great Falls, MT",17-May-22,0
-Green Bay Metro,1736118,"Green Bay, WI",1-Jan-07,1
-New Jersey Transit Corporation,242461980,"Newark, NJ",25-Jul-08,1
-Rapid Transit System,175140,"Rapid City, SD",17-May-22,0
-"Council on Aging of Martin County, Inc.",15977,"Stuart, FL",30-Jun-11,2
-Broome County Department of Public Transportation,2828981,"Vestal, NY",1-Oct-20,1
-Davenport Public Transit,939758,"Davenport, IA",1-Jan-18,1
-Montgomery Area Transit System,708351,"Montgomery, AL",1-Apr-15,1
-Village of Spring Valley Bus,39950,"Spring Valley, NY",17-May-22,0
-Sioux Falls Transit,715480,"Sioux Falls, SD",18-Jun-14,1
-Newburgh Beacon Bus Corporation,116213,"New Windsor, NY",1-Jan-15,1
-City of Loveland Transit,63929,"Loveland, CO",12-Oct-20,1
-Rogue Valley Transportation District,1182925,"Medford, OR",1-Sep-13,1
-Port Arthur Transit,116656,"Port Arthur, TX",17-May-22,0
-"Transportation District Commission of Hampton Roads, dba: Hampton Roads Transit",23326705,"Hampton, VA",28-Dec-08,1
-City of Tempe Transportation Planning and Transit Division,6909856,"Tempe, AZ",17-May-22,0
-Northern Indiana Commuter Transportation District,3802391,"Chesterton, IN",1-Jan-12,1
-Williamsport Bureau of Transportation,1253920,"Williamsport, PA",17-Feb-22,2
-Monterey-Salinas Transit,4738112,"Monterey, CA",27-Feb-16,1
-City of Beloit Transit System,271279,"Beloit, WI",1-Mar-12,1
-Washington Metropolitan Area Transit Authority,412822055,"Washington, DC",23-Mar-09,1
-SunLine Transit Agency,3334540,"Thousand Palms, CA",1-May-11,1
-Trans-Hudson Express,7711260,"Jersey City, NJ",26-Apr-15,1
-Santa Clara Valley Transportation Authority,37564165,"San Jose, CA",11-Jul-11,1
-Portage Area Regional Transportation Authority,1096803,"Kent, OH",21-Jul-19,1
-Monsey New Square Trails Corporation,542835,"Spring Valley, NY",17-May-22,0
-"Golden Gate Bridge, Highway and Transportation District",9370490,"San Francisco, CA",10-Sep-12,1
-LaCrosse Municipal Transit Utility,1059544,"LaCrosse, WI",1-Jan-12,1
-Transport of Rockland,2677098,"Pomona, NY",1-Jan-21,1
-City of Jefferson,347090,"Jefferson City, MO",1-May-15,1
-South Florida Regional Transportation Authority,3064074,"Pompano Beach, FL",20-Apr-12,1
-GTJC,65485749,"Lynbrook, NY",31-Dec-06,2
-"City of Logan, dba: The Logan Transit District",1489031,"Logan, UT",2-Jan-15,1
-"Hendrick Hudson Bus Lines, Inc.",38015,"Newburgh, NY",17-May-22,0
-Simi Valley Transit,432714,"Simi Valley, CA",1-Oct-17,1
-Pioneer Valley Transit Authority,9746629,"Springfield, MA",11-Mar-22,1
-Abilene Transit System,497574,"Abilene, TX",17-May-22,0
-Fayetteville Area System of Transit,1340098,"Fayetteville, NC",17-May-22,0
-Yakima Transit,1083488,"Yakima, WA",1-Aug-13,1
-Washington County Transit,80468,"West Bend, WI",17-May-22,1
-City of Fairfax CUE Bus,1061500,"Fairfax, VA",20-Mar-15,1
-City of Los Angeles Department of Transportation,29983363,"Los Angeles, CA",1-May-11,1
-Licking County Transit Board,2979,"Newark, OH",17-May-22,0
-Fairfax Connector Bus System,8474143,"Fairfax, VA",30-Jun-12,1
-Southern California Regional Rail Authority,10693327,"Los Angeles, CA",8-Mar-08,1
-Springfield Mass Transit District,1286329,"Springfield, IL",20-Aug-15,1
-Petersburg Area Transit,464797,"Petersburg, VA",1-May-21,1
-South Coast Area Transit,3145890,"Oxnard, CA",24-Aug-15,1
-Ann Arbor Transportation Authority,4701100,"Ann Arbor, MI",24-Aug-08,1
-Culver City Municipal Bus Lines,5402335,"Culver City, CA",17-Aug-16,1
-Western Reserve Transit Authority,1403017,"Youngstown, OH",9-Sep-20,1
-Bis-Man Transit Board,90692,"Bismarck, ND",17-May-22,0
-Polk County Transit Services Division - Polk County Board of County Commissioners,452607,"Bartow, FL",17-May-22,0
-Ulster County Area Transit,194446,"Kingston, NY",1-Jan-15,1
-San Diego Metropolitan Transit System,24425116,"San Diego, CA",13-May-16,1
-Red Rose Transit Authority,1946006,"Lancaster, PA",10-Aug-21,1
-Peninsula Corridor Joint Powers Board,9184511,"San Carlos, CA",2-Apr-07,1
-Greater Attleboro-Taunton Regional Transit Authority,695352,"Attleboro, MA",1-May-11,1
-The Lawton Area Transit System,258234,"Lawton, OK",17-May-22,0
-Gainesville Regional Transit System,8041803,"Gainesville, FL",18-Aug-14,1
-Central Puget Sound Regional Transit Authority,10968661,"Seattle, WA",19-Sep-09,1
-Island Transit,886946,"Galveston, TX",17-May-22,0
-Fayette Area Coordinated Transportation,102515,"Lemont Furnace, PA",17-May-22,0
-City of Lodi - Transit Division,368692,"Lodi, CA",20-Apr-13,1
-Central Oklahoma Transportation and Parking Authority,2607690,"Oklahoma City, OK",25-Jan-15,1
-Monongalia County Urban Transit,381250,"Morgantown, WV",1-Jan-14,1
-Altamont Commuter Express,640596,"Stockton, CA",11-Mar-13,1
-Northeast Illinois Regional Commuter Railroad Corporation,68590955,"Chicago, IL",4-Jun-08,1
-Ohio Valley Regional Transportation Authority,498054,"Wheeling, WV",17-May-22,0
-Napa County Transportation Planning Agency,745331,"Napa, CA",13-Jul-12,1
-Decatur Public Transit System,995887,"Decatur, IL",17-May-22,0
-Altoona Metro Transit,663076,"Altoona, PA",17-May-22,0
-Yolo County Transportation District,1230312,"Woodland, CA",3-Mar-13,1
-Metropolitan Evansville Transit System,0,"Evansville, IN",17-May-22,0
-Private Transportation Corporation,512283,"Brooklyn, NY",17-May-22,0
-Norwalk Transit System,2511590,"Norwalk, CA",1-Jan-16,1
-Belle Urban System - Racine,1503416,"Racine, WI",7-Dec-16,1
-Luzerne County Transportation Authority,2780392,"Kingston, PA",17-May-22,0
-Regional Transportation Commission of Southern Nevada,52810964,"Las Vegas, NV",18-Oct-09,1
-Ride-On Montgomery County Transit,24645238,"Rockville, MD",5-Sep-10,1
-Roseville Transit,345406,"Roseville, CA",3-Jan-10,1
-City of Poughkeepsie,349572,"Poughkeepsie, NY",31-Dec-17,2
-Metropolitan Transit Authority of Black Hawk County,340181,"Waterloo, IA",25-Aug-18,1
-Chapel Hill Transit,5711073,"Chapel Hill, NC",1-Nov-10,1
-Worcester Regional Transit Authority,2567983,"Worcester, MA",4-Jul-13,1
-Las Cruces Area Transit,614579,"Las Cruces, NM",1-Jan-20,1
-Winston-Salem Transit Authority - Trans-Aid of Forsyth County,2727650,"Winston-Salem, NC",17-May-22,0
-Community Urban Bus Service,322273,"Longview, WA",17-May-22,0
-Texoma Council of Governments Transportation Department,16985,"Sherman, TX",30-Apr-06,2
-Lexington Transit Authority,2838102,"Lexington, KY",8-Jan-13,1
-Intercity Transit,2869758,"Olympia, WA",19-Sep-11,1
-City of Danville/Danville Mass Transit,341873,"Danville, IL",28-Sep-21,1
-Potomac and Rappahannock Transportation Commission,2086691,"Woodbridge, VA",7-Dec-15,1
-City of San Luis Obispo,875354,"San Luis Obispo, CA",1-Jun-10,1
-Twin Cities Area Transportation Authority,20917,"Benton Harbor, MI",17-May-22,0
-Annapolis Department of Transportation,1525900,"Annapolis, MD",29-Aug-10,1
-City of Union City Transit Division,380512,"Union City, CA",7-Nov-16,1
-Sheboygan Transit System,515168,"Sheboygan, WI",1-Jan-14,1
-Erie Metropolitan Transit Authority,2588887,"Erie, PA",1-Sep-17,1
-City of Gardena Transportation Department,4656211,"Gardena, CA",12-Aug-18,1
-City of Moorhead Transit,319746,"Moorhead, MN",20-Apr-16,1
-"G G and C Bus Company, Inc.",41070,"Washington, PA",30-Jun-07,2
-Chico Area Transit System City of Chico,833982,"Chico, CA",30-Jun-05,2
-Fredericksburg Regional Transit,328724,"Fredericksburg, VA",17-May-22,0
-Port Authority Trans-Hudson Corporation,71305202,"Jersey City, NJ",25-Jul-08,1
-Billings Metropolitan Transit,653866,"Billings, MT",17-May-22,0
-Durham Area Transit Authority,4443568,"Durham, NC",1-Jan-08,1
-Cooperative Alliance for Seacoast Transportation,313897,"Dover, NH",27-Mar-18,1
-Cleveland Area Rapid Transit,937668,"Norman, OK",10-Oct-16,1
-"County of Volusia, dba: VOTRAN",3331041,"South Daytona, FL",9-Jan-17,1
-Link Transit,710952,"Wenatchee, WA",1-Jan-13,1
-StarTran,1599218,"Lincoln, NE",19-Sep-12,1
-Central Florida Regional Transportation Authority,24059369,"Orlando, FL",1-Dec-14,1
-Fairbanks North Star Borough Transit,399056,"Fairbanks, AK",15-Dec-15,1
-ABQ Ride,7686582,"Albuquerque, NM",19-May-12,1
-Carroll County Planning Department,12340,"Westminster, MD",27-Jul-15,1
-National City Transit,1633113,"National City, CA",30-Jun-06,2
-Mass Transit Department - City of El Paso,12345370,"El Paso, TX",20-Sep-15,1
-Transit Services of Frederick County,483304,"Frederick, MD",29-Aug-10,1
-Chula Vista Transit,3068544,"Chula Vista, CA",30-Jun-15,2
-Brunswick Transit Alternative,23008,"Brunswick, OH",1-Jan-17,2
-Westmoreland County Transit Authority,287932,"Greensburg, PA",17-May-22,0
-Redding Area Bus Authority,762404,"Redding, CA",1-Oct-09,1
-Gary Public Transportation Corporation,1477528,"Gary, IN",19-Sep-20,1
-Williamsburg Area Transport,520488,"Williamsburg, VA",10-May-15,1
-LACMTA - Small Operators,10047080,"Los Angeles, CA",14-Dec-08,1
-Capital Area Transit,3546761,"Raleigh, NC",1-Jan-08,1
-"Rockland Coaches, Inc.",4328619,"Westwood, NJ",17-May-22,0
-Regional Transportation Commission of Washoe County,8001999,"Reno, NV",29-Sep-13,1
-Gwinnett County Board of Commissioners,1637237,"Lawrenceville, GA",12-Jun-14,1
-"CNY Centro, Inc.",8081443,"Syracuse, NY",1-Jun-15,1
-Wichita Transit,2070422,"Wichita, KS",11-Dec-15,1
-Johnson City Transit System,370188,"Johnson City, TN",17-May-22,0
-Southeast Area Transit,931992,"Preston, CT",1-Jan-19,1
-Iowa City Transit,1516580,"Iowa City, IA",1-Aug-18,1
-Jackson Transit Authority,421819,"Jackson, TN",17-May-22,0
-The Greater New Haven Transit District,93029,"Hamden, CT",17-May-22,0
-Brazos Transit District,600888,"Bryan, TX",17-May-22,0
-Transit Authority of Northern Kentucky,3681086,"Fort Wright, KY",29-Aug-08,1
-Whatcom Transportation Authority,3382349,"Bellingham, WA",7-Feb-16,1
-Capital Area Transit System,4752816,"Baton Rouge, LA",17-May-22,0
-Knoxville Area Transit,3070487,"Knoxville, TN",11-Jan-16,1
-City of Seattle - Seattle Center Monorail Transit,1506240,"Seattle, WA",1-Apr-21,1
-"Metropolitan Transit Authority of Harris County, Texas",91780526,"Houston, TX",15-Feb-09,1
-Harford Transit,221742,"Abingdon, MD",1-Oct-15,1
-Ventura Intercity Service Transit Authority,442092,"Ventura, CA",1-Sep-16,1
-Wausau Area Transit System,809511,"Wausau, WI",17-May-22,0
-Wilmington Transit Authority,1230017,"Wilmington, NC",10-Mar-17,1
-Research Triangle Regional Public Transportation Authority,780292,"Research Triangle Park, NC",1-Jan-08,1
-Lee County Transit,2827240,"Fort Myers, FL",21-Apr-11,1
-Atlantic Express,18356,"Staten Island, NY",30-Jun-06,2
-City of Vallejo Transportation Program,2892095,"Vallejo, CA",6-Apr-14,1
-Stark Area Regional Transit Authority,1878420,"Canton, OH",1-Apr-21,1
-MTA Long Island Rail Road,95519000,"Jamaica, NY",2-Sep-08,1
-Denver Regional Transportation District,85132424,"Denver, CO",17-Aug-08,1
-Greensboro Transit Authority,2736536,"Greensboro, NC",1-Mar-21,1
-Casco Bay Island Transit District,852826,"Portland, ME",10-Oct-17,1
-Missoula Urban Transportation District,644463,"Missoula, MT",8-Sep-08,1
-"Council on Aging of St. Lucie, Inc.",33457,"Fort Pierce, FL",17-May-22,0
-"Western Maine Transportation Services, Inc.",198545,"Mexico, ME",17-May-22,0
-City Utilities of Springfield Transit Services,1570375,"Springfield, MO",17-May-22,0
-"Board of County Commissioners, Palm Beach County, PalmTran, Inc.",8419477,"West Palm Beach, FL",12-Apr-16,1
-Housatonic Area Regional Transit,773037,"Danbury, CT",17-May-22,0
-Ozark Regional Transit,23754,"Springdale, AR",17-May-22,0
-Metropolitan Atlanta Rapid Transit Authority,142049871,"Atlanta, GA",25-Aug-12,1
-Massachusetts Bay Transportation Authority,393515140,"Boston, MA",7-Apr-08,1
-City of Alexandria,623871,"Alexandria, LA",17-May-22,0
-Metropolitan Transit Authority,7372388,"Nashville, TN",29-Sep-13,1
-City of Porterville,423934,"Porterville, CA",31-Dec-12,1
-Blue Water Area Transportation Commission,451794,"Port Huron, MI",17-May-22,0
-Pinellas Suncoast Transit Authority,10204222,"St. Petersburg, FL",2-Oct-11,1
-San Mateo County Transit District,14548496,"San Carlos, CA",7-Apr-07,1
-Sarasota County Area Transit,1876245,"Sarasota, FL",14-Feb-09,1
-Southeastern Pennsylvania Transportation Authority,332892371,"Philadelphia, PA",23-Mar-08,1
-City of Corona,162423,"Corona, CA",1-Jan-10,1
-Battle Creek Transit,496648,"Battle Creek, MI",17-May-22,0
-"Community Transit, Inc.",595943,"Passaic, NJ",17-May-22,0
-Golden Empire Transit District,6825690,"Bakersfield, CA",1-Sep-12,1
-Central Midlands Regional Transit Authority,2659401,"Columbia, SC",17-May-22,0
-Huntington Area Rapid Transit,226905,"Huntington Station, NY",1-Nov-20,1
-Modesto Area Express,3610074,"Modesto, CA",1-Oct-10,1
-Hernando County Board of County Commissioners,133750,"Brooksville, FL",1-Jan-15,1
-Port Authority Transit Corporation,9362839,"Lindenwold, NJ",25-Jul-08,1
-Coralville Transit System,0,"Coralville, IA",7-Oct-17,1
-Space Coast Area Transit,839510,"Cocoa, FL",1-Apr-10,1
-Milford Transit District,299310,"Milford, CT",17-May-22,0
-Bi-State Development Agency,45762011,"St. Louis, MO",15-Mar-15,1
-"City of Huntsville, Alabama - Public Transportation Division",277316,"Huntsville, AL",1-Jan-09,1
-Connecticut Transit - New Haven Division,7734650,"Hartford, CT",13-Dec-15,1
-Santa Fe Trails - City of Santa Fe,540637,"Santa Fe, NM",1-Jan-12,1
-Metra Transit System,1109042,"Columbus, GA",1-Sep-21,1
-Salem Area Mass Transit District,5412915,"Salem, OR",4-Mar-12,1
-"City Transit Management Company, Inc.",3709386,"Lubbock, TX",8-Aug-20,1
-Tuscaloosa County Parking and Transit Authority,120878,"Tuscaloosa, AL",17-May-22,0
-City of Alameda Ferry Services,464674,"Alameda, CA",1-Jan-07,1
-Bay County Council On Aging Bay Coordinated Transportation,242467,"Panama City, FL",1-Jan-15,1
-Centre Area Transportation Authority,6008773,"State College, PA",16-Sep-15,1
-"University of California, Davis",3416432,"Davis, CA",27-Aug-08,1
-South Bend Public Transportation Corporation,3072722,"South Bend, IN",17-May-22,0
-Kanawha Valley Regional Transportation Authority,2125308,"Charleston, WV",14-Feb-14,1
-North San Diego County Transit District,11537291,"Oceanside, CA",18-Oct-09,1
-The Greater Cleveland Regional Transit Authority,65096106,"Cleveland, OH",9-Nov-09,1
-"Centro of Cayuga, Inc.",402167,"Syracuse, NY",29-Jun-15,1
-Greater Dayton Regional Transit Authority,11779951,"Dayton, OH",2-Jun-19,1
-Transfort,1481472,"Fort Collins, CO",12-Jan-15,1
-Spartanburg Transit System,500942,"Spartanburg, SC",17-May-22,0
-"Metro-North Commuter Railroad Company, dba: MTA Metro-North Railroad",74652827,"New York, NY",17-Oct-09,1
-City of Lawrence - Lawrence Transit System,455396,"Lawrence, KS",1-Aug-18,1
-Charleston Area Regional Transportation Authority,1038278,"Charleston, SC",4-Jun-14,1
-Bonanza,257619,"Providence, RI",2-Jan-09,1
-Five Seasons Transportation and Parking,1047772,"Cedar Rapids, IA",17-May-22,0
-The Wave Transit System,793140,"Mobile, AL",17-May-22,0
-Lowell Regional Transit Authority,1417934,"Lowell, MA",1-Jul-09,1
-Central Arkansas Transit Authority,2282456,"North Little Rock, AR",1-Jan-12,1
-Cobb County Department of Transportation Authority,3793253,"Marietta, GA",7-Jul-14,1
-City of Fairfield - Fairfield-Suisun Transit,762714,"Fairfield, CA",1-Jan-09,1
-Macon-Bibb County Transit Authority,1050765,"Macon, GA",17-May-22,0
-Loudoun County Commuter Bus Service - Office of Transportation Services,515430,"Leesburg, VA",1-Sep-20,1
-Santa Clarita Transit,3446513,"Santa Clarita, CA",17-May-22,0
-Hammond Transit System,412783,"Hammond, IN",17-May-22,0
-Berks Area Reading Transportation Authority,2646408,"Reading, PA",22-Apr-21,1
-Yuba-Sutter Transit Authority,617655,"Marysville, CA",1-Jan-12,1
-Mass Transportation Authority,4081665,"Flint, MI",23-Nov-17,1
-"Lakeland Bus Lines, Inc.",1872086,"Dover, NJ",17-May-22,0
-Central Contra Costa Transit Authority,4242249,"Concord, CA",26-Dec-10,1
-Capital Area Transportation Authority,8932953,"Lansing, MI",8-Mar-15,1
-"Orange-Newark-Elizabeth, Inc.",12394405,"Elizabeth, NJ",17-May-22,0
-Torrance Transit System,4612548,"Torrance, CA",3-Oct-11,1
-City of Appleton - Valley Transit,1030325,"Appleton, WI",1-Jan-12,1
-Suburban Transit Corporation,3641316,"New Brunswick, NJ",17-May-22,0
-"Casper Area Transportation Coalition, Inc.",10859,"Casper, WY",17-May-22,0
-Kenosha Transit,1643671,"Kenosha, WI",1-Mar-21,1
-New York City Department of Transportation,20034157,"New York, NY",30-Apr-14,1
-Ames Transit Agency,4283170,"Ames, IA",10-Aug-20,1
-Pasco County Public Transportation,740918,"Port Richey, FL",18-Dec-17,1
-Norwalk Transit District,1700845,"Norwalk, CT",1-Jan-10,1
-Jefferson Parish Department of Transit Administration,3058393,"Gretna, LA",11-Nov-20,1
-Okaloosa County Board of County Commissioners,71193,"Fort Walton Beach, FL",1-Jul-15,1
-City of Lompoc - Lompoc Transit,307726,"Lompoc, CA",1-May-18,1
-Oshkosh Transit System,984625,"Oshkosh, WI",1-Apr-13,1
-Charlotte Area Transit System,17312394,"Charlotte, NC",4-May-17,1
-Everett Transit,1957478,"Everett, WA",24-Aug-14,1
-University of Michigan Parking and Transportation Services,5282764,"Ann Arbor, MI",24-Jun-12,1
-Foothill Transit,14747521,"West Covina, CA",11-Jan-15,1
-Muncie Indiana Transit System,1761657,"Muncie, IN",15-Aug-16,1
-Greater Richmond Transit Company,12415055,"Richmond, VA",31-Jan-21,1
-Victor Valley Transit Authority,970968,"Hesperia, CA",1-Jan-14,1
-Rockford Mass Transit District,1249102,"Rockford, IL",17-May-22,0
-Greater Lynchburg Transit Company,1104263,"Lynchburg, VA",8-Mar-15,1
-City of Glendale Transit,175638,"Glendale, AZ",17-May-22,0
-Springfield City Area Transit,299720,"Springfield, OH",17-May-22,0
-"Trans-Bridge Lines, Inc.",996530,"Bethlehem, PA",17-May-22,0
-San Francisco Municipal Railway,216918351,"San Francisco, CA",21-Feb-09,1
-Toledo Area Regional Transit Authority,5600427,"Toledo, OH",16-Aug-20,1
-Queens Surface Corporation,4052718,"Flushing, NY",8-Sep-13,1
-Mesa County,672394,"Grand Junction, CO",1-Jan-16,1
-"City of Ocala, Florida",296303,"Ocala, FL",1-Jul-15,1
-Niagara Frontier Transportation Authority,23430551,"Buffalo, NY",5-Oct-13,1
-Utah Transit Authority,36688470,"Salt Lake City, UT",12-May-08,1
-Milwaukee County Transit System,50434805,"Milwaukee, WI",1-Nov-08,1
-County of Lackawanna Transit System,1791552,"Scranton, PA",17-May-22,0
-St. Cloud Metropolitan Transit Commission,1723166,"St. Cloud, MN",17-May-22,0
-Broward County Mass Transit Division,40496389,"Pompano Beach, FL",18-May-08,1
-Washington State Ferries,23880997,"Seattle, WA",10-Dec-15,1
-City of Brownsville - Brownsville Urban System,1632541,"Brownsville, TX",17-May-22,0
-Prince George's County Transit,2467659,"Largo, MD",1-Jan-16,1
-Merced County Transit,903788,"Merced, CA",1-Apr-14,1
-Janesville Transit System,513641,"Janesville, WI",1-Jan-15,1
-York County Transportation Authority,1458561,"York, PA",2-Nov-14,1
-Coconino County Transportation Services,426331,"Flagstaff, AZ",30-Jun-07,2
-Bloomington Public Transportation Corporation,2148561,"Bloomington, IN",1-Jan-11,1
-Maryland Transit Administration,102748973,"Baltimore, MD",24-Aug-08,1
-Santa Maria Area Transit,766779,"Santa Maria, CA",1-Jan-15,1
-Saginaw Transit Authority Regional Service,616650,"Saginaw, MI",17-May-22,0
-Lehigh and Northampton Transportation Authority,4401359,"Allentown, PA",1-May-08,1
-Orange County Transportation Authority,67304135,"Orange, CA",9-Dec-07,1
-City of Anderson Transportation System,168387,"Anderson, IN",17-May-22,0
-"Centro of Oswego, Inc.",407764,"Syracuse, NY",17-May-22,0
-Santa Barbara Metropolitan Transit District,7189179,"Santa Barbara, CA",22-Aug-16,1
-Metro Transit System,11475597,"Madison, WI",6-Mar-11,1
-Clarkstown Mini-Trans,155499,"Nanuet, NY",1-Jan-20,1
-The City of Cheyenne Transit Program,170500,"Cheyenne, WY",17-May-22,0
-Metro Transit,69698813,"Minneapolis, MN",7-Nov-09,1
-New Jersey Transit Corporation-45,3770760,"Newark, NJ",25-Jul-08,1
-Indianapolis and Marion County Public Transportation,8486044,"Indianapolis, IN",8-May-12,1
-Merrimack Valley Regional Transit Authority,1603296,"Haverhill, MA",1-Aug-09,1
-Capital Metropolitan Transportation Authority,32476217,"Austin, TX",13-Jan-08,1
-High Point Transit,675883,"High Point, NC",3-May-21,1
-Municipality of Anchorage - Public Transportation Department,3975074,"Anchorage, AK",2-Jun-14,1
-Ozaukee County Transit Services,100981,"Port Washington, WI",17-May-22,0
-Mid Mon Valley Transit Authority,358673,"Charleroi, PA",17-May-22,0
-Ben Franklin Transit,3066920,"Richland, WA",19-Sep-17,1
-Fond du Lac Area Transit,127871,"Fond du Lac, WI",17-May-22,0
-City of Danville Mass Transit System,204205,"Danville, VA",23-Jun-21,1
-Los Angeles County Metropolitan Transportation Authority,451511323,"Los Angeles, CA",14-Dec-08,1
-Champaign-Urbana Mass Transit District,10017606,"Urbana, IL",16-Aug-10,1
-Charlottesville Transit Service,1385286,"Charlottesville, VA",28-Sep-10,1
-Sonoma County Transit,1259388,"Santa Rosa, CA",1-Jan-13,1
-Chicago Transit Authority,490003721,"Chicago, IL",20-Oct-09,1
-Cambria County Transit Authority,1251256,"Johnstown, PA",17-May-22,0
-Montebello Bus Lines,9566679,"Montebello, CA",2-Aug-20,1
-Duluth Transit Authority,2709249,"Duluth, MN",11-Apr-10,1
-Tompkins Consolidated Area Transit,3090978,"Ithaca, NY",20-Aug-17,1
-City of Commerce Municipal Buslines,674652,"Commerce, CA",13-Oct-16,1
-Bloomington-Normal Public Transit System,1294175,"Bloomington, IL",1-Jan-15,1
-"Northeast Transportation Company, Inc.",1806403,"Waterbury, CT",17-May-22,0
-Lorain County Transit,796547,"Lorain, OH",17-May-22,0
-Metropolitan Bus Authority,28394288,"San Juan, PR",17-May-22,0
-Chittenden County Transportation Authority,1887104,"Burlington, VT",16-Dec-11,1
-Golden Crescent Regional Planning Commssion,136282,"Victoria, TX",17-May-22,0
-Lakeland Area Mass Transit District,1538232,"Lakeland, FL",1-Mar-11,1
-Beaumont Municipal Transit System,649315,"Beaumont, TX",17-May-22,0
-"County Commissioners of Charles County, MD",382750,"Port Tobacco, MD",1-Jan-14,1
-Skagit Transit,269053,"Burlington, WA",1-Sep-13,1
-Metropolitan Tulsa Transit Authority,2281375,"Tulsa, OK",6-Mar-13,1
-Blacksburg Transit,2385074,"Blacksburg, VA",5-Dec-08,1
-MTS Contract Services,17883687,"San Diego, CA",30-Jun-06,2
-City of Detroit Department of Transportation,35396882,"Detroit, MI",23-Apr-11,1
-City of Alexandria - Alexandria Transit Company,3323021,"Alexandria, VA",24-Jul-14,1
-Western Contra Costa Transit Authority,1162395,"Pinole, CA",1-Jan-15,1
-Detroit Transportation Corporation,1340646,"Detroit, MI",10-Aug-17,1
-Washington County Transportation Department,298626,"Hagerstown, MD",24-Sep-15,1
-City of Visalia - Visalia City Coach,1280223,"Visalia, CA",7-Mar-20,1
-Fort Wayne Public Transportation Corporation,1713381,"Fort Wayne, IN",1-Mar-11,1
-"Adirondack Transit Lines, Inc,",467403,"Hurley, NY",31-Dec-20,1
-Laguna Beach Municipal Transit,103354,"Laguna Beach, CA",1-Jan-12,1
-City of Rochester Public Transportation,1300793,"Rochester, MN",1-Jan-13,1
-ValleyRide,1070708,"Meridian, ID",21-Aug-17,1
-Metropolitan Council,9306149,"St. Paul, MN",7-Nov-09,1
-Georgia Regional Transportation Authority,2070295,"Atlanta, GA",12-Nov-14,1
-Dutchess County Division of Mass Transportation,668673,"Poughkeepsie, NY",31-Aug-18,1
-Topeka Metropolitan Transit Authority,1311669,"Topeka, KS",3-Sep-12,1
-Greenville Transit Authority,734863,"Greenville, SC",23-Sep-15,1
-Greater Portland Transit District,1360010,"Portland, ME",27-Aug-17,1
-Corpus Christi Regional Transportation Authority,5695078,"Corpus Christi, TX",1-Apr-13,1
-Miami-Dade Transit,103232388,"Miami, FL",27-Jun-10,1
-Connecticut Transit - Hartford Division,12508700,"Hartford, CT",14-Sep-14,1
-Dallas Area Rapid Transit,72206091,"Dallas, TX",5-Feb-07,1
-Transit Authority of River City,15038337,"Louisville, KY",4-Nov-11,1
-Kitsap Transit,4580938,"Bremerton, WA",13-Dec-09,1
-Amarillo City Transit,358335,"Amarillo, TX",1-Jan-19,1
-Chattanooga Area Regional Transportation Authority,2471789,"Chattanooga, TN",15-Aug-13,1
-Yuma Metropolitan Planning Organization,100178,"Yuma, AZ",1-Jan-12,1
-Fort Worth Transportation Authority,7792556,"Fort Worth, TX",22-Jan-12,1
-Virginia Railway Express,3654271,"Alexandria, VA",8-Nov-10,1
-Eastern Contra Costa Transit Authority,2319606,"Antioch, CA",8-Sep-16,1
-Richland County Transit,292449,"Mansfield, OH",17-May-22,0
-Capital Area Transit,1969069,"Harrisburg, PA",1-Nov-16,1
-Thousand Oaks Transit,140123,"Thousand Oaks, CA",25-Jun-09,1
-Michiana Area Council of Governments,136569,"South Bend, IN",17-May-22,0
-Snohomish County Transportation Benefit Area Corporation,8219785,"Everett, WA",12-Jun-10,1
-"Waco Transit System, Inc.",545548,"Waco, TX",17-May-22,0
-Metro Regional Transit Authority,5534275,"Akron, OH",13-Nov-18,1
-"Staten Island Rapid Transit Operating Authority, dba: MTA Staten Island Railway",3482383,"Staten Island, NY",8-Sep-13,1
-Colorado Springs Transit System,2259294,"Colorado Springs, CO",4-Jul-10,1
-Clarksville Transit System,605835,"Clarksville, TN",18-Feb-21,1
-Nashua Transit System,315468,"Nashua, NH",17-May-22,0
-Midland-Odessa Urban Transit District,298606,"Odessa, TX",17-May-22,0
-Pee Dee Regional Transportation Authority,34840,"Florence, SC",1-Dec-21,1
-City of Bangor - BAT Community Connector,681173,"Bangor, ME",17-May-22,0
-Transit Authority of Omaha,4625658,"Omaha, NE",29-Mar-20,1
-City of Tallahassee,4612725,"Tallahassee, FL",4-Apr-15,1
-South Metro Area Rapid Transit,247726,"Wilsonville, OR",1-Jan-11,1
-Crescent City Connection Division - Louisiana Department of Transportation,3133238,"New Orleans, LA",17-May-22,0
-Albany Transit System,662467,"Albany, GA",17-May-22,0
-City of Pocatello - Pocatello Regional Transit,431111,"Pocatello, ID",26-Aug-13,1
-Shreveport Area Transit System,2814415,"Shreveport, LA",19-Nov-20,1
-Memphis Area Transit Authority,11898331,"Memphis, TN",8-Nov-20,1
-Placer County Department of Public Works,569174,"Auburn, CA",14-Sep-08,1
-City of Holland Macatawa Area Express,82737,"Holland, MI",17-May-22,0
-Howard Transit,679002,"Laurel, MD",13-Jun-10,1
-Pierce County Ferry Operations,212541,"Tacoma, WA",1-Sep-20,1
-VIA Metropolitan Transit,39697208,"San Antonio, TX",13-Jun-11,1
-Berkshire Regional Transit Authority,508776,"Pittsfield, MA",1-Jul-09,1
-Lafayette Transit System,1335222,"Lafayette, LA",17-May-22,0
-Bay Metropolitan Transit Authority,525916,"Bay City, MI",17-May-22,0
-Tioga County,39388,"Owego, NY",17-May-22,0
-San Francisco Bay Area Rapid Transit District,99296028,"Oakland, CA",1-Jan-07,1
-Collier Area Transit,3998260,"Naples, FL",5-Apr-17,1
-"New York Bus Tours, Inc., dba: New York Bus Service",1790318,"Bronx, NY",31-Dec-05,2
-Columbia Transit,517010,"Columbia, MO",17-May-22,0
-Puerto Rico Highway and Transportation Authority,5270844,"San Juan, PR",1-Aug-15,1
-Suffolk County Department of Public Works - Transportation Division,5312569,"Yaphank, NY",1-Jan-17,1
-University of Iowa,3572019,"Iowa City, IA",8-Oct-18,1
-City of Rome Transit Department,815562,"Rome, GA",17-May-22,0
-Greater Bridgeport Transit Authority,4706885,"Bridgeport, CT",5-Nov-17,1
-"University of Arkansas, Fayetteville",1311421,"Fayetteville, AR",24-Aug-09,1
-Jacksonville Transportation Authority,10502273,"Jacksonville, FL",2-Jun-14,1
-Manchester Transit Authority,412386,"Manchester, NH",17-May-22,0
-City of Denton Public Transportation Department,1265309,"Denton, TX",11-Apr-11,1
-Augusta Richmond County Transit Department,923066,"Augusta, GA",17-May-22,0
-Clark County Public Transportation Benefit Area Authority,5614951,"Vancouver, WA",18-Sep-13,1
-"Laredo Transit Management, Inc.",3898147,"Laredo, TX",17-May-22,0
-Delaware Transit Corporation,8052454,"Dover, DE",23-May-10,1
-Southeastern Regional Transit Authority,1610179,"New Bedford, MA",22-Apr-13,1
-City of San Angelo,152954,"San Angelo, TX",17-May-22,0
-Middletown Transit District,348768,"Middletown, CT",1-Jan-21,1
-Hill Country Transit District,360619,"San Saba, TX",17-May-22,0
-Greater Lafayette Public Transportation Corporation,4231208,"Lafayette, IN",17-Jan-11,1
-MTA Bus Company,24638749,"New York, NY",3-Jan-10,1
-Omnitrans,15038153,"San Bernardino, CA",6-Jan-14,1
-Southwest Ohio Regional Transit Authority,25900339,"Cincinnati, OH",27-May-12,1
-"Regional Transit Service, Inc. and Lift Line, Inc.",12928234,"Rochester, NY",1-Apr-19,1
-Pueblo Transit System,973968,"Pueblo, CO",1-Oct-21,1
-City of Canton Transit,41134,"Canton, GA",30-Sep-07,2
-Greater Glens Falls Transit System,285496,"Queensbury, NY",4-Sep-18,1
-City of Greeley - Transit Services,431771,"Greeley, CO",28-Nov-20,1
-Santee Wateree Regional Transportation Authority,193960,"Sumter, SC",19-Nov-20,1
-Cape Cod Regional Transit Authority,279628,"Hyannis, MA",22-May-09,1
-Kansas City Area Transportation Authority,13615226,"Kansas City, MO",28-Sep-14,1
-Puerto Rico Ports Authority,2066985,"San Juan, PR",17-May-22,0
-Cape Ann Transportation Authority,256958,"Gloucester, MA",1-Aug-09,1
-Bettendorf Transit System,144712,"Bettendorf, IA",17-May-22,0
-Birmingham-Jefferson County Transit Authority,3686392,"Birmingham, AL",1-Jan-12,1
-Brockton Area Transit Authority,3020216,"Brockton, MA",1-Jan-08,1
-City of Monroe Transit System,963547,"Monroe, LA",17-May-22,0
-Asheville Transit System,1059265,"Asheville, NC",1-Jan-12,1
-Montachusett Regional Transit Authority,617134,"Fitchburg, MA",1-Jan-09,1
-Lower Rio Grande Valley Development Council,35054,"McAllen, TX",17-May-22,0
-"Metropolitan Suburban Bus Authority, dba: MTA Long Island Bus",31091738,"Garden City, NY",24-Jan-10,1
-Sioux City Transit System,776394,"Sioux City, IA",1-Jan-18,1
-"Private One of New York, LLC, dba: New York Airport Service",947334,"Brooklyn, NY",17-May-22,0
-Monroe Bus Corporation,273409,"Brooklyn, NY",17-May-22,0
-,,,,
+Company_Nm,trips,query,twitter_Nm,twitter_handle,date,link,following,followers,verified,dedicated,extra_twitter_Nm,extra_twitter_hd,ext_date,ext_link,following,followers,verified,,,,,,,
+Alameda-Contra Costa Transit District,64600740,"Oakland, CA",AC Transit,rideact,Oct-08,https://twitter.com/rideact,470,11400,0,1,AC Transit Service Alerts,RideACTAlerts,Mar-22,https://twitter.com/RideACTAlerts,18,272,0,,,,,,,
+Antelope Valley Transit Authority,2669356,"Lancaster, CA",AVTA,AVTA1,Feb-12,https://twitter.com/AVTA1,191,1032,0,1,,,,,,,,,,,,,,
+Capital District Transportation Authority,11691153,"Albany, NY",CDTA,CDTA,Mar-09,https://twitter.com/CDTA,969,3848,0,1,,,,,,,,,,,,,,
+Cities Area Transit,256180,"Grand Forks, ND",Cities Area Transit,RideCATGF,Aug-16,https://twitter.com/RideCATGF,128,89,0,1,,,,,,,,,,,,,,
+City and County of Honolulu Department of Transportation Services,67406827,"Honolulu, HI",Transportation HNL,hnldts,Mar-09,https://twitter.com/hnldts,323,1964,0,1,,,,,,,,,,,,,,
+City of Harrisonburg Department of Public Transportation,1130165,"Harrisonburg, VA",HDPT,rideHDPT,Jun-13,https://twitter.com/rideHDPT,226,2196,0,1,,,,,,,,,,,,,,
+City of Santa Rosa,2605975,"Santa Rosa, CA",City of Santa Rosa,CityofSantaRosa,Mar-10,https://twitter.com/CityofSantaRosa,84,15700,1,0,,,,,,,,,,,,,,
+City of Waukesha Transit Commission,1258629,"Waukesha, WI",cityofwaukesha,CityofWaukesha,Apr-16,https://twitter.com/CityofWaukesha,227,4931,0,0,,,,,,,,,,,,,,
+Coast Transit Authority,490705,"Gulfport, MS",City of Gulfport,CityofGulfport,Jun-09,https://twitter.com/CityofGulfport,188,9342,1,0,,,,,,,,,,,,,,
+Connecticut Department of Transportation,600740,"Newington, CT",Connecticut Department of Transportation,CTDOTOfficial,May-20,https://twitter.com/CTDOTOfficial,458,3808,1,1,Statewide CTDOT,CTDOT_Statewide,Dec-09,https://twitter.com/CTDOT_Statewide,1,14100,0,CT Highway Safety,Cthighwaysafety,Dec-12,https://twitter.com/Cthighwaysafety,270,714,0
+Escambia County Area Transit,1215737,"Pensacola, FL",My Escambia,myescambia,May-09,https://twitter.com/myescambia,124,9815,0,0,,,,,,,,,,,,,,
+Interurban Transit Partnership,6069439,"Grand Rapids, MI",The Rapid,TheRapid,Jan-09,https://twitter.com/TheRapid,586,5923,0,1,,,,,,,,,,,,,,
+"Johnson County Kansas, aka: Johnson County Transit",305779,"Olathe, KS",RideKC JoCo,RideKCJoCo,Feb-09,https://twitter.com/RideKCJoCo,436,2257,0,1,,,,,,,,,,,,,,
+King County Department of Transportation - Metro Transit Division,94982735,"Seattle, WA",King County Metro,KingCountyMetro,Dec-09,https://twitter.com/KingCountyMetro,508,130400,1,1,King County Metro Transit Alerts,kcmetroalerts,Jul-10,https://twitter.com/kcmetroalerts,1,1037,0,,,,,,,
+Laketran,661603,"Grand River, OH",Laketran,Laketran,Dec-10,https://twitter.com/Laketran,771,1208,0,1,,,,,,,,,,,,,,
+Lane Transit District,8348879,"Eugene, OR",,,,,,,,,,,,,,,,,,,,,,
+Madison County Transit District,1885577,"Granite City, IL",,,,,,,,,,,,,,,,,,,,,,
+Manatee County Area Transit,1304637,"Bradenton, FL",,,,,,,,,,,,,,,,,,,,,,
+MTA New York City Transit,2756452297,"New York, NY",,,,,,,,,,,,,,,,,,,,,,
+Pace - Suburban Bus Division,33769583,"Arlington Heights, IL",,,,,,,,,,,,,,,,,,,,,,
+Pierce County Transportation Benefit Area Authority,12245514,"Tacoma, WA",,,,,,,,,,,,,,,,,,,,,,
+"Regional Public Transportation Authority, dba: Valley Metro",6366799,"Phoenix, AZ",,,,,,,,,,,,,,,,,,,,,,
+Rock Island County Metropolitan Mass Transit District,2346775,"Rock Island, IL",,,,,,,,,,,,,,,,,,,,,,
+Sacramento Regional Transit District,30937994,"Sacramento, CA",,,,,,,,,,,,,,,,,,,,,,
+San Joaquin Regional Transit District,3922295,"Stockton, CA",,,,,,,,,,,,,,,,,,,,,,
+Tri-County Metropolitan Transportation District of Oregon,103519979,"Portland, OR",,,,,,,,,,,,,,,,,,,,,,
+Kalamazoo Metro Transit System,2821101,"Kalamazoo, MI",,,,,,,,,,,,,,,,,,,,,,
+Rhode Island Public Transit Authority,18612675,"Providence, RI",,,,,,,,,,,,,,,,,,,,,,
+Des Moines Metropolitan Transit Authority,3809648,"Des Moines, IA",,,,,,,,,,,,,,,,,,,,,,
+Long Beach Transit,26964674,"Long Beach, CA",,,,,,,,,,,,,,,,,,,,,,
+Fresno Area Express,11241838,"Fresno, CA",,,,,,,,,,,,,,,,,,,,,,
+Port Authority of Allegheny County,67179046,"Pittsburgh, PA",,,,,,,,,,,,,,,,,,,,,,
+Hillsborough Area Regional Transit Authority,11606920,"Tampa, FL",,,,,,,,,,,,,,,,,,,,,,
+City of Jackson Transit System,761766,"Jackson, MS",,,,,,,,,,,,,,,,,,,,,,
+City of Jackson Transportation Authority,513072,"Jackson, MI",,,,,,,,,,,,,,,,,,,,,,
+Eau Claire Transit,1177002,"Eau Claire, WI",,,,,,,,,,,,,,,,,,,,,,
+Beaver County Transit Authority,578666,"Rochester, PA",,,,,,,,,,,,,,,,,,,,,,
+"San Diego Trolley, Inc.",29334362,"San Diego, CA",,,,,,,,,,,,,,,,,,,,,,
+Suburban Mobility Authority for Regional Transportation,9865876,"Detroit, MI",,,,,,,,,,,,,,,,,,,,,,
+DeCamp Bus Lines,2195276,"Montclair, NJ",,,,,,,,,,,,,,,,,,,,,,
+Santa Cruz Metropolitan Transit District,5523072,"Santa Cruz, CA",,,,,,,,,,,,,,,,,,,,,,
+Central Ohio Transit Authority,14625379,"Columbus, OH",,,,,,,,,,,,,,,,,,,,,,
+"Olympia Trails Bus Company, Inc.",672454,"Elizabeth, NJ",,,,,,,,,,,,,,,,,,,,,,
+Santa Monica's Big Blue Bus,20543294,"Santa Monica, CA",,,,,,,,,,,,,,,,,,,,,,
+NC State University Transportation Department,1767209,"Raleigh, NC",,,,,,,,,,,,,,,,,,,,,,
+Westchester County Bee-Line System,24947454,"Mount Vernon, NY",,,,,,,,,,,,,,,,,,,,,,
+St. Joseph Transit,289616,"St. Joseph, MO",,,,,,,,,,,,,,,,,,,,,,
+Waccamaw Regional Transportation Authority,627254,"Conway, SC",,,,,,,,,,,,,,,,,,,,,,
+Northern New England Passenger Rail Authority,250535,"Portland, ME",,,,,,,,,,,,,,,,,,,,,,
+Missouri State University,756464,"Springfield, MO",,,,,,,,,,,,,,,,,,,,,,
+Lee-Russell Council of Governments,57404,"Opelika, AL",,,,,,,,,,,,,,,,,,,,,,
+Connecticut Transit - Stamford Division,2809704,"Hartford, CT",,,,,,,,,,,,,,,,,,,,,,
+Fort Smith Transit,178446,"Fort Smith, AR",,,,,,,,,,,,,,,,,,,,,,
+Chatham Area Transit Authority,3813154,"Savannah, GA",,,,,,,,,,,,,,,,,,,,,,
+Chemung County Transit System,534746,"Elmira, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Dubuque,534546,"Dubuque, IA",,,,,,,,,,,,,,,,,,,,,,
+Putnam County Transit,185328,"Carmel, NY",,,,,,,,,,,,,,,,,,,,,,
+Fargo Metropolitan Area Transit,837651,"Fargo, ND",,,,,,,,,,,,,,,,,,,,,,
+Spokane Transit Authority,7688002,"Spokane, WA",,,,,,,,,,,,,,,,,,,,,,
+Butler County Regional Transit Authority,12900,"Hamilton, OH",,,,,,,,,,,,,,,,,,,,,,
+Shenango Valley Shuttle Service,122476,"Hermitage, PA",,,,,,,,,,,,,,,,,,,,,,
+Livermore / Amador Valley Transit Authority,1944493,"Livermore, CA",,,,,,,,,,,,,,,,,,,,,,
+Terre Haute Transit Utility,177206,"Terre Haute, IN",,,,,,,,,,,,,,,,,,,,,,
+The Tri-State Transit Authority,684431,"Huntington, WV",,,,,,,,,,,,,,,,,,,,,,
+Riverside Transit Agency,7139831,"Riverside, CA",,,,,,,,,,,,,,,,,,,,,,
+Greater Peoria Mass Transit District,2266566,"Peoria, IL",,,,,,,,,,,,,,,,,,,,,,
+Greater Roanoke Transit Company,1923317,"Roanoke, VA",,,,,,,,,,,,,,,,,,,,,,
+City of Tucson,16236219,"Tucson, AZ",,,,,,,,,,,,,,,,,,,,,,
+City of Middletown - Middletown Transit System,220936,"Middletown, OH",,,,,,,,,,,,,,,,,,,,,,
+"Hudson Transit Lines, Inc.",3245893,"Mahwah, NJ",,,,,,,,,,,,,,,,,,,,,,
+Great Falls Transit District,431420,"Great Falls, MT",,,,,,,,,,,,,,,,,,,,,,
+Green Bay Metro,1736118,"Green Bay, WI",,,,,,,,,,,,,,,,,,,,,,
+New Jersey Transit Corporation,242461980,"Newark, NJ",,,,,,,,,,,,,,,,,,,,,,
+Rapid Transit System,175140,"Rapid City, SD",,,,,,,,,,,,,,,,,,,,,,
+"Council on Aging of Martin County, Inc.",15977,"Stuart, FL",,,,,,,,,,,,,,,,,,,,,,
+Broome County Department of Public Transportation,2828981,"Vestal, NY",,,,,,,,,,,,,,,,,,,,,,
+Davenport Public Transit,939758,"Davenport, IA",,,,,,,,,,,,,,,,,,,,,,
+Montgomery Area Transit System,708351,"Montgomery, AL",,,,,,,,,,,,,,,,,,,,,,
+Village of Spring Valley Bus,39950,"Spring Valley, NY",,,,,,,,,,,,,,,,,,,,,,
+Sioux Falls Transit,715480,"Sioux Falls, SD",,,,,,,,,,,,,,,,,,,,,,
+Newburgh Beacon Bus Corporation,116213,"New Windsor, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Loveland Transit,63929,"Loveland, CO",,,,,,,,,,,,,,,,,,,,,,
+Rogue Valley Transportation District,1182925,"Medford, OR",,,,,,,,,,,,,,,,,,,,,,
+Port Arthur Transit,116656,"Port Arthur, TX",,,,,,,,,,,,,,,,,,,,,,
+"Transportation District Commission of Hampton Roads, dba: Hampton Roads Transit",23326705,"Hampton, VA",,,,,,,,,,,,,,,,,,,,,,
+City of Tempe Transportation Planning and Transit Division,6909856,"Tempe, AZ",,,,,,,,,,,,,,,,,,,,,,
+Northern Indiana Commuter Transportation District,3802391,"Chesterton, IN",,,,,,,,,,,,,,,,,,,,,,
+Williamsport Bureau of Transportation,1253920,"Williamsport, PA",,,,,,,,,,,,,,,,,,,,,,
+Monterey-Salinas Transit,4738112,"Monterey, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Beloit Transit System,271279,"Beloit, WI",,,,,,,,,,,,,,,,,,,,,,
+Washington Metropolitan Area Transit Authority,412822055,"Washington, DC",,,,,,,,,,,,,,,,,,,,,,
+SunLine Transit Agency,3334540,"Thousand Palms, CA",,,,,,,,,,,,,,,,,,,,,,
+Trans-Hudson Express,7711260,"Jersey City, NJ",,,,,,,,,,,,,,,,,,,,,,
+Santa Clara Valley Transportation Authority,37564165,"San Jose, CA",,,,,,,,,,,,,,,,,,,,,,
+Portage Area Regional Transportation Authority,1096803,"Kent, OH",,,,,,,,,,,,,,,,,,,,,,
+Monsey New Square Trails Corporation,542835,"Spring Valley, NY",,,,,,,,,,,,,,,,,,,,,,
+"Golden Gate Bridge, Highway and Transportation District",9370490,"San Francisco, CA",,,,,,,,,,,,,,,,,,,,,,
+LaCrosse Municipal Transit Utility,1059544,"LaCrosse, WI",,,,,,,,,,,,,,,,,,,,,,
+Transport of Rockland,2677098,"Pomona, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Jefferson,347090,"Jefferson City, MO",,,,,,,,,,,,,,,,,,,,,,
+South Florida Regional Transportation Authority,3064074,"Pompano Beach, FL",,,,,,,,,,,,,,,,,,,,,,
+GTJC,65485749,"Lynbrook, NY",,,,,,,,,,,,,,,,,,,,,,
+"City of Logan, dba: The Logan Transit District",1489031,"Logan, UT",,,,,,,,,,,,,,,,,,,,,,
+"Hendrick Hudson Bus Lines, Inc.",38015,"Newburgh, NY",,,,,,,,,,,,,,,,,,,,,,
+Simi Valley Transit,432714,"Simi Valley, CA",,,,,,,,,,,,,,,,,,,,,,
+Pioneer Valley Transit Authority,9746629,"Springfield, MA",,,,,,,,,,,,,,,,,,,,,,
+Abilene Transit System,497574,"Abilene, TX",,,,,,,,,,,,,,,,,,,,,,
+Fayetteville Area System of Transit,1340098,"Fayetteville, NC",,,,,,,,,,,,,,,,,,,,,,
+Yakima Transit,1083488,"Yakima, WA",,,,,,,,,,,,,,,,,,,,,,
+Washington County Transit,80468,"West Bend, WI",,,,,,,,,,,,,,,,,,,,,,
+City of Fairfax CUE Bus,1061500,"Fairfax, VA",,,,,,,,,,,,,,,,,,,,,,
+City of Los Angeles Department of Transportation,29983363,"Los Angeles, CA",,,,,,,,,,,,,,,,,,,,,,
+Licking County Transit Board,2979,"Newark, OH",,,,,,,,,,,,,,,,,,,,,,
+Fairfax Connector Bus System,8474143,"Fairfax, VA",,,,,,,,,,,,,,,,,,,,,,
+Southern California Regional Rail Authority,10693327,"Los Angeles, CA",,,,,,,,,,,,,,,,,,,,,,
+Springfield Mass Transit District,1286329,"Springfield, IL",,,,,,,,,,,,,,,,,,,,,,
+Petersburg Area Transit,464797,"Petersburg, VA",,,,,,,,,,,,,,,,,,,,,,
+South Coast Area Transit,3145890,"Oxnard, CA",,,,,,,,,,,,,,,,,,,,,,
+Ann Arbor Transportation Authority,4701100,"Ann Arbor, MI",,,,,,,,,,,,,,,,,,,,,,
+Culver City Municipal Bus Lines,5402335,"Culver City, CA",,,,,,,,,,,,,,,,,,,,,,
+Western Reserve Transit Authority,1403017,"Youngstown, OH",,,,,,,,,,,,,,,,,,,,,,
+Bis-Man Transit Board,90692,"Bismarck, ND",,,,,,,,,,,,,,,,,,,,,,
+Polk County Transit Services Division - Polk County Board of County Commissioners,452607,"Bartow, FL",,,,,,,,,,,,,,,,,,,,,,
+Ulster County Area Transit,194446,"Kingston, NY",,,,,,,,,,,,,,,,,,,,,,
+San Diego Metropolitan Transit System,24425116,"San Diego, CA",,,,,,,,,,,,,,,,,,,,,,
+Red Rose Transit Authority,1946006,"Lancaster, PA",,,,,,,,,,,,,,,,,,,,,,
+Peninsula Corridor Joint Powers Board,9184511,"San Carlos, CA",,,,,,,,,,,,,,,,,,,,,,
+Greater Attleboro-Taunton Regional Transit Authority,695352,"Attleboro, MA",,,,,,,,,,,,,,,,,,,,,,
+The Lawton Area Transit System,258234,"Lawton, OK",,,,,,,,,,,,,,,,,,,,,,
+Gainesville Regional Transit System,8041803,"Gainesville, FL",,,,,,,,,,,,,,,,,,,,,,
+Central Puget Sound Regional Transit Authority,10968661,"Seattle, WA",,,,,,,,,,,,,,,,,,,,,,
+Island Transit,886946,"Galveston, TX",,,,,,,,,,,,,,,,,,,,,,
+Fayette Area Coordinated Transportation,102515,"Lemont Furnace, PA",,,,,,,,,,,,,,,,,,,,,,
+City of Lodi - Transit Division,368692,"Lodi, CA",,,,,,,,,,,,,,,,,,,,,,
+Central Oklahoma Transportation and Parking Authority,2607690,"Oklahoma City, OK",,,,,,,,,,,,,,,,,,,,,,
+Monongalia County Urban Transit,381250,"Morgantown, WV",,,,,,,,,,,,,,,,,,,,,,
+Altamont Commuter Express,640596,"Stockton, CA",,,,,,,,,,,,,,,,,,,,,,
+Northeast Illinois Regional Commuter Railroad Corporation,68590955,"Chicago, IL",,,,,,,,,,,,,,,,,,,,,,
+Ohio Valley Regional Transportation Authority,498054,"Wheeling, WV",,,,,,,,,,,,,,,,,,,,,,
+Napa County Transportation Planning Agency,745331,"Napa, CA",,,,,,,,,,,,,,,,,,,,,,
+Decatur Public Transit System,995887,"Decatur, IL",,,,,,,,,,,,,,,,,,,,,,
+Altoona Metro Transit,663076,"Altoona, PA",,,,,,,,,,,,,,,,,,,,,,
+Yolo County Transportation District,1230312,"Woodland, CA",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Evansville Transit System,0,"Evansville, IN",,,,,,,,,,,,,,,,,,,,,,
+Private Transportation Corporation,512283,"Brooklyn, NY",,,,,,,,,,,,,,,,,,,,,,
+Norwalk Transit System,2511590,"Norwalk, CA",,,,,,,,,,,,,,,,,,,,,,
+Belle Urban System - Racine,1503416,"Racine, WI",,,,,,,,,,,,,,,,,,,,,,
+Luzerne County Transportation Authority,2780392,"Kingston, PA",,,,,,,,,,,,,,,,,,,,,,
+Regional Transportation Commission of Southern Nevada,52810964,"Las Vegas, NV",,,,,,,,,,,,,,,,,,,,,,
+Ride-On Montgomery County Transit,24645238,"Rockville, MD",,,,,,,,,,,,,,,,,,,,,,
+Roseville Transit,345406,"Roseville, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Poughkeepsie,349572,"Poughkeepsie, NY",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Transit Authority of Black Hawk County,340181,"Waterloo, IA",,,,,,,,,,,,,,,,,,,,,,
+Chapel Hill Transit,5711073,"Chapel Hill, NC",,,,,,,,,,,,,,,,,,,,,,
+Worcester Regional Transit Authority,2567983,"Worcester, MA",,,,,,,,,,,,,,,,,,,,,,
+Las Cruces Area Transit,614579,"Las Cruces, NM",,,,,,,,,,,,,,,,,,,,,,
+Winston-Salem Transit Authority - Trans-Aid of Forsyth County,2727650,"Winston-Salem, NC",,,,,,,,,,,,,,,,,,,,,,
+Community Urban Bus Service,322273,"Longview, WA",,,,,,,,,,,,,,,,,,,,,,
+Texoma Council of Governments Transportation Department,16985,"Sherman, TX",,,,,,,,,,,,,,,,,,,,,,
+Lexington Transit Authority,2838102,"Lexington, KY",,,,,,,,,,,,,,,,,,,,,,
+Intercity Transit,2869758,"Olympia, WA",,,,,,,,,,,,,,,,,,,,,,
+City of Danville/Danville Mass Transit,341873,"Danville, IL",,,,,,,,,,,,,,,,,,,,,,
+Potomac and Rappahannock Transportation Commission,2086691,"Woodbridge, VA",,,,,,,,,,,,,,,,,,,,,,
+City of San Luis Obispo,875354,"San Luis Obispo, CA",,,,,,,,,,,,,,,,,,,,,,
+Twin Cities Area Transportation Authority,20917,"Benton Harbor, MI",,,,,,,,,,,,,,,,,,,,,,
+Annapolis Department of Transportation,1525900,"Annapolis, MD",,,,,,,,,,,,,,,,,,,,,,
+City of Union City Transit Division,380512,"Union City, CA",,,,,,,,,,,,,,,,,,,,,,
+Sheboygan Transit System,515168,"Sheboygan, WI",,,,,,,,,,,,,,,,,,,,,,
+Erie Metropolitan Transit Authority,2588887,"Erie, PA",,,,,,,,,,,,,,,,,,,,,,
+City of Gardena Transportation Department,4656211,"Gardena, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Moorhead Transit,319746,"Moorhead, MN",,,,,,,,,,,,,,,,,,,,,,
+"G G and C Bus Company, Inc.",41070,"Washington, PA",,,,,,,,,,,,,,,,,,,,,,
+Chico Area Transit System City of Chico,833982,"Chico, CA",,,,,,,,,,,,,,,,,,,,,,
+Fredericksburg Regional Transit,328724,"Fredericksburg, VA",,,,,,,,,,,,,,,,,,,,,,
+Port Authority Trans-Hudson Corporation,71305202,"Jersey City, NJ",,,,,,,,,,,,,,,,,,,,,,
+Billings Metropolitan Transit,653866,"Billings, MT",,,,,,,,,,,,,,,,,,,,,,
+Durham Area Transit Authority,4443568,"Durham, NC",,,,,,,,,,,,,,,,,,,,,,
+Cooperative Alliance for Seacoast Transportation,313897,"Dover, NH",,,,,,,,,,,,,,,,,,,,,,
+Cleveland Area Rapid Transit,937668,"Norman, OK",,,,,,,,,,,,,,,,,,,,,,
+"County of Volusia, dba: VOTRAN",3331041,"South Daytona, FL",,,,,,,,,,,,,,,,,,,,,,
+Link Transit,710952,"Wenatchee, WA",,,,,,,,,,,,,,,,,,,,,,
+StarTran,1599218,"Lincoln, NE",,,,,,,,,,,,,,,,,,,,,,
+Central Florida Regional Transportation Authority,24059369,"Orlando, FL",,,,,,,,,,,,,,,,,,,,,,
+Fairbanks North Star Borough Transit,399056,"Fairbanks, AK",,,,,,,,,,,,,,,,,,,,,,
+ABQ Ride,7686582,"Albuquerque, NM",,,,,,,,,,,,,,,,,,,,,,
+Carroll County Planning Department,12340,"Westminster, MD",,,,,,,,,,,,,,,,,,,,,,
+National City Transit,1633113,"National City, CA",,,,,,,,,,,,,,,,,,,,,,
+Mass Transit Department - City of El Paso,12345370,"El Paso, TX",,,,,,,,,,,,,,,,,,,,,,
+Transit Services of Frederick County,483304,"Frederick, MD",,,,,,,,,,,,,,,,,,,,,,
+Chula Vista Transit,3068544,"Chula Vista, CA",,,,,,,,,,,,,,,,,,,,,,
+Brunswick Transit Alternative,23008,"Brunswick, OH",,,,,,,,,,,,,,,,,,,,,,
+Westmoreland County Transit Authority,287932,"Greensburg, PA",,,,,,,,,,,,,,,,,,,,,,
+Redding Area Bus Authority,762404,"Redding, CA",,,,,,,,,,,,,,,,,,,,,,
+Gary Public Transportation Corporation,1477528,"Gary, IN",,,,,,,,,,,,,,,,,,,,,,
+Williamsburg Area Transport,520488,"Williamsburg, VA",,,,,,,,,,,,,,,,,,,,,,
+LACMTA - Small Operators,10047080,"Los Angeles, CA",,,,,,,,,,,,,,,,,,,,,,
+Capital Area Transit,3546761,"Raleigh, NC",,,,,,,,,,,,,,,,,,,,,,
+"Rockland Coaches, Inc.",4328619,"Westwood, NJ",,,,,,,,,,,,,,,,,,,,,,
+Regional Transportation Commission of Washoe County,8001999,"Reno, NV",,,,,,,,,,,,,,,,,,,,,,
+Gwinnett County Board of Commissioners,1637237,"Lawrenceville, GA",,,,,,,,,,,,,,,,,,,,,,
+"CNY Centro, Inc.",8081443,"Syracuse, NY",,,,,,,,,,,,,,,,,,,,,,
+Wichita Transit,2070422,"Wichita, KS",,,,,,,,,,,,,,,,,,,,,,
+Johnson City Transit System,370188,"Johnson City, TN",,,,,,,,,,,,,,,,,,,,,,
+Southeast Area Transit,931992,"Preston, CT",,,,,,,,,,,,,,,,,,,,,,
+Iowa City Transit,1516580,"Iowa City, IA",,,,,,,,,,,,,,,,,,,,,,
+Jackson Transit Authority,421819,"Jackson, TN",,,,,,,,,,,,,,,,,,,,,,
+The Greater New Haven Transit District,93029,"Hamden, CT",,,,,,,,,,,,,,,,,,,,,,
+Brazos Transit District,600888,"Bryan, TX",,,,,,,,,,,,,,,,,,,,,,
+Transit Authority of Northern Kentucky,3681086,"Fort Wright, KY",,,,,,,,,,,,,,,,,,,,,,
+Whatcom Transportation Authority,3382349,"Bellingham, WA",,,,,,,,,,,,,,,,,,,,,,
+Capital Area Transit System,4752816,"Baton Rouge, LA",,,,,,,,,,,,,,,,,,,,,,
+Knoxville Area Transit,3070487,"Knoxville, TN",,,,,,,,,,,,,,,,,,,,,,
+City of Seattle - Seattle Center Monorail Transit,1506240,"Seattle, WA",,,,,,,,,,,,,,,,,,,,,,
+"Metropolitan Transit Authority of Harris County, Texas",91780526,"Houston, TX",,,,,,,,,,,,,,,,,,,,,,
+Harford Transit,221742,"Abingdon, MD",,,,,,,,,,,,,,,,,,,,,,
+Ventura Intercity Service Transit Authority,442092,"Ventura, CA",,,,,,,,,,,,,,,,,,,,,,
+Wausau Area Transit System,809511,"Wausau, WI",,,,,,,,,,,,,,,,,,,,,,
+Wilmington Transit Authority,1230017,"Wilmington, NC",,,,,,,,,,,,,,,,,,,,,,
+Research Triangle Regional Public Transportation Authority,780292,"Research Triangle Park, NC",,,,,,,,,,,,,,,,,,,,,,
+Lee County Transit,2827240,"Fort Myers, FL",,,,,,,,,,,,,,,,,,,,,,
+Atlantic Express,18356,"Staten Island, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Vallejo Transportation Program,2892095,"Vallejo, CA",,,,,,,,,,,,,,,,,,,,,,
+Stark Area Regional Transit Authority,1878420,"Canton, OH",,,,,,,,,,,,,,,,,,,,,,
+MTA Long Island Rail Road,95519000,"Jamaica, NY",,,,,,,,,,,,,,,,,,,,,,
+Denver Regional Transportation District,85132424,"Denver, CO",,,,,,,,,,,,,,,,,,,,,,
+Greensboro Transit Authority,2736536,"Greensboro, NC",,,,,,,,,,,,,,,,,,,,,,
+Casco Bay Island Transit District,852826,"Portland, ME",,,,,,,,,,,,,,,,,,,,,,
+Missoula Urban Transportation District,644463,"Missoula, MT",,,,,,,,,,,,,,,,,,,,,,
+"Council on Aging of St. Lucie, Inc.",33457,"Fort Pierce, FL",,,,,,,,,,,,,,,,,,,,,,
+"Western Maine Transportation Services, Inc.",198545,"Mexico, ME",,,,,,,,,,,,,,,,,,,,,,
+City Utilities of Springfield Transit Services,1570375,"Springfield, MO",,,,,,,,,,,,,,,,,,,,,,
+"Board of County Commissioners, Palm Beach County, PalmTran, Inc.",8419477,"West Palm Beach, FL",,,,,,,,,,,,,,,,,,,,,,
+Housatonic Area Regional Transit,773037,"Danbury, CT",,,,,,,,,,,,,,,,,,,,,,
+Ozark Regional Transit,23754,"Springdale, AR",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Atlanta Rapid Transit Authority,142049871,"Atlanta, GA",,,,,,,,,,,,,,,,,,,,,,
+Massachusetts Bay Transportation Authority,393515140,"Boston, MA",,,,,,,,,,,,,,,,,,,,,,
+City of Alexandria,623871,"Alexandria, LA",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Transit Authority,7372388,"Nashville, TN",,,,,,,,,,,,,,,,,,,,,,
+City of Porterville,423934,"Porterville, CA",,,,,,,,,,,,,,,,,,,,,,
+Blue Water Area Transportation Commission,451794,"Port Huron, MI",,,,,,,,,,,,,,,,,,,,,,
+Pinellas Suncoast Transit Authority,10204222,"St. Petersburg, FL",,,,,,,,,,,,,,,,,,,,,,
+San Mateo County Transit District,14548496,"San Carlos, CA",,,,,,,,,,,,,,,,,,,,,,
+Sarasota County Area Transit,1876245,"Sarasota, FL",,,,,,,,,,,,,,,,,,,,,,
+Southeastern Pennsylvania Transportation Authority,332892371,"Philadelphia, PA",,,,,,,,,,,,,,,,,,,,,,
+City of Corona,162423,"Corona, CA",,,,,,,,,,,,,,,,,,,,,,
+Battle Creek Transit,496648,"Battle Creek, MI",,,,,,,,,,,,,,,,,,,,,,
+"Community Transit, Inc.",595943,"Passaic, NJ",,,,,,,,,,,,,,,,,,,,,,
+Golden Empire Transit District,6825690,"Bakersfield, CA",,,,,,,,,,,,,,,,,,,,,,
+Central Midlands Regional Transit Authority,2659401,"Columbia, SC",,,,,,,,,,,,,,,,,,,,,,
+Huntington Area Rapid Transit,226905,"Huntington Station, NY",,,,,,,,,,,,,,,,,,,,,,
+Modesto Area Express,3610074,"Modesto, CA",,,,,,,,,,,,,,,,,,,,,,
+Hernando County Board of County Commissioners,133750,"Brooksville, FL",,,,,,,,,,,,,,,,,,,,,,
+Port Authority Transit Corporation,9362839,"Lindenwold, NJ",,,,,,,,,,,,,,,,,,,,,,
+Coralville Transit System,0,"Coralville, IA",,,,,,,,,,,,,,,,,,,,,,
+Space Coast Area Transit,839510,"Cocoa, FL",,,,,,,,,,,,,,,,,,,,,,
+Milford Transit District,299310,"Milford, CT",,,,,,,,,,,,,,,,,,,,,,
+Bi-State Development Agency,45762011,"St. Louis, MO",,,,,,,,,,,,,,,,,,,,,,
+"City of Huntsville, Alabama - Public Transportation Division",277316,"Huntsville, AL",,,,,,,,,,,,,,,,,,,,,,
+Connecticut Transit - New Haven Division,7734650,"Hartford, CT",,,,,,,,,,,,,,,,,,,,,,
+Santa Fe Trails - City of Santa Fe,540637,"Santa Fe, NM",,,,,,,,,,,,,,,,,,,,,,
+Metra Transit System,1109042,"Columbus, GA",,,,,,,,,,,,,,,,,,,,,,
+Salem Area Mass Transit District,5412915,"Salem, OR",,,,,,,,,,,,,,,,,,,,,,
+"City Transit Management Company, Inc.",3709386,"Lubbock, TX",,,,,,,,,,,,,,,,,,,,,,
+Tuscaloosa County Parking and Transit Authority,120878,"Tuscaloosa, AL",,,,,,,,,,,,,,,,,,,,,,
+City of Alameda Ferry Services,464674,"Alameda, CA",,,,,,,,,,,,,,,,,,,,,,
+Bay County Council On Aging Bay Coordinated Transportation,242467,"Panama City, FL",,,,,,,,,,,,,,,,,,,,,,
+Centre Area Transportation Authority,6008773,"State College, PA",,,,,,,,,,,,,,,,,,,,,,
+"University of California, Davis",3416432,"Davis, CA",,,,,,,,,,,,,,,,,,,,,,
+South Bend Public Transportation Corporation,3072722,"South Bend, IN",,,,,,,,,,,,,,,,,,,,,,
+Kanawha Valley Regional Transportation Authority,2125308,"Charleston, WV",,,,,,,,,,,,,,,,,,,,,,
+North San Diego County Transit District,11537291,"Oceanside, CA",,,,,,,,,,,,,,,,,,,,,,
+The Greater Cleveland Regional Transit Authority,65096106,"Cleveland, OH",,,,,,,,,,,,,,,,,,,,,,
+"Centro of Cayuga, Inc.",402167,"Syracuse, NY",,,,,,,,,,,,,,,,,,,,,,
+Greater Dayton Regional Transit Authority,11779951,"Dayton, OH",,,,,,,,,,,,,,,,,,,,,,
+Transfort,1481472,"Fort Collins, CO",,,,,,,,,,,,,,,,,,,,,,
+Spartanburg Transit System,500942,"Spartanburg, SC",,,,,,,,,,,,,,,,,,,,,,
+"Metro-North Commuter Railroad Company, dba: MTA Metro-North Railroad",74652827,"New York, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Lawrence - Lawrence Transit System,455396,"Lawrence, KS",,,,,,,,,,,,,,,,,,,,,,
+Charleston Area Regional Transportation Authority,1038278,"Charleston, SC",,,,,,,,,,,,,,,,,,,,,,
+Bonanza,257619,"Providence, RI",,,,,,,,,,,,,,,,,,,,,,
+Five Seasons Transportation and Parking,1047772,"Cedar Rapids, IA",,,,,,,,,,,,,,,,,,,,,,
+The Wave Transit System,793140,"Mobile, AL",,,,,,,,,,,,,,,,,,,,,,
+Lowell Regional Transit Authority,1417934,"Lowell, MA",,,,,,,,,,,,,,,,,,,,,,
+Central Arkansas Transit Authority,2282456,"North Little Rock, AR",,,,,,,,,,,,,,,,,,,,,,
+Cobb County Department of Transportation Authority,3793253,"Marietta, GA",,,,,,,,,,,,,,,,,,,,,,
+City of Fairfield - Fairfield-Suisun Transit,762714,"Fairfield, CA",,,,,,,,,,,,,,,,,,,,,,
+Macon-Bibb County Transit Authority,1050765,"Macon, GA",,,,,,,,,,,,,,,,,,,,,,
+Loudoun County Commuter Bus Service - Office of Transportation Services,515430,"Leesburg, VA",,,,,,,,,,,,,,,,,,,,,,
+Santa Clarita Transit,3446513,"Santa Clarita, CA",,,,,,,,,,,,,,,,,,,,,,
+Hammond Transit System,412783,"Hammond, IN",,,,,,,,,,,,,,,,,,,,,,
+Berks Area Reading Transportation Authority,2646408,"Reading, PA",,,,,,,,,,,,,,,,,,,,,,
+Yuba-Sutter Transit Authority,617655,"Marysville, CA",,,,,,,,,,,,,,,,,,,,,,
+Mass Transportation Authority,4081665,"Flint, MI",,,,,,,,,,,,,,,,,,,,,,
+"Lakeland Bus Lines, Inc.",1872086,"Dover, NJ",,,,,,,,,,,,,,,,,,,,,,
+Central Contra Costa Transit Authority,4242249,"Concord, CA",,,,,,,,,,,,,,,,,,,,,,
+Capital Area Transportation Authority,8932953,"Lansing, MI",,,,,,,,,,,,,,,,,,,,,,
+"Orange-Newark-Elizabeth, Inc.",12394405,"Elizabeth, NJ",,,,,,,,,,,,,,,,,,,,,,
+Torrance Transit System,4612548,"Torrance, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Appleton - Valley Transit,1030325,"Appleton, WI",,,,,,,,,,,,,,,,,,,,,,
+Suburban Transit Corporation,3641316,"New Brunswick, NJ",,,,,,,,,,,,,,,,,,,,,,
+"Casper Area Transportation Coalition, Inc.",10859,"Casper, WY",,,,,,,,,,,,,,,,,,,,,,
+Kenosha Transit,1643671,"Kenosha, WI",,,,,,,,,,,,,,,,,,,,,,
+New York City Department of Transportation,20034157,"New York, NY",,,,,,,,,,,,,,,,,,,,,,
+Ames Transit Agency,4283170,"Ames, IA",,,,,,,,,,,,,,,,,,,,,,
+Pasco County Public Transportation,740918,"Port Richey, FL",,,,,,,,,,,,,,,,,,,,,,
+Norwalk Transit District,1700845,"Norwalk, CT",,,,,,,,,,,,,,,,,,,,,,
+Jefferson Parish Department of Transit Administration,3058393,"Gretna, LA",,,,,,,,,,,,,,,,,,,,,,
+Okaloosa County Board of County Commissioners,71193,"Fort Walton Beach, FL",,,,,,,,,,,,,,,,,,,,,,
+City of Lompoc - Lompoc Transit,307726,"Lompoc, CA",,,,,,,,,,,,,,,,,,,,,,
+Oshkosh Transit System,984625,"Oshkosh, WI",,,,,,,,,,,,,,,,,,,,,,
+Charlotte Area Transit System,17312394,"Charlotte, NC",,,,,,,,,,,,,,,,,,,,,,
+Everett Transit,1957478,"Everett, WA",,,,,,,,,,,,,,,,,,,,,,
+University of Michigan Parking and Transportation Services,5282764,"Ann Arbor, MI",,,,,,,,,,,,,,,,,,,,,,
+Foothill Transit,14747521,"West Covina, CA",,,,,,,,,,,,,,,,,,,,,,
+Muncie Indiana Transit System,1761657,"Muncie, IN",,,,,,,,,,,,,,,,,,,,,,
+Greater Richmond Transit Company,12415055,"Richmond, VA",,,,,,,,,,,,,,,,,,,,,,
+Victor Valley Transit Authority,970968,"Hesperia, CA",,,,,,,,,,,,,,,,,,,,,,
+Rockford Mass Transit District,1249102,"Rockford, IL",,,,,,,,,,,,,,,,,,,,,,
+Greater Lynchburg Transit Company,1104263,"Lynchburg, VA",,,,,,,,,,,,,,,,,,,,,,
+City of Glendale Transit,175638,"Glendale, AZ",,,,,,,,,,,,,,,,,,,,,,
+Springfield City Area Transit,299720,"Springfield, OH",,,,,,,,,,,,,,,,,,,,,,
+"Trans-Bridge Lines, Inc.",996530,"Bethlehem, PA",,,,,,,,,,,,,,,,,,,,,,
+San Francisco Municipal Railway,216918351,"San Francisco, CA",,,,,,,,,,,,,,,,,,,,,,
+Toledo Area Regional Transit Authority,5600427,"Toledo, OH",,,,,,,,,,,,,,,,,,,,,,
+Queens Surface Corporation,4052718,"Flushing, NY",,,,,,,,,,,,,,,,,,,,,,
+Mesa County,672394,"Grand Junction, CO",,,,,,,,,,,,,,,,,,,,,,
+"City of Ocala, Florida",296303,"Ocala, FL",,,,,,,,,,,,,,,,,,,,,,
+Niagara Frontier Transportation Authority,23430551,"Buffalo, NY",,,,,,,,,,,,,,,,,,,,,,
+Utah Transit Authority,36688470,"Salt Lake City, UT",,,,,,,,,,,,,,,,,,,,,,
+Milwaukee County Transit System,50434805,"Milwaukee, WI",,,,,,,,,,,,,,,,,,,,,,
+County of Lackawanna Transit System,1791552,"Scranton, PA",,,,,,,,,,,,,,,,,,,,,,
+St. Cloud Metropolitan Transit Commission,1723166,"St. Cloud, MN",,,,,,,,,,,,,,,,,,,,,,
+Broward County Mass Transit Division,40496389,"Pompano Beach, FL",,,,,,,,,,,,,,,,,,,,,,
+Washington State Ferries,23880997,"Seattle, WA",,,,,,,,,,,,,,,,,,,,,,
+City of Brownsville - Brownsville Urban System,1632541,"Brownsville, TX",,,,,,,,,,,,,,,,,,,,,,
+Prince George's County Transit,2467659,"Largo, MD",,,,,,,,,,,,,,,,,,,,,,
+Merced County Transit,903788,"Merced, CA",,,,,,,,,,,,,,,,,,,,,,
+Janesville Transit System,513641,"Janesville, WI",,,,,,,,,,,,,,,,,,,,,,
+York County Transportation Authority,1458561,"York, PA",,,,,,,,,,,,,,,,,,,,,,
+Coconino County Transportation Services,426331,"Flagstaff, AZ",,,,,,,,,,,,,,,,,,,,,,
+Bloomington Public Transportation Corporation,2148561,"Bloomington, IN",,,,,,,,,,,,,,,,,,,,,,
+Maryland Transit Administration,102748973,"Baltimore, MD",,,,,,,,,,,,,,,,,,,,,,
+Santa Maria Area Transit,766779,"Santa Maria, CA",,,,,,,,,,,,,,,,,,,,,,
+Saginaw Transit Authority Regional Service,616650,"Saginaw, MI",,,,,,,,,,,,,,,,,,,,,,
+Lehigh and Northampton Transportation Authority,4401359,"Allentown, PA",,,,,,,,,,,,,,,,,,,,,,
+Orange County Transportation Authority,67304135,"Orange, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Anderson Transportation System,168387,"Anderson, IN",,,,,,,,,,,,,,,,,,,,,,
+"Centro of Oswego, Inc.",407764,"Syracuse, NY",,,,,,,,,,,,,,,,,,,,,,
+Santa Barbara Metropolitan Transit District,7189179,"Santa Barbara, CA",,,,,,,,,,,,,,,,,,,,,,
+Metro Transit System,11475597,"Madison, WI",,,,,,,,,,,,,,,,,,,,,,
+Clarkstown Mini-Trans,155499,"Nanuet, NY",,,,,,,,,,,,,,,,,,,,,,
+The City of Cheyenne Transit Program,170500,"Cheyenne, WY",,,,,,,,,,,,,,,,,,,,,,
+Metro Transit,69698813,"Minneapolis, MN",,,,,,,,,,,,,,,,,,,,,,
+New Jersey Transit Corporation-45,3770760,"Newark, NJ",,,,,,,,,,,,,,,,,,,,,,
+Indianapolis and Marion County Public Transportation,8486044,"Indianapolis, IN",,,,,,,,,,,,,,,,,,,,,,
+Merrimack Valley Regional Transit Authority,1603296,"Haverhill, MA",,,,,,,,,,,,,,,,,,,,,,
+Capital Metropolitan Transportation Authority,32476217,"Austin, TX",,,,,,,,,,,,,,,,,,,,,,
+High Point Transit,675883,"High Point, NC",,,,,,,,,,,,,,,,,,,,,,
+Municipality of Anchorage - Public Transportation Department,3975074,"Anchorage, AK",,,,,,,,,,,,,,,,,,,,,,
+Ozaukee County Transit Services,100981,"Port Washington, WI",,,,,,,,,,,,,,,,,,,,,,
+Mid Mon Valley Transit Authority,358673,"Charleroi, PA",,,,,,,,,,,,,,,,,,,,,,
+Ben Franklin Transit,3066920,"Richland, WA",,,,,,,,,,,,,,,,,,,,,,
+Fond du Lac Area Transit,127871,"Fond du Lac, WI",,,,,,,,,,,,,,,,,,,,,,
+City of Danville Mass Transit System,204205,"Danville, VA",,,,,,,,,,,,,,,,,,,,,,
+Los Angeles County Metropolitan Transportation Authority,451511323,"Los Angeles, CA",,,,,,,,,,,,,,,,,,,,,,
+Champaign-Urbana Mass Transit District,10017606,"Urbana, IL",,,,,,,,,,,,,,,,,,,,,,
+Charlottesville Transit Service,1385286,"Charlottesville, VA",,,,,,,,,,,,,,,,,,,,,,
+Sonoma County Transit,1259388,"Santa Rosa, CA",,,,,,,,,,,,,,,,,,,,,,
+Chicago Transit Authority,490003721,"Chicago, IL",,,,,,,,,,,,,,,,,,,,,,
+Cambria County Transit Authority,1251256,"Johnstown, PA",,,,,,,,,,,,,,,,,,,,,,
+Montebello Bus Lines,9566679,"Montebello, CA",,,,,,,,,,,,,,,,,,,,,,
+Duluth Transit Authority,2709249,"Duluth, MN",,,,,,,,,,,,,,,,,,,,,,
+Tompkins Consolidated Area Transit,3090978,"Ithaca, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Commerce Municipal Buslines,674652,"Commerce, CA",,,,,,,,,,,,,,,,,,,,,,
+Bloomington-Normal Public Transit System,1294175,"Bloomington, IL",,,,,,,,,,,,,,,,,,,,,,
+"Northeast Transportation Company, Inc.",1806403,"Waterbury, CT",,,,,,,,,,,,,,,,,,,,,,
+Lorain County Transit,796547,"Lorain, OH",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Bus Authority,28394288,"San Juan, PR",,,,,,,,,,,,,,,,,,,,,,
+Chittenden County Transportation Authority,1887104,"Burlington, VT",,,,,,,,,,,,,,,,,,,,,,
+Golden Crescent Regional Planning Commssion,136282,"Victoria, TX",,,,,,,,,,,,,,,,,,,,,,
+Lakeland Area Mass Transit District,1538232,"Lakeland, FL",,,,,,,,,,,,,,,,,,,,,,
+Beaumont Municipal Transit System,649315,"Beaumont, TX",,,,,,,,,,,,,,,,,,,,,,
+"County Commissioners of Charles County, MD",382750,"Port Tobacco, MD",,,,,,,,,,,,,,,,,,,,,,
+Skagit Transit,269053,"Burlington, WA",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Tulsa Transit Authority,2281375,"Tulsa, OK",,,,,,,,,,,,,,,,,,,,,,
+Blacksburg Transit,2385074,"Blacksburg, VA",,,,,,,,,,,,,,,,,,,,,,
+MTS Contract Services,17883687,"San Diego, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Detroit Department of Transportation,35396882,"Detroit, MI",,,,,,,,,,,,,,,,,,,,,,
+City of Alexandria - Alexandria Transit Company,3323021,"Alexandria, VA",,,,,,,,,,,,,,,,,,,,,,
+Western Contra Costa Transit Authority,1162395,"Pinole, CA",,,,,,,,,,,,,,,,,,,,,,
+Detroit Transportation Corporation,1340646,"Detroit, MI",,,,,,,,,,,,,,,,,,,,,,
+Washington County Transportation Department,298626,"Hagerstown, MD",,,,,,,,,,,,,,,,,,,,,,
+City of Visalia - Visalia City Coach,1280223,"Visalia, CA",,,,,,,,,,,,,,,,,,,,,,
+Fort Wayne Public Transportation Corporation,1713381,"Fort Wayne, IN",,,,,,,,,,,,,,,,,,,,,,
+"Adirondack Transit Lines, Inc,",467403,"Hurley, NY",,,,,,,,,,,,,,,,,,,,,,
+Laguna Beach Municipal Transit,103354,"Laguna Beach, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Rochester Public Transportation,1300793,"Rochester, MN",,,,,,,,,,,,,,,,,,,,,,
+ValleyRide,1070708,"Meridian, ID",,,,,,,,,,,,,,,,,,,,,,
+Metropolitan Council,9306149,"St. Paul, MN",,,,,,,,,,,,,,,,,,,,,,
+Georgia Regional Transportation Authority,2070295,"Atlanta, GA",,,,,,,,,,,,,,,,,,,,,,
+Dutchess County Division of Mass Transportation,668673,"Poughkeepsie, NY",,,,,,,,,,,,,,,,,,,,,,
+Topeka Metropolitan Transit Authority,1311669,"Topeka, KS",,,,,,,,,,,,,,,,,,,,,,
+Greenville Transit Authority,734863,"Greenville, SC",,,,,,,,,,,,,,,,,,,,,,
+Greater Portland Transit District,1360010,"Portland, ME",,,,,,,,,,,,,,,,,,,,,,
+Corpus Christi Regional Transportation Authority,5695078,"Corpus Christi, TX",,,,,,,,,,,,,,,,,,,,,,
+Miami-Dade Transit,103232388,"Miami, FL",,,,,,,,,,,,,,,,,,,,,,
+Connecticut Transit - Hartford Division,12508700,"Hartford, CT",,,,,,,,,,,,,,,,,,,,,,
+Dallas Area Rapid Transit,72206091,"Dallas, TX",,,,,,,,,,,,,,,,,,,,,,
+Transit Authority of River City,15038337,"Louisville, KY",,,,,,,,,,,,,,,,,,,,,,
+Kitsap Transit,4580938,"Bremerton, WA",,,,,,,,,,,,,,,,,,,,,,
+Amarillo City Transit,358335,"Amarillo, TX",,,,,,,,,,,,,,,,,,,,,,
+Chattanooga Area Regional Transportation Authority,2471789,"Chattanooga, TN",,,,,,,,,,,,,,,,,,,,,,
+Yuma Metropolitan Planning Organization,100178,"Yuma, AZ",,,,,,,,,,,,,,,,,,,,,,
+Fort Worth Transportation Authority,7792556,"Fort Worth, TX",,,,,,,,,,,,,,,,,,,,,,
+Virginia Railway Express,3654271,"Alexandria, VA",,,,,,,,,,,,,,,,,,,,,,
+Eastern Contra Costa Transit Authority,2319606,"Antioch, CA",,,,,,,,,,,,,,,,,,,,,,
+Richland County Transit,292449,"Mansfield, OH",,,,,,,,,,,,,,,,,,,,,,
+Capital Area Transit,1969069,"Harrisburg, PA",,,,,,,,,,,,,,,,,,,,,,
+Thousand Oaks Transit,140123,"Thousand Oaks, CA",,,,,,,,,,,,,,,,,,,,,,
+Michiana Area Council of Governments,136569,"South Bend, IN",,,,,,,,,,,,,,,,,,,,,,
+Snohomish County Transportation Benefit Area Corporation,8219785,"Everett, WA",,,,,,,,,,,,,,,,,,,,,,
+"Waco Transit System, Inc.",545548,"Waco, TX",,,,,,,,,,,,,,,,,,,,,,
+Metro Regional Transit Authority,5534275,"Akron, OH",,,,,,,,,,,,,,,,,,,,,,
+"Staten Island Rapid Transit Operating Authority, dba: MTA Staten Island Railway",3482383,"Staten Island, NY",,,,,,,,,,,,,,,,,,,,,,
+Colorado Springs Transit System,2259294,"Colorado Springs, CO",,,,,,,,,,,,,,,,,,,,,,
+Clarksville Transit System,605835,"Clarksville, TN",,,,,,,,,,,,,,,,,,,,,,
+Nashua Transit System,315468,"Nashua, NH",,,,,,,,,,,,,,,,,,,,,,
+Midland-Odessa Urban Transit District,298606,"Odessa, TX",,,,,,,,,,,,,,,,,,,,,,
+Pee Dee Regional Transportation Authority,34840,"Florence, SC",,,,,,,,,,,,,,,,,,,,,,
+City of Bangor - BAT Community Connector,681173,"Bangor, ME",,,,,,,,,,,,,,,,,,,,,,
+Transit Authority of Omaha,4625658,"Omaha, NE",,,,,,,,,,,,,,,,,,,,,,
+City of Tallahassee,4612725,"Tallahassee, FL",,,,,,,,,,,,,,,,,,,,,,
+South Metro Area Rapid Transit,247726,"Wilsonville, OR",,,,,,,,,,,,,,,,,,,,,,
+Crescent City Connection Division - Louisiana Department of Transportation,3133238,"New Orleans, LA",,,,,,,,,,,,,,,,,,,,,,
+Albany Transit System,662467,"Albany, GA",,,,,,,,,,,,,,,,,,,,,,
+City of Pocatello - Pocatello Regional Transit,431111,"Pocatello, ID",,,,,,,,,,,,,,,,,,,,,,
+Shreveport Area Transit System,2814415,"Shreveport, LA",,,,,,,,,,,,,,,,,,,,,,
+Memphis Area Transit Authority,11898331,"Memphis, TN",,,,,,,,,,,,,,,,,,,,,,
+Placer County Department of Public Works,569174,"Auburn, CA",,,,,,,,,,,,,,,,,,,,,,
+City of Holland Macatawa Area Express,82737,"Holland, MI",,,,,,,,,,,,,,,,,,,,,,
+Howard Transit,679002,"Laurel, MD",,,,,,,,,,,,,,,,,,,,,,
+Pierce County Ferry Operations,212541,"Tacoma, WA",,,,,,,,,,,,,,,,,,,,,,
+VIA Metropolitan Transit,39697208,"San Antonio, TX",,,,,,,,,,,,,,,,,,,,,,
+Berkshire Regional Transit Authority,508776,"Pittsfield, MA",,,,,,,,,,,,,,,,,,,,,,
+Lafayette Transit System,1335222,"Lafayette, LA",,,,,,,,,,,,,,,,,,,,,,
+Bay Metropolitan Transit Authority,525916,"Bay City, MI",,,,,,,,,,,,,,,,,,,,,,
+Tioga County,39388,"Owego, NY",,,,,,,,,,,,,,,,,,,,,,
+San Francisco Bay Area Rapid Transit District,99296028,"Oakland, CA",,,,,,,,,,,,,,,,,,,,,,
+Collier Area Transit,3998260,"Naples, FL",,,,,,,,,,,,,,,,,,,,,,
+"New York Bus Tours, Inc., dba: New York Bus Service",1790318,"Bronx, NY",,,,,,,,,,,,,,,,,,,,,,
+Columbia Transit,517010,"Columbia, MO",,,,,,,,,,,,,,,,,,,,,,
+Puerto Rico Highway and Transportation Authority,5270844,"San Juan, PR",,,,,,,,,,,,,,,,,,,,,,
+Suffolk County Department of Public Works - Transportation Division,5312569,"Yaphank, NY",,,,,,,,,,,,,,,,,,,,,,
+University of Iowa,3572019,"Iowa City, IA",,,,,,,,,,,,,,,,,,,,,,
+City of Rome Transit Department,815562,"Rome, GA",,,,,,,,,,,,,,,,,,,,,,
+Greater Bridgeport Transit Authority,4706885,"Bridgeport, CT",,,,,,,,,,,,,,,,,,,,,,
+"University of Arkansas, Fayetteville",1311421,"Fayetteville, AR",,,,,,,,,,,,,,,,,,,,,,
+Jacksonville Transportation Authority,10502273,"Jacksonville, FL",,,,,,,,,,,,,,,,,,,,,,
+Manchester Transit Authority,412386,"Manchester, NH",,,,,,,,,,,,,,,,,,,,,,
+City of Denton Public Transportation Department,1265309,"Denton, TX",,,,,,,,,,,,,,,,,,,,,,
+Augusta Richmond County Transit Department,923066,"Augusta, GA",,,,,,,,,,,,,,,,,,,,,,
+Clark County Public Transportation Benefit Area Authority,5614951,"Vancouver, WA",,,,,,,,,,,,,,,,,,,,,,
+"Laredo Transit Management, Inc.",3898147,"Laredo, TX",,,,,,,,,,,,,,,,,,,,,,
+Delaware Transit Corporation,8052454,"Dover, DE",,,,,,,,,,,,,,,,,,,,,,
+Southeastern Regional Transit Authority,1610179,"New Bedford, MA",,,,,,,,,,,,,,,,,,,,,,
+City of San Angelo,152954,"San Angelo, TX",,,,,,,,,,,,,,,,,,,,,,
+Middletown Transit District,348768,"Middletown, CT",,,,,,,,,,,,,,,,,,,,,,
+Hill Country Transit District,360619,"San Saba, TX",,,,,,,,,,,,,,,,,,,,,,
+Greater Lafayette Public Transportation Corporation,4231208,"Lafayette, IN",,,,,,,,,,,,,,,,,,,,,,
+MTA Bus Company,24638749,"New York, NY",,,,,,,,,,,,,,,,,,,,,,
+Omnitrans,15038153,"San Bernardino, CA",,,,,,,,,,,,,,,,,,,,,,
+Southwest Ohio Regional Transit Authority,25900339,"Cincinnati, OH",,,,,,,,,,,,,,,,,,,,,,
+"Regional Transit Service, Inc. and Lift Line, Inc.",12928234,"Rochester, NY",,,,,,,,,,,,,,,,,,,,,,
+Pueblo Transit System,973968,"Pueblo, CO",,,,,,,,,,,,,,,,,,,,,,
+City of Canton Transit,41134,"Canton, GA",,,,,,,,,,,,,,,,,,,,,,
+Greater Glens Falls Transit System,285496,"Queensbury, NY",,,,,,,,,,,,,,,,,,,,,,
+City of Greeley - Transit Services,431771,"Greeley, CO",,,,,,,,,,,,,,,,,,,,,,
+Santee Wateree Regional Transportation Authority,193960,"Sumter, SC",,,,,,,,,,,,,,,,,,,,,,
+Cape Cod Regional Transit Authority,279628,"Hyannis, MA",,,,,,,,,,,,,,,,,,,,,,
+Kansas City Area Transportation Authority,13615226,"Kansas City, MO",,,,,,,,,,,,,,,,,,,,,,
+Puerto Rico Ports Authority,2066985,"San Juan, PR",,,,,,,,,,,,,,,,,,,,,,
+Cape Ann Transportation Authority,256958,"Gloucester, MA",,,,,,,,,,,,,,,,,,,,,,
+Bettendorf Transit System,144712,"Bettendorf, IA",,,,,,,,,,,,,,,,,,,,,,
+Birmingham-Jefferson County Transit Authority,3686392,"Birmingham, AL",,,,,,,,,,,,,,,,,,,,,,
+Brockton Area Transit Authority,3020216,"Brockton, MA",,,,,,,,,,,,,,,,,,,,,,
+City of Monroe Transit System,963547,"Monroe, LA",,,,,,,,,,,,,,,,,,,,,,
+Asheville Transit System,1059265,"Asheville, NC",,,,,,,,,,,,,,,,,,,,,,
+Montachusett Regional Transit Authority,617134,"Fitchburg, MA",,,,,,,,,,,,,,,,,,,,,,
+Lower Rio Grande Valley Development Council,35054,"McAllen, TX",,,,,,,,,,,,,,,,,,,,,,
+"Metropolitan Suburban Bus Authority, dba: MTA Long Island Bus",31091738,"Garden City, NY",,,,,,,,,,,,,,,,,,,,,,
+Sioux City Transit System,776394,"Sioux City, IA",,,,,,,,,,,,,,,,,,,,,,
+"Private One of New York, LLC, dba: New York Airport Service",947334,"Brooklyn, NY",,,,,,,,,,,,,,,,,,,,,,
+Monroe Bus Corporation,273409,"Brooklyn, NY",,,,,,,,,,,,,,,,,,,,,,
