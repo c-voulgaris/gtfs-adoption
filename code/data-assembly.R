@@ -2,6 +2,9 @@
 # used in a regression analysis predicting the time it takes
 # for a transit agency to adopt GTFS.
 
+# TODO: Get data for each year.
+
+
 library(tidyverse)
 library(readxl)
 library(tidycensus)
@@ -9,59 +12,108 @@ library(here)
 library(lubridate)
 
 ### Load NTD data
-agencies <- here("NTD_data",
-                 "2005_agency_info.xlsx") %>%
-  read_xlsx(sheet = "Sheet1") %>%
-  select(Trs_Id,
-         Agency_Type_Desc,
-         Institution_Type_Desc,
-         Company_Nm,
-         State_Desc,
-         Service_Area) %>%
-  rename(ID = Trs_Id)
+agencies <- tibble(ID = c(""),
+                   Agency_Type_Desc = c(""),
+                   Institution_Type_Desc = c(""),
+                   Company_Nm = c(""),
+                   Service_Area = c(""),
+                   year = 0)
 
-service <- here("NTD_data",
-                "2005_Service.xlsx") %>%
-  read_xlsx(sheet = "Sheet1") %>%
-  filter(Time_Period_Desc == "Annual Total") %>%
-  filter((passenger_Car_Sched_Rev_Miles > 0) | (vehicle_Sched_Miles > 0)) %>%
-  group_by(Trs_Id) %>%
-  summarise(trips = sum(Unlinked_Passenger_Trips),
-            VRM = sum(vehicle_Or_Train_Rev_Miles)) %>%
-  rename(ID = Trs_Id)
+service <- tibble(ID = c(""),
+                  trips = 0,
+                  VRM = 0,
+                  year = 0)
 
-service_area <- here("NTD_data",
-                                "2005_Appendix_D.xlsx") %>%
-  read_xlsx(sheet = "sst7A9.rpt",
-            skip = 4) %>%
-  select(UZA, 
-         `Urbanized Area`,
-         Population,
-         `Square Miles`,
-         `Population Density`,
-         `Transit Agency`,
-         ID) %>%
-  fill(UZA, 
-       `Urbanized Area`,
-       Population,
-       `Square Miles`,
-       `Population Density`)
+service_area <- tibble(UZA = c(""),
+                       `Urbanized Area` = c(""),
+                       `Population` = 0,
+                       `Square Miles` = 0,
+                       `Population Density` = 0,
+                       `Transit Agency` = "",
+                       ID = "",
+                        year = 0)
 
-salary <- here("NTD_data",
-                     "2005_Operating_Expenses.xlsx") %>%
-  read_xlsx(sheet = "Sheet1") %>%
-  select(Trs_Id, 
-         expense_category_desc,
-         op_sal_wage_amt,
-         other_sal_wage_amt,
-         fringe_benefit_amt)  %>%
-  rename(ID = Trs_Id) %>%
-  filter(expense_category_desc == "General Administration") %>%
-  group_by(ID) %>%
-  mutate(salary_plus_fringe = op_sal_wage_amt +
-                              other_sal_wage_amt +
-                              fringe_benefit_amt) %>%
-  summarise(gen_admin_salary = sum(salary_plus_fringe))
+for (i in 2005:2008) {
+  these_agencies <- here("NTD_data",
+                   paste0("y", i),
+                   paste0(i, "_agency_info.xlsx")) %>%
+    read_xlsx(sheet = 1) %>%
+    select(Trs_Id,
+           Agency_Type_Desc,
+           Institution_Type_Desc,
+           Company_Nm,
+           Service_Area) %>%
+    rename(ID = Trs_Id) %>%
+    mutate(year = i)
+    
+  agencies <- rbind(agencies, these_agencies)
+  
+  these_service <- here("NTD_data",
+                        paste0("y", i),
+                        paste0(i, "_Service.xlsx")) %>%
+    read_xlsx(sheet = 1) %>%
+    rename_all(tolower) %>%
+    filter(time_period_desc == "Annual Total") %>%
+    filter((passenger_car_sched_rev_miles > 0) | (vehicle_sched_miles > 0)) %>%
+    group_by(trs_id) %>%
+    summarise(trips = sum(unlinked_passenger_trips),
+              VRM = sum(vehicle_or_train_rev_miles)) %>%
+    rename(ID = trs_id) %>%
+    mutate(year = i)
+  
+  service <- rbind(service, these_service)
+  
+  skip <- ifelse(i < 2007, 4, 1)
+  these_service_area <- here("NTD_data",
+                       paste0("y", i),
+                       paste0(i, "_Appendix_D.xlsx")) %>%
+    read_xlsx(sheet = 1,
+              skip = skip) %>%
+    select(UZA, 
+           `Urbanized Area`,
+           Population,
+           `Square Miles`,
+           `Population Density`,
+           `Transit Agency`,
+           ID) %>%
+    mutate(year = i)
+    
+  if (i < 2007) { 
+    these_service_area <- these_service_area %>%
+      fill(UZA, 
+           `Urbanized Area`,
+           Population,
+           `Square Miles`,
+           `Population Density`)
+  }
+  service_area <- rbind(service_area, these_service_area)
+  
+  salary <- here("NTD_data",
+                 paste0("y", i),
+                 paste0(i, "_Operating_Expenses.xlsx")) %>%
+    read_xlsx(sheet = 1) %>%
+    select(Trs_Id, 
+           expense_category_desc,
+           op_sal_wage_amt,
+           other_sal_wage_amt,
+           fringe_benefit_amt)  %>%
+    rename(ID = Trs_Id) %>%
+    filter(expense_category_desc == "General Administration") %>%
+    group_by(ID) %>%
+    mutate(salary_plus_fringe = op_sal_wage_amt +
+             other_sal_wage_amt +
+             fringe_benefit_amt) %>%
+    summarise(gen_admin_salary = sum(salary_plus_fringe))
+  
+}
+
+
+
+
+
+
+
+
 
 farebox <- here("NTD_data",
                 "2005_Table_26.xlsx") %>%
@@ -105,6 +157,7 @@ NTD_data <- inner_join(service, agencies) %>%
   group_by(`Urbanized Area`) %>%
   mutate(n_in_uza = n(),
          VRM_UZA_share = VRM / sum(VRM))
+
 
 # Load census data
 vars <- c(
@@ -150,11 +203,7 @@ site_data <- dates %>%
   mutate(gtfs_date = dmy(gtfs_date)) %>%
   mutate(time_to_adopt_gtfs = as.numeric(gtfs_date - my("Dec 2005"))/365.25) %>%
   mutate(inst_type = substr(Institution_Type_Desc, 1,2)) %>%
-  mutate(agency_type = substr(Agency_Type_Desc, 1, 2)) %>%
-  mutate(inst_type = as_factor(inst_type)) %>%
-  mutate(agency_type = as_factor(agency_type)) %>%
-  mutate(inst_type = relevel(inst_type, ref = "2.")) %>%
-  mutate(agency_type = relevel(agency_type, ref = "2."))
+  mutate(agency_type = substr(Agency_Type_Desc, 1, 2)) 
 
 here("assembled-data",
      "agency-data.csv") %>%
