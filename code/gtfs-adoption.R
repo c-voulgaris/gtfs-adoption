@@ -10,6 +10,7 @@ agency_data <- here("assembled-data",
      "agency-data.csv") %>%
   read_csv() 
 
+######### visualize change in market penetration over time ####
 adoption_rates <- tibble(Date = seq(ymd("2005-1-1"), 
                                     ymd("2022-6-1"), 
                                     by = "months"),
@@ -111,3 +112,55 @@ here("figures",
   ggsave(width = 6,
          height = 6,
          units = "in")
+
+########### Regression analysis ############################
+
+# change status variable to 0 for all censoring (either 
+# not-yet adopted or agency was dissolved)
+
+# Set agency type and institution type as factors
+
+agency_data <- agency_data %>%
+#  mutate(gtfs_status = ifelse(gtfs_status != 1, 0, 1)) %>%
+  mutate(inst_type = as_factor(inst_type)) %>%
+  mutate(agency_type = as_factor(agency_type)) %>%
+  mutate(inst_type = relevel(inst_type, ref = "2")) %>%
+  mutate(agency_type = relevel(agency_type, ref = "2"))
+  
+# Cox regression model
+
+cox_model <- coxph(Surv(time_to_adopt_gtfs, gtfs_status) ~ 
+        VOMS,
+        #Population +
+        #`Population Density` +
+        #VOMS +
+        #VRM +
+        #fare_recovery +
+       # overhead +
+        #n_in_uza +
+        #VRM_UZA_share +
+        #pct_rented +
+        #Region +
+        #inst_type +
+     #   agency_type, 
+      data = agency_data)
+
+linear_model <- lm(time_to_adopt_gtfs ~ 
+                     ridership +
+                     Population +
+                     `Population Density` +
+                     VOMS +
+                     VRM +
+                     fare_recovery +
+                     overhead +
+                     n_in_uza +
+                     VRM_UZA_share +
+                     pct_rented +
+                     Region +
+                     inst_type +
+                     agency_type, 
+                   data = agency_data[agency_data$gtfs_status != 2,])
+
+summary(cox_model)
+
+AIC(cox_model)
