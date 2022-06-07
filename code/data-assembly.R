@@ -134,8 +134,10 @@ dates <- here("assembled-data",
   read_csv() %>%
   # ignore blank lines
   filter(!is.na(Company_Nm)) %>%
-  # treat yet-to-adopt and no-longer-exists as the same
-  mutate(status = ifelse(status == 1, 1, 0)) 
+  rename(gtfs_date = date,
+         gtfs_status = status,
+         ridership = trips) %>%
+  select(-query)
 
 regions <- here("assembled-data",
                 "census-regions.csv") %>%
@@ -145,8 +147,8 @@ regions <- here("assembled-data",
 site_data <- dates %>%
   inner_join(all_data) %>%
   inner_join(regions) %>%
-  mutate(date = dmy(date)) %>%
-  mutate(time_to_adopt = as.numeric(date - my("Dec 2005"))/365.25) %>%
+  mutate(gtfs_date = dmy(gtfs_date)) %>%
+  mutate(time_to_adopt_gtfs = as.numeric(gtfs_date - my("Dec 2005"))/365.25) %>%
   mutate(inst_type = substr(Institution_Type_Desc, 1,2)) %>%
   mutate(agency_type = substr(Agency_Type_Desc, 1, 2)) %>%
   mutate(inst_type = as_factor(inst_type)) %>%
