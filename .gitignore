@@ -42,3 +42,6 @@ vignettes/*.pdf
 *.xlsx
 *.xls
 
+# Don't know what this file is 
+.DS_Store
+

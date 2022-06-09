@@ -33,7 +33,21 @@ service_area <- tibble(UZA = c(""),
                        ID = "",
                         year = 0)
 
+salary <- tibble(ID = c(""),
+                 gen_admin_salary = 0,
+                 year = 0)
+
+farebox <- tibble(ID = c(""),
+                  State = c(""),
+                  Name = c(""),
+                  VOMS = 0,
+                  fare_rev = 0,
+                  op_exp = 0,
+                  fare_recovery = 0,
+                  year = 0)
+
 for (i in 2005:2008) {
+  ### agency info
   these_agencies <- here("NTD_data",
                    paste0("y", i),
                    paste0(i, "_agency_info.xlsx")) %>%
@@ -48,6 +62,7 @@ for (i in 2005:2008) {
     
   agencies <- rbind(agencies, these_agencies)
   
+  ### Service (service spreadsheet)
   these_service <- here("NTD_data",
                         paste0("y", i),
                         paste0(i, "_Service.xlsx")) %>%
@@ -64,6 +79,8 @@ for (i in 2005:2008) {
   service <- rbind(service, these_service)
   
   skip <- ifelse(i < 2007, 4, 1)
+  
+  ### Service ares (appendix D)
   these_service_area <- here("NTD_data",
                        paste0("y", i),
                        paste0(i, "_Appendix_D.xlsx")) %>%
@@ -88,56 +105,75 @@ for (i in 2005:2008) {
   }
   service_area <- rbind(service_area, these_service_area)
   
-  salary <- here("NTD_data",
+  ### Salary (operating expenses)
+  these_salary <- here("NTD_data",
                  paste0("y", i),
                  paste0(i, "_Operating_Expenses.xlsx")) %>%
     read_xlsx(sheet = 1) %>%
-    select(Trs_Id, 
+    rename_all(tolower) %>%
+    select(trs_id, 
            expense_category_desc,
            op_sal_wage_amt,
            other_sal_wage_amt,
            fringe_benefit_amt)  %>%
-    rename(ID = Trs_Id) %>%
+    rename(ID = trs_id) %>%
     filter(expense_category_desc == "General Administration") %>%
     group_by(ID) %>%
     mutate(salary_plus_fringe = op_sal_wage_amt +
              other_sal_wage_amt +
              fringe_benefit_amt) %>%
-    summarise(gen_admin_salary = sum(salary_plus_fringe))
+    summarise(gen_admin_salary = sum(salary_plus_fringe)) %>%
+    mutate(year = i)
   
+  salary <- rbind(salary, these_salary)
+  
+  ### farebox (Table 26)
+  skip <- ifelse(i < 2007, 3, 1)
+  
+  these_farebox <- here("NTD_data",
+                  paste0("y", i),
+                  paste0(i, "_Table_26.xlsx")) %>%
+    read_xlsx(sheet = 1,
+              skip = skip) %>%
+    fill(State, Name) %>%
+    filter(!is.na(ID)) %>%
+    select(-...9,
+           -...11,
+           -...13,
+           -...15,
+           -...17) 
+  
+  colnames(these_farebox) <- c("State",
+                                      "Name",
+                                      "ID",
+                                      "Org Type",
+                                      "Mode",
+                                      "TOS",
+                                      "VOMS",
+                                      "Fare Revenues",
+                                      "Total Operating Expenses",
+                                      "trips",
+                                      "avg_fare",
+                                      "rec_rat")
+  
+  these_farebox <- these_farebox %>%
+    group_by(ID) %>%
+    summarise(State = first(State),
+              Name = first(Name),
+              VOMS = sum(VOMS),
+              fare_rev = sum(`Fare Revenues`),
+              op_exp = sum(`Total Operating Expenses`)) %>%
+    mutate(fare_recovery = fare_rev / op_exp) %>%
+    mutate(year = i)
+  
+  farebox <- rbind(farebox, these_farebox)
 }
-
-
-
-
-
-
-
-
-
-farebox <- here("NTD_data",
-                "2005_Table_26.xlsx") %>%
-  read_xlsx(sheet = "Pass_Fare_Recovery_Ratio.rpt",
-            skip = 3) %>%
-  fill(State, Name) %>%
-  filter(!is.na(ID)) %>%
-  select(-...9,
-         -...11,
-         -...13,
-         -...15,
-         -...17) %>%
-  group_by(ID) %>%
-  summarise(State = first(State),
-            Name = first(Name),
-            VOMS = sum(VOMS),
-            fare_rev = sum(`Fare Revenues`),
-            op_exp = sum(`Total Operating Expenses`)) %>%
-  mutate(fare_recovery = fare_rev / op_exp)
 
 NTD_data <- inner_join(service, agencies) %>%
   inner_join(farebox) %>%
   inner_join(salary) %>%
   inner_join(service_area) %>%
+  filter(year > 0) %>%
   mutate(overhead = gen_admin_salary / op_exp) %>%
   select(ID, 
          Company_Nm, 
@@ -153,11 +189,11 @@ NTD_data <- inner_join(service, agencies) %>%
          op_exp,
          fare_recovery,
          gen_admin_salary,
-         overhead) %>%
+         overhead,
+         year) %>%
   group_by(`Urbanized Area`) %>%
   mutate(n_in_uza = n(),
          VRM_UZA_share = VRM / sum(VRM))
-
 
 # Load census data
 vars <- c(
@@ -197,14 +233,10 @@ regions <- here("assembled-data",
   read_csv(show_col_types = FALSE) %>%
   rename(State = State_Desc)
 
-site_data <- dates %>%
+final_data <- dates %>%
   inner_join(all_data) %>%
   inner_join(regions) %>%
-  mutate(gtfs_date = dmy(gtfs_date)) %>%
-  mutate(time_to_adopt_gtfs = as.numeric(gtfs_date - my("Dec 2005"))/365.25) %>%
-  mutate(inst_type = substr(Institution_Type_Desc, 1,2)) %>%
-  mutate(agency_type = substr(Agency_Type_Desc, 1, 2)) 
-
-here("assembled-data",
-     "agency-data.csv") %>%
-  write_csv(x = site_data, file = .)
+  mutate(adopted_year = as.numeric(substr(gtfs_date, 8, 9)) + 2000) %>%
+  mutate(adopted_yet = adopted_year <= year & 
+                         gtfs_status == 1) %>%
+  filter(gtfs_status != 2 | adopted_year >= year)
