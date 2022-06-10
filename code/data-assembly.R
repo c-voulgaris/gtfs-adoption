@@ -46,6 +46,8 @@ farebox <- tibble(ID = c(""),
                   fare_recovery = 0,
                   year = 0)
 
+###### Mengyao to updated everything in this loop so it works for all years
+# after downloading the spreadsheets for all years
 for (i in 2005:2008) {
   ### agency info
   these_agencies <- here("NTD_data",
@@ -168,6 +170,9 @@ for (i in 2005:2008) {
   
   farebox <- rbind(farebox, these_farebox)
 }
+###### End of the part Mengyao will update at once she's 
+###### downloaded all the NTD files.
+########################################################
 
 NTD_data <- inner_join(service, agencies) %>%
   inner_join(farebox) %>%
