@@ -156,6 +156,34 @@ for (i in 2005:2008) {
                                       "avg_fare",
                                       "rec_rat")
   
+  salary <- rbind(salary, these_salary)
+  
+  these_farebox <- here("NTD_data",
+                  paste0("y", i),
+                  paste0(i, "_Table_26.xlsx")) %>%
+    read_xlsx(sheet = 1,
+              skip = 3) %>%
+    fill(State, Name) %>%
+    filter(!is.na(ID)) %>%
+    select(-...9,
+           -...11,
+           -...13,
+           -...15,
+           -...17) 
+  
+  colnames(these_farebox) <- colnames("State",
+                                      "Name",
+                                      "ID",
+                                      "`Org Type`",
+                                      "Mode",
+                                      "TOS",
+                                      "VOMS",
+                                      "`Fare Revenues`",
+                                      "`Total Operating Expenses`",
+                                      "trips",
+                                      "avg_fare",
+                                      "rec_rat")
+  
   these_farebox <- these_farebox %>%
     group_by(ID) %>%
     summarise(State = first(State),
