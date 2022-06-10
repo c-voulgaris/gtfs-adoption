@@ -5,8 +5,8 @@ This folder should contain the following files, downloaded from the [National Tr
   * Link name: "2005 Annual Database Agency Information"
 * 2005_Appendix_D.xlsx
   * Link name (2005-2013): "2005 Appendix D: 2000 U.S. Urbanized Areas (UZAs), Populations, Square Miles and Densities Reported by Transit Agencies"
-  * Link name (2014-?): "2014 Annual Database Agency UZAs"
-  * Link name (?-2020): The information you'd need from this file is in the "Agency Information" spreadsheet
+  * Link name (2014-2018): "2014 Annual Database Agency UZAs"
+  * Link name (2019-2020): The information you'd need from this file is in the "Agency Information" spreadsheet
 * 2005_Operating_Expenses.xlsx
   * Data category: "Expenses"
   * Link name: "2005 Annual Database Operating Expense"
