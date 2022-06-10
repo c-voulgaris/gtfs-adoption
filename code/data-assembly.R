@@ -9,7 +9,6 @@ library(tidyverse)
 library(readxl)
 library(tidycensus)
 library(here)
-library(lubridate)
 
 ### Load NTD data
 agencies <- tibble(ID = c(""),
@@ -201,13 +200,18 @@ NTD_data <- inner_join(service, agencies) %>%
          VRM_UZA_share = VRM / sum(VRM))
 
 # Load census data
-vars <- c(
+vars2000 <- c(
   total_homes = "H004001",
   rented_homes = "H004003"
 )
 
-UZAs <- get_decennial(geography = "urban area", 
-                      variables = vars,
+vars2010 <- c(
+  total_homes = "H004001",
+  rented_homes = "H004004"
+)
+
+UZAs2000 <- get_decennial(geography = "urban area", 
+                      variables = vars2000,
                       year = 2000,
                       output = "wide") %>%
   mutate(pct_rented = rented_homes / total_homes) %>%
