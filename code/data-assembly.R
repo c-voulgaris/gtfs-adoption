@@ -169,6 +169,106 @@ for (i in 2005:2008) {
   
   farebox <- rbind(farebox, these_farebox)
 }
+
+### agency info
+for (i in 2005:2020) {
+  these_agencies <- here("NTD_data",
+                         paste0("y", i),
+                         paste0(i, "_agency_info.xlsx"))
+  if (i<2010) {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 1) %>%
+      select(Trs_Id,
+             Agency_Type_Desc,
+             Institution_Type_Desc,
+             Company_Nm,
+             Service_Area) %>%
+      rename(ID = Trs_Id) %>%
+      mutate(year = i)
+  }
+  
+  else if (i==2010) {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 2) %>%
+      select(Trs_Id,
+             Agency_Type_Desc,
+             Company_Nm,
+             Service_Area) %>%
+      rename(ID = Trs_Id) %>%
+      mutate(Institution_Type_Desc = NA, year = i)
+  }
+  
+  else if (i==2011) {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 1) %>%
+      select(Trs_Id,
+             Agency_Type_Desc,
+             Company_Nm,
+             Service_Area) %>%
+      rename(ID = Trs_Id) %>%
+      mutate(Institution_Type_Desc = NA, year = i)
+  }
+
+  else if (i==2012) {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 1) %>%
+      select(Trs_Id,
+             Agency_Type_Desc,
+             Org_Type,
+             Company_Nm,
+             Service_Area) %>%
+      rename(ID = Trs_Id,
+             Institution_Type_Desc = Org_Type) %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2013) {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 1) %>%
+      select(NTDID,
+             'Agency Type',
+             'Organization Type',
+             Agency,
+             'Service Area (SQ Mi)') %>%
+      rename(ID = NTDID,
+             Agency_Type_Desc = 'Agency Type',
+             Institution_Type_Desc = 'Organization Type',
+             Company_Nm = Agency,
+             Service_Area = 'Service Area (SQ Mi)') %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2014) {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 1) %>%
+      select("4 digit NTDID",
+             'Organization Type',
+             "Reporter Name",
+             "Service Area Sq Mi") %>%
+      rename(ID = "4 digit NTDID",
+             Institution_Type_Desc = 'Organization Type',
+             Company_Nm = "Reporter Name",
+             Service_Area = "Service Area Sq Mi") %>%
+      mutate(Agency_Type_Desc = NA, year = i)
+  }
+ 
+  else {
+    these_agencies <- these_agencies %>%
+      read_xlsx(sheet = 1) %>%
+      select("Legacy NTD ID",
+             'Organization Type',
+             "Agency Name",
+             "Service Area Sq Miles") %>%
+      rename(ID = "Legacy NTD ID",
+             Institution_Type_Desc = 'Organization Type',
+             Company_Nm = "Agency Name",
+             Service_Area = "Service Area Sq Miles") %>%
+      mutate(Agency_Type_Desc = NA, year = i)
+  } 
+  
+  agencies <- rbind(agencies, these_agencies)
+}
+
 ###### End of the part Mengyao will update at once she's 
 ###### downloaded all the NTD files.
 ########################################################
