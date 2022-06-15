@@ -82,7 +82,7 @@ for (i in 2005:2008) {
   
   skip <- ifelse(i < 2007, 4, 1)
   
-  ### Service ares (appendix D)
+  ### Service area (appendix D)
   these_service_area <- here("NTD_data",
                        paste0("y", i),
                        paste0(i, "_Appendix_D.xlsx")) %>%
@@ -371,7 +371,7 @@ for (i in 2005:2020) {
   service <- rbind(service, these_service)
   }
 
-### Service ares (appendix D)
+### Service area (appendix D)
 service_area <- tibble(UZA = c(""),
                        `Urbanized Area` = c(""),
                        `Population` = 0,
@@ -381,25 +381,22 @@ service_area <- tibble(UZA = c(""),
                        ID = "",
                        year = 0)
 
-for (i in 2005:2008) {
-  skip <- ifelse(i < 2007, 4, 1)
-  
+for (i in 2005:2018) {
   these_service_area <- here("NTD_data",
                              paste0("y", i),
-                             paste0(i, "_Appendix_D.xlsx")) %>%
-    read_xlsx(sheet = 1,
-              skip = skip) %>%
-    select(UZA, 
-           `Urbanized Area`,
-           Population,
-           `Square Miles`,
-           `Population Density`,
-           `Transit Agency`,
-           ID) %>%
-    mutate(year = i)
-
-  if (i < 2007) { 
+                             paste0(i, "_Appendix_D.xlsx"))
+    
+  if (i<2007) {
     these_service_area <- these_service_area %>%
+      read_xlsx(sheet = 1, skip = 4) %>%
+      select(UZA, 
+             `Urbanized Area`,
+             Population,
+             `Square Miles`,
+             `Population Density`,
+             `Transit Agency`,
+             ID) %>%
+      mutate(year = i) %>%
       fill(UZA,
            `Urbanized Area`,
            Population,
@@ -407,9 +404,93 @@ for (i in 2005:2008) {
            `Population Density`)
   }
   
+  else if (i>=2007 & i<2013) {
+    these_service_area <- these_service_area %>%
+      read_xlsx(sheet = 1, skip = 1) %>%
+      select(UZA, 
+             `Urbanized Area`,
+             Population,
+             `Square Miles`,
+             `Population Density`,
+             `Transit Agency`,
+             ID) %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2013) {
+    these_service_area <- these_service_area %>%
+      read_xlsx(sheet = 1, skip = 1) %>%
+      select(UZA, 
+             `Urbanized Area`,
+             Population,
+             `Square Miles`,
+             `Population Density`,
+             `Transit Agency`,
+             `NTD ID`) %>%
+      rename(ID = "NTD ID") %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2014) {
+    these_service_area <- these_service_area %>%
+      read_xlsx(sheet = 1) %>%
+      select(UZA, 
+             `UZA Name`,
+             Population,
+             `Square Miles`,
+             Density,
+             `Reporter Name`,
+             `4 digit NTDID`) %>%
+      rename("Urbanized Area" = "UZA Name",
+             "Population Density" = Density,
+             "Transit Agency" = "Reporter Name",
+             ID = "4 digit NTDID") %>%
+      mutate(year = i)
+  }
+
+  else {
+    these_service_area <- these_service_area %>%
+      read_xlsx(sheet = 1) %>%
+      select(`UZA ID`, 
+             `UZA Name`,
+             Population,
+             `Square Miles`,
+             Density,
+             `Agency Name`,
+             `Legacy NTD ID`) %>%
+      rename(UZA = "UZA ID",
+             "Urbanized Area" = "UZA Name",
+             "Population Density" = Density,
+             "Transit Agency" = "Agency Name",
+             ID = "Legacy NTD ID") %>%
+      mutate(year = i)
+  }
+  
   service_area <- rbind(service_area, these_service_area)
 }
 
+for (i in 2019:2020) {
+  these_service_area <- here("NTD_data",
+                             paste0("y", i),
+                             paste0(i, "_agency_info.xlsx")) %>%
+    read_xlsx(sheet = 1) %>%
+    select(`Primary UZA`,
+           `UZA Name`,
+           Population,
+           `Sq Miles`,
+           Density,
+           `Agency Name`,
+           `Legacy NTD ID`) %>%
+    rename(UZA = "Primary UZA",
+           "Urbanized Area" = "UZA Name",
+           "Population Density" = Density,
+           "Square Miles" = "Sq Miles",
+           "Transit Agency" = "Agency Name",
+           ID = "Legacy NTD ID") %>%
+    mutate(year = i)
+  
+  service_area <- rbind(service_area, these_service_area)
+  }
 
 
 ###### End of the part Mengyao will update at once she's 
