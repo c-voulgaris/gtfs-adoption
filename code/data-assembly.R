@@ -47,6 +47,7 @@ farebox <- tibble(ID = c(""),
 
 ###### Mengyao to updated everything in this loop so it works for all years
 # after downloading the spreadsheets for all years
+
 for (i in 2005:2008) {
   ### agency info
   these_agencies <- here("NTD_data",
@@ -171,13 +172,23 @@ for (i in 2005:2008) {
 }
 
 ### agency info
+agencies <- tibble(ID = c(""),
+                   Agency_Type_Desc = c(""),
+                   Institution_Type_Desc = c(""),
+                   Company_Nm = c(""),
+                   Service_Area = c(""),
+                   year = 0)
+
 for (i in 2005:2020) {
+  sheet <- ifelse(i == 2010, 2, 1)
+  
   these_agencies <- here("NTD_data",
                          paste0("y", i),
-                         paste0(i, "_agency_info.xlsx"))
-  if (i<2010) {
+                         paste0(i, "_agency_info.xlsx")) %>%
+    read_xlsx(sheet = sheet)
+  
+  if (i < 2010) {
     these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 1) %>%
       select(Trs_Id,
              Agency_Type_Desc,
              Institution_Type_Desc,
@@ -187,20 +198,8 @@ for (i in 2005:2020) {
       mutate(year = i)
   }
   
-  else if (i==2010) {
+  else if (i == 2010 | i == 2011) { # why can't say i == 2010|2011 here?
     these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 2) %>%
-      select(Trs_Id,
-             Agency_Type_Desc,
-             Company_Nm,
-             Service_Area) %>%
-      rename(ID = Trs_Id) %>%
-      mutate(Institution_Type_Desc = NA, year = i)
-  }
-  
-  else if (i==2011) {
-    these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 1) %>%
       select(Trs_Id,
              Agency_Type_Desc,
              Company_Nm,
@@ -209,9 +208,8 @@ for (i in 2005:2020) {
       mutate(Institution_Type_Desc = NA, year = i)
   }
 
-  else if (i==2012) {
+  else if (i == 2012) {
     these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 1) %>%
       select(Trs_Id,
              Agency_Type_Desc,
              Org_Type,
@@ -224,7 +222,6 @@ for (i in 2005:2020) {
   
   else if (i == 2013) {
     these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 1) %>%
       select(NTDID,
              'Agency Type',
              'Organization Type',
@@ -240,7 +237,6 @@ for (i in 2005:2020) {
   
   else if (i == 2014) {
     these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 1) %>%
       select("4 digit NTDID",
              'Organization Type',
              "Reporter Name",
@@ -254,7 +250,6 @@ for (i in 2005:2020) {
  
   else {
     these_agencies <- these_agencies %>%
-      read_xlsx(sheet = 1) %>%
       select("Legacy NTD ID",
              'Organization Type',
              "Agency Name",
@@ -268,6 +263,154 @@ for (i in 2005:2020) {
   
   agencies <- rbind(agencies, these_agencies)
 }
+
+### Service
+service <- tibble(ID = c(""),
+                  trips = 0,
+                  VRM = 0,
+                  year = 0)
+
+for (i in 2005:2020) {
+  skip <- ifelse(i == 2013 | i == 2014, 1, 0)
+  
+  these_service <- here("NTD_data",
+                        paste0("y", i),
+                        paste0(i, "_Service.xlsx")) %>%
+    read_xlsx(sheet = 1,
+              skip = skip) %>%
+    rename_all(tolower)
+  
+  if (i < 2012) {
+    these_service <- these_service %>%
+      filter(time_period_desc == "Annual Total") %>%
+      filter((passenger_car_sched_rev_miles > 0) | (vehicle_sched_miles > 0)) %>%
+      group_by(trs_id) %>%
+      summarise(trips = sum(unlinked_passenger_trips),
+                VRM = sum(vehicle_or_train_rev_miles)) %>%
+      rename(ID = trs_id) %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2012) {
+    these_service <- these_service %>%
+      filter(time_period_desc == "Annual Total") %>%
+      filter((pass_car_sched_rev_miles_num > 0) | (veh_miles_num > 0)) %>%
+      group_by(trs_id) %>%
+      summarise(trips = sum(unl_pass_trips_num),
+                VRM = sum(veh_rev_miles_num)) %>%
+      rename(ID = trs_id) %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2013) {
+    these_service <- these_service %>%
+      filter(`time period` == "Annual Total") %>%
+      filter(`scheduled vehicle revenue miles` > 0) %>%
+      group_by(ntdid) %>%
+      summarise(trips = sum(`unlinked passenger trips`),
+                VRM = sum(`vehicle revenue miles`)) %>%
+      rename(ID = ntdid) %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2014) {
+    these_service <- these_service %>%
+      filter(`time period` == "Annual Total") %>%
+      filter(`scheduled revenue miles` > 0) %>%
+      group_by(`4 digit ntdid`) %>%
+      summarise(trips = sum(`unlinked passenger trips (upt)`),
+                VRM = sum(`total actual revenue miles...14`)) %>%
+      rename(ID = "4 digit ntdid") %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2015) {
+    these_service <- these_service %>%
+      filter(`time period` == "Annual Total") %>%
+      filter(`scheduled actual vehicles/ passenger car revenue miles` > 0) %>%
+      group_by(`legacy ntd id`) %>%
+      summarise(trips = sum(`unlinked passenger trips (upt)`),
+                VRM = sum(`actual vehicles/ passenger car  revenue miles`)) %>%
+      rename(ID = "legacy ntd id") %>%
+      mutate(year = i)
+  }
+  
+  else if (i>2015 & i<2019) {
+    these_service <- these_service %>%
+      filter(`time period` == "Annual Total") %>%
+      filter(`scheduled actual vehicle/passenger car revenue miles` > 0) %>%
+      group_by(`legacy ntd id`) %>%
+      summarise(trips = sum(`unlinked passenger trips (upt)`),
+                VRM = sum(`actual vehicles/passenger car revenue miles`)) %>%
+      rename(ID = "legacy ntd id") %>%
+      mutate(year = i)
+  }
+  
+  else if (i == 2019) {
+    these_service <- these_service %>%
+      filter(`time period` == "Annual Total") %>%
+      filter(`scheduled actual vehicle/passenger car revenue miles` > 0) %>%
+      group_by(`ntd id`) %>%
+      summarise(trips = sum(`unlinked passenger trips (upt)`),
+                VRM = sum(`actual vehicle/passenger car revenue miles`)) %>%
+      rename(ID = "ntd id") %>%
+      mutate(year = i)
+  }  
+  
+  else {
+    these_service <- these_service %>%
+      filter(`time period` == "Annual Total") %>%
+      filter(`scheduled actual vehicle/ passenger car revenue miles` > 0) %>%
+      group_by(`ntd id`) %>%
+      summarise(trips = sum(`unlinked passenger trips (upt)`),
+                VRM = sum(`actual vehicles/ passenger car revenue miles`)) %>%
+      rename(ID = "ntd id") %>%
+      mutate(year = i)
+  }   
+  
+  service <- rbind(service, these_service)
+  }
+
+### Service ares (appendix D)
+service_area <- tibble(UZA = c(""),
+                       `Urbanized Area` = c(""),
+                       `Population` = 0,
+                       `Square Miles` = 0,
+                       `Population Density` = 0,
+                       `Transit Agency` = "",
+                       ID = "",
+                       year = 0)
+
+for (i in 2005:2008) {
+  skip <- ifelse(i < 2007, 4, 1)
+  
+  these_service_area <- here("NTD_data",
+                             paste0("y", i),
+                             paste0(i, "_Appendix_D.xlsx")) %>%
+    read_xlsx(sheet = 1,
+              skip = skip) %>%
+    select(UZA, 
+           `Urbanized Area`,
+           Population,
+           `Square Miles`,
+           `Population Density`,
+           `Transit Agency`,
+           ID) %>%
+    mutate(year = i)
+
+  if (i < 2007) { 
+    these_service_area <- these_service_area %>%
+      fill(UZA,
+           `Urbanized Area`,
+           Population,
+           `Square Miles`,
+           `Population Density`)
+  }
+  
+  service_area <- rbind(service_area, these_service_area)
+}
+
+
 
 ###### End of the part Mengyao will update at once she's 
 ###### downloaded all the NTD files.
