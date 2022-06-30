@@ -5,6 +5,9 @@
 library(tidyverse)
 library(here)
 library(lubridate)
+library(GGally)
+library(lme4)
+library(ggplot2)
 
 agency_data <- here("assembled-data",
      "agency-data.csv") %>%
@@ -299,3 +302,73 @@ linear_model <- lm(time_to_adopt_gtfs ~
 summary(cox_model)
 
 AIC(cox_model)
+
+### Logistic regression
+
+long_data <- here("assembled-data",
+                  "final-data.csv") %>%
+  read_csv() %>%
+  rename(penetration = `Percent adoption of GTFS data standard`) %>%
+  mutate(Region = as_factor(Region),
+         Division = as_factor(Division)) %>%
+  mutate(Region = relevel(Region, ref = "r9"),
+         Division = relevel(Division, ref = "d3"))
+
+# Clustering by transit agency (Company_Nm)
+
+# Agency-level variables
+## State
+## Agency Type
+## Institution type
+## Region
+## Division
+
+# Year-level variables
+## ridership
+## Population
+## Population density
+## VOMS
+## VRM
+## fare_recovery
+## overhead
+## n_in_uza
+## VRM_UZA_share
+## pct_rented
+## penetration
+
+# estimate a logistic regression model
+model <- glm(adopted_yet ~
+                 Region +
+                 scale(ridership) +
+                 scale(VRM) +
+                 scale(overhead) +
+                 scale(fare_recovery) +
+                 scale(pct_rented) +
+                 scale(penetration) +
+                 scale(n_in_uza), 
+               data = long_data, 
+               family = binomial)
+
+# Display regression results with cluster-robust standard errors
+summ(model, robust = "HC3", cluster = "Company_Nm")
+
+# Show variation in probability of adoption by Vehicle revenue miles
+# Note: x-axis is log-transformed
+effect_plot(model, 
+            robust = "HC3", 
+            cluster = "Company_Nm",
+            interval = TRUE,
+            pred = VRM) +
+  scale_x_continuous(trans = "log",
+                     breaks = breaks <- 10^seq(4, 8, by=1),
+                     labels = formatC(breaks, 
+                                      big.mark = ",", 
+                                      format = "f",
+                                      digits = 0))
+
+# Show variation in probability of adoption by region
+effect_plot(model, 
+            robust = "HC3", 
+            cluster = "Company_Nm",
+            interval = TRUE,
+            pred = Region)
