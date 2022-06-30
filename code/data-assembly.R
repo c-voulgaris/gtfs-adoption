@@ -2,9 +2,6 @@
 # used in a regression analysis predicting the time it takes
 # for a transit agency to adopt GTFS.
 
-# TODO: Get data for each year.
-
-
 library(tidyverse)
 library(readxl)
 library(tidycensus)
@@ -809,3 +806,6 @@ adoption_rates <- adoption_rates %>%
 
 final_data <- final_data %>%
   inner_join(adoption_rates)
+
+## Export csv file
+write.csv(final_data, file = "/Users/limengyao/Desktop/R/transit-tech-adoption/assembled-data/final-data.csv")
