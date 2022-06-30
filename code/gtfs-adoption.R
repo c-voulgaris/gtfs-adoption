@@ -96,7 +96,8 @@ ggplot(adoption_rates) +
            xend = ymd("2008-6-1"), 
            y = 0.06, 
            yend = 0.85,
-           color = "red") +
+           color = "red",
+           linetype = "dashed") +
   annotate("text", 
            x = ymd("2008-6-1"), 
            y = 0.9,
@@ -151,7 +152,8 @@ ggplot(adoption_rates) +
            xend = ymd("2010-1-11"), 
            y = 0.15, 
            yend = 0.95,
-           color = "red") +
+           color = "red",
+           linetype = "dashed") +
   annotate("text", 
            x = ymd("2010-1-11"), 
            y = 1,
@@ -173,7 +175,8 @@ ggplot(adoption_rates) +
            xend = ymd("2011-08-01"), 
            y = 0.24, 
            yend = 0.85,
-           color = "red") +
+           color = "red",
+           linetype = "dashed") +
   annotate("text", 
            x = ymd("2011-08-01"), 
            y = 0.9,
