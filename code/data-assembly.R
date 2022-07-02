@@ -808,4 +808,7 @@ final_data <- final_data %>%
   inner_join(adoption_rates)
 
 ## Export csv file
-write.csv(final_data, file = "/Users/limengyao/Desktop/R/transit-tech-adoption/assembled-data/final-data.csv")
+### CTV note: updated so it will work regardless of whose computer is running it
+write.csv(final_data, 
+          file = here("assembled-data", 
+                      "final-data.csv"))
