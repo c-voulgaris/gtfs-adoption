@@ -775,7 +775,7 @@ final_data <- dates %>%
   mutate(adopted_year = as.numeric(str_sub(gtfs_date, -2, -1)) + 2000) %>%
   mutate(adopted_yet = adopted_year <= year & 
                          gtfs_status == 1) %>%
-  filter(gtfs_status != 2 | adopted_year >= year)
+  filter(adopted_year >= year) #
 
 ## Add adoption rates
 agency_data <- here("assembled-data",
