@@ -34,10 +34,12 @@ ggplot() +
           size = 1) +
   theme_map()
 
-## (2) The percentage increase of GTFS adoption rate from 2005 to 2020
+## (2) 
+### The percentage increase of GTFS adoption rate from 2005 to 2020
 gtfs_data <- here("assembled-data",
                   "final-data.csv") %>%
-  read_csv() 
+  read_csv() %>%
+  select(-X1)
 
 ggplot(gtfs_data, 
        aes(x = year, y = `Percent adoption of GTFS data standard`)) +
@@ -52,16 +54,19 @@ ggplot(gtfs_data,
            label = "8.60%",
            size = 5) +
   annotate("segment",
-           x = 2018)
+           x = 2018, xend = 2018,
+           y = 0.655, yend = 0.685,
+           color = "gray") +
   annotate("text",
            x = 2018,
            y = 0.7,
            label = "65.29%",
            size = 5)
 
-### The number increase of GTFS adoption agencies from 2005 to 2020
-ggplot(gtfs_data, aes(x = year, y = num_adopted)) +
-  geom_point()
+### The number increase of GTFS adoption agencies from 2005 to 2020 & The number change of total agencies from 2005 to 2020
+ggplot(gtfs_data) +
+  geom_point(aes(x = year, y = num_adopted)) +
+  geom_point(aes(x = year, y = num_agencies)) 
 
 ## (3) Use Tigris package to get urbanized area shapefile. But it is too big and does not plot on my computer. 
 options(tigris_class = "sf")
@@ -69,8 +74,8 @@ options(tigris_cache_dir = TRUE)
 
 uza <- urban_areas()
 
-ggplot(uza) +
+uza_ie <- uza %>%
+  filter(NAME10 == "Dixon, IL" | NAME10 == "Escanaba, MI")
+
+ggplot(uza_ie) +
   geom_sf()
-
-plot(uza$geometry)
-

@@ -668,11 +668,50 @@ for (i in 2015:2020) {
 ###### End of the part Mengyao will update at once she's 
 ###### downloaded all the NTD files.
 ########################################################
+agencies_2005 <- agencies %>%
+  filter(year < 2014)
+agencies_2014 <- agencies %>%
+  filter(year >= 2014)
 
-NTD_data <- inner_join(service, agencies) %>%
-  inner_join(farebox) %>%
-  inner_join(salary) %>%
-  inner_join(service_area) %>%
+service_2005 <- service %>%
+  filter(year < 2014)
+service_2014 <- service %>%
+  filter(year >= 2014) %>%
+  select(-ID)
+
+farebox_2005 <- farebox %>%
+  filter(year < 2014)
+farebox_2014 <- farebox %>%
+  filter(year >= 2014) %>%
+  select(-ID, -Name)
+
+salary_2005 <- salary %>%
+  filter(year < 2014)
+salary_2014 <- salary %>%
+  filter(year >= 2014) %>%
+  select(-ID)
+
+service_area_2005 <- service_area %>%
+  filter(year < 2014) %>%
+  select(-"Transit Agency")
+service_area_2014 <- service_area %>%
+  filter(year >= 2014 & UZA != 0) %>%
+  select(-ID, -"Transit Agency")
+
+NTD_2005 <- full_join(agencies_2005, service_2005) %>%
+  full_join(farebox_2005) %>%
+  select(-Name) %>%
+  full_join(salary_2005) %>%
+  full_join(service_area_2005)
+
+NTD_2014 <- full_join(agencies_2014, service_2014) %>%
+  full_join(farebox_2014) %>%
+  full_join(salary_2014) %>%
+  full_join(service_area_2014)
+
+NTD <- rbind(NTD_2005, NTD_2014)
+
+NTD_data <- NTD %>%
   #### Since there is an empty row at the beginning of the spreadsheet, you may get rid of it by filter(). 
   filter(year > 0) %>%
   mutate(overhead = gen_admin_salary / op_exp) %>%
@@ -745,11 +784,11 @@ UZAs2010 <- get_decennial(geography = "urban area",
 #### For year 2005 to 2009, you may join 2000 decennial census data to the NTD data. For year 2010 to 2020, you may join 2010 decennial census data to the NTD data.    
 NTD_data_2000 <- NTD_data %>%
   filter(year < 2010) %>%
-  inner_join(UZAs2000)
+  left_join(UZAs2000)
 
 NTD_data_2010 <- NTD_data %>%
   filter(year >=2010) %>%
-  inner_join(UZAs2010)
+  left_join(UZAs2010)
 
 all_data <- rbind(NTD_data_2000, NTD_data_2010)  
 
@@ -769,19 +808,45 @@ regions <- here("assembled-data",
   read_csv() %>%
   rename(State = State_Desc)
 
-final_data <- dates %>%
-  inner_join(all_data) %>%
-  inner_join(regions) %>%
+ID_ref <- agencies %>%
+  filter(year == 2005) %>%
+  select(ID, Company_Nm)
+
+dates <- dates %>%
+  left_join(ID_ref)
+
+ID_ref1 <- agencies %>%
+  filter(year == 2014) %>%
+  select(ID, NTDID)
+
+dates <- dates %>%
+  left_join(ID_ref1)
+
+dates_2005 <- dates %>%
+  select(-Company_Nm, -NTDID)
+dates_2014 <- dates %>%
+  select(-Company_Nm, -ID)
+
+all_data_2005 <- all_data %>%
+  filter(year < 2014) %>%
+  left_join(dates_2005)
+all_data_2014 <- all_data %>%
+  filter(year >= 2014) %>%
+  left_join(dates_2014)
+
+final_data <- rbind(all_data_2005, all_data_2014) %>%
   mutate(adopted_year = as.numeric(str_sub(gtfs_date, -2, -1)) + 2000) %>%
   mutate(adopted_yet = adopted_year <= year & 
-                         gtfs_status == 1) %>%
-  filter(adopted_year >= year) #
+           gtfs_status == 1) %>%
+  #### After the agency has adopted the GTFS standard, we don't want it to appear in the dataframe again. 
+  filter(adopted_year >= year)
 
 ## Add adoption rates
 agency_data <- here("assembled-data",
                     "agency-data.csv") %>%
-  read_csv() 
-
+  read_csv() %>%
+  filter(!is.na(status))
+  
 adoption_rates <- tibble(Date = seq(ymd("2005-12-1"), 
                                     ymd("2022-12-1"), 
                                     by = "years"),
@@ -790,13 +855,11 @@ adoption_rates <- tibble(Date = seq(ymd("2005-12-1"),
 
 for (i in 1:length(adoption_rates$Date)) {
   adoption_rates$num_agencies[i] = 
-    sum(agency_data$gtfs_status < 2) +
-    sum(agency_data$gtfs_status == 2 &
-          agency_data$gtfs_date > adoption_rates$Date[i])
+    sum(agency_data$status < 2) +
+    sum(agency_data$status == 2 & agency_data$date > adoption_rates$Date[i])
   
   adoption_rates$num_adopted[i] = 
-    sum(agency_data$gtfs_status == 1 & 
-          agency_data$gtfs_date < adoption_rates$Date[i])
+    sum(agency_data$gtfs_status == 1 & agency_data$date < adoption_rates$Date[i])
 }
 
 adoption_rates <- adoption_rates %>%
