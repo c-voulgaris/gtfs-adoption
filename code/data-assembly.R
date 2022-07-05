@@ -733,6 +733,7 @@ NTD_data <- NTD %>%
          gen_admin_salary,
          overhead,
          year) %>%
+  replace_na(list(VRM = 0)) %>%
   #### You may group by 2 variable to get the number of agencies in one urbanized area in one year (First, by year. and then, by urbanized area). The "VRM_UZA_share" is the percentage that the agency's VRM holds in the whole urbanized area's VRM.
   group_by(year, `Urbanized Area`) %>%  
   mutate(n_in_uza = n(),
@@ -845,30 +846,36 @@ final_data <- rbind(all_data_2005, all_data_2014) %>%
 agency_data <- here("assembled-data",
                     "agency-data.csv") %>%
   read_csv() %>%
-  filter(!is.na(status))
-  
+  filter(!is.na(status)) %>%
+  #### The "date" column is read in as a character column, you may convert it to a date column to allow the following date comparison.
+  mutate(gtfs_date = as.Date(date, "%d-%b-%y")) %>%
+  rename(gtfs_status = status)
+
+#### We create a new dataframe containing dates.   
 adoption_rates <- tibble(Date = seq(ymd("2005-12-1"), 
                                     ymd("2022-12-1"), 
                                     by = "years"),
                          num_agencies = 0,
                          num_adopted = 0) 
 
+#### For the gtfs_status column, 0 means that the agency has not adopted the gtfs standard, 1 means that the agency has already adopted the gtfs standard, 2 means that the agency does not exist anymore. 
 for (i in 1:length(adoption_rates$Date)) {
   adoption_rates$num_agencies[i] = 
-    sum(agency_data$status < 2) +
-    sum(agency_data$status == 2 & agency_data$date > adoption_rates$Date[i])
+    sum(agency_data$gtfs_status < 2) +
+    sum(agency_data$gtfs_status == 2 & agency_data$gtfs_date > adoption_rates$Date[i])
   
   adoption_rates$num_adopted[i] = 
-    sum(agency_data$gtfs_status == 1 & agency_data$date < adoption_rates$Date[i])
+    sum(agency_data$gtfs_status == 1 & agency_data$gtfs_date < adoption_rates$Date[i]) #Quesion: the one that exist in 2005, adopted gtfs, but don't exist anymore therefore status == 2?
 }
 
 adoption_rates <- adoption_rates %>%
   mutate(`Percent adoption of GTFS data standard` = 
            num_adopted / num_agencies) %>%
-  mutate(year = as.numeric(substr(Date, 1, 4)))
+  mutate(year = as.numeric(substr(Date, 1, 4))) %>%
+  select(-Date)
 
 final_data <- final_data %>%
-  inner_join(adoption_rates)
+  left_join(adoption_rates)
 
 ## Export csv file
 ### CTV note: updated so it will work regardless of whose computer is running it
