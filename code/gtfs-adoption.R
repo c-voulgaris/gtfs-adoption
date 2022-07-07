@@ -8,6 +8,7 @@ library(lubridate)
 library(GGally)
 library(lme4)
 library(ggplot2)
+library(jtools)
 
 agency_data <- here("assembled-data",
      "agency-data.csv") %>%
@@ -308,11 +309,11 @@ AIC(cox_model)
 long_data <- here("assembled-data",
                   "final-data.csv") %>%
   read_csv() %>%
-  rename(penetration = `Percent adoption of GTFS data standard`) %>%
-  mutate(Region = as_factor(Region),
-         Division = as_factor(Division)) %>%
-  mutate(Region = relevel(Region, ref = "r9"),
-         Division = relevel(Division, ref = "d3"))
+  rename(penetration = `Percent adoption of GTFS data standard`) #%>%
+#  mutate(Region = as_factor(Region),
+#         Division = as_factor(Division)) %>%
+#  mutate(Region = relevel(Region, ref = "r9"),
+#         Division = relevel(Division, ref = "d3"))
 
 # Clustering by transit agency (Company_Nm)
 
@@ -337,20 +338,46 @@ long_data <- here("assembled-data",
 ## penetration
 
 # estimate a logistic regression model
-model <- glm(adopted_yet ~
-                 Region +
+model_1 <- glm(adopted_yet ~
+               #  Region +
                  scale(ridership) +
                  scale(VRM) +
                  scale(overhead) +
                  scale(fare_recovery) +
                  scale(pct_rented) +
+                 scale(year) +
+                 scale(n_in_uza), 
+               data = long_data, 
+               family = binomial)
+
+model_2 <- glm(adopted_yet ~
+               #  Region +
+             #  scale(ridership) +
+               scale(VRM) +
+               scale(overhead) +
+               scale(fare_recovery) +
+               scale(pct_rented) +
+               scale(penetration) +
+               scale(n_in_uza), 
+             data = long_data, 
+             family = binomial)
+
+model_3 <- glm(adopted_yet ~
+                 #  Region +
+                 scale(ridership) +
+                # scale(VRM) +
+                 scale(overhead) +
+                 scale(fare_recovery) +
+                 scale(pct_rented) +
                  scale(penetration) +
+                 scale(year) +
                  scale(n_in_uza), 
                data = long_data, 
                family = binomial)
 
 # Display regression results with cluster-robust standard errors
-summ(model, robust = "HC3", cluster = "Company_Nm")
+export_summs(model_1, model_2, model_3, 
+             robust = "HC3", cluster = "Company_Nm")
 
 # Show variation in probability of adoption by Vehicle revenue miles
 # Note: x-axis is log-transformed
