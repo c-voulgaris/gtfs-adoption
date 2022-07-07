@@ -33,6 +33,7 @@ for (i in 2005:2020) {
     read_xlsx(sheet = sheet)
   
   #### The agency's ID information has been stored in different columns for different years. Since 2014, a new NTDID has been applied. ID of the original format has been stored in the "Legacy NTD ID" Column and has been abandoned since 2019. 
+  #### Another issue with the original excel files is: For column ID and column NTDID, sometimes it is 1 in the cell, and formatted as 0001 in excel. However, when you read it into R, it shows 1 instead of 0001, which causes trouble for joining. It does not help to specify the column type in R. You may use methods here: https://www.excelforum.com/excel-general/568465-leading-zeroes-get-dropped-when-converted-to-text.html to shift the data and keep the leading zeros in excel. 
   
   #### For year 2005 to 2009, the agency's ID information is stored in the "Trs_id" column. The agency type information is stored in the "Agency_Type_Desc" column. The institution type information is stored in the "Institution_Type_Desc" column. The company name information is stored in the "Company_Nm" column. The service area data is stored in the "Service_Area" column. NTDID and organization type data are missing from the spreadsheet.
   if (i < 2010) {
