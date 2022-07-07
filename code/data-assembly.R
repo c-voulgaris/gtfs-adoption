@@ -788,40 +788,37 @@ NTD_data_2000 <- NTD_data %>%
   left_join(UZAs2000)
 
 NTD_data_2010 <- NTD_data %>%
-  filter(year >=2010) %>%
+  filter(year >= 2010) %>%
   left_join(UZAs2010)
 
 all_data <- rbind(NTD_data_2000, NTD_data_2010)  
 
 ## Load dates and census regions.
 dates <- here("assembled-data", 
-              "agencies-dates.csv") %>%
+              "agency-data.csv") %>%
   read_csv() %>%
   # ignore blank lines
   filter(!is.na(Company_Nm)) %>%
   rename(gtfs_date = date,
          gtfs_status = status,
-         ridership = trips) %>%
-  select(-query)
+         ridership = trips)
 
-regions <- here("assembled-data",
-                "census-regions.csv") %>%
-  read_csv() %>%
-  rename(State = State_Desc)
-
-ID_ref <- agencies %>%
+ID_ref1 <- agencies %>%
   filter(year == 2005) %>%
   select(ID, Company_Nm)
 
-dates <- dates %>%
-  left_join(ID_ref)
-
-ID_ref1 <- agencies %>%
+ID_ref2 <- agencies %>%
   filter(year == 2014) %>%
   select(ID, NTDID)
 
+ID_ref <- ID_ref1 %>%
+  left_join(ID_ref2)
+
 dates <- dates %>%
-  left_join(ID_ref1)
+  left_join(ID_ref) %>%
+  arrange(ID) %>%
+  #### Since there are agencies named "Capital Area Transit" in both Raleigh, NC and Harrisburg, PA, you need to delete the mismatching lines and keep the one with the right ID. 
+  slice((-c(126, 177)))
 
 dates_2005 <- dates %>%
   select(-Company_Nm, -NTDID)
@@ -835,10 +832,15 @@ all_data_2014 <- all_data %>%
   filter(year >= 2014) %>%
   left_join(dates_2014)
 
+regions <- here("assembled-data",
+                "census-regions.csv") %>%
+  read_csv() %>%
+  rename(State = State_Desc)
+
 final_data <- rbind(all_data_2005, all_data_2014) %>%
+  left_join(regions) %>%
   mutate(adopted_year = as.numeric(str_sub(gtfs_date, -2, -1)) + 2000) %>%
-  mutate(adopted_yet = adopted_year <= year & 
-           gtfs_status == 1) %>%
+  mutate(adopted_yet = adopted_year <= year & gtfs_status == 1) %>%
   #### After the agency has adopted the GTFS standard, we don't want it to appear in the dataframe again. 
   filter(adopted_year >= year)
 
@@ -858,14 +860,14 @@ adoption_rates <- tibble(Date = seq(ymd("2005-12-1"),
                          num_agencies = 0,
                          num_adopted = 0) 
 
-#### For the gtfs_status column, 0 means that the agency has not adopted the gtfs standard, 1 means that the agency has already adopted the gtfs standard, 2 means that the agency does not exist anymore. 
+#### For the gtfs_status column, 0 means that the agency has not adopted the gtfs standard and the date is the search date, 1 means that the agency has already adopted the gtfs standard and the date is the adoption date, 2 means that the agency does not exist anymore and the date is the agency's close date. 
 for (i in 1:length(adoption_rates$Date)) {
   adoption_rates$num_agencies[i] = 
     sum(agency_data$gtfs_status < 2) +
     sum(agency_data$gtfs_status == 2 & agency_data$gtfs_date > adoption_rates$Date[i])
   
   adoption_rates$num_adopted[i] = 
-    sum(agency_data$gtfs_status == 1 & agency_data$gtfs_date < adoption_rates$Date[i]) #Quesion: the one that exist in 2005, adopted gtfs, but don't exist anymore therefore status == 2?
+    sum(agency_data$gtfs_status == 1 & agency_data$gtfs_date < adoption_rates$Date[i])
 }
 
 adoption_rates <- adoption_rates %>%
@@ -874,8 +876,15 @@ adoption_rates <- adoption_rates %>%
   mutate(year = as.numeric(substr(Date, 1, 4))) %>%
   select(-Date)
 
+#### Since ID is used for some years and NTDID is used for some others, it is better to have both for all agencies and all years to make the final data easier to use. 
+ID_ref3 <- ID_ref %>%
+  select(-Company_Nm)
+
 final_data <- final_data %>%
-  left_join(adoption_rates)
+  left_join(adoption_rates) %>%
+  select(-NTDID) %>%
+  left_join(ID_ref3) %>%
+  relocate(NTDID, .after = ID)
 
 ## Export csv file
 ### CTV note: updated so it will work regardless of whose computer is running it
