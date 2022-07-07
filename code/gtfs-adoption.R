@@ -11,8 +11,12 @@ library(ggplot2)
 library(jtools)
 
 agency_data <- here("assembled-data",
-     "agency-data.csv") %>%
-  read_csv() 
+                    "agency-data.csv") %>%
+  read_csv() %>%
+  filter(!is.na(status)) %>%
+  #### The "date" column is read in as a character column, you may convert it to a date column to allow the following date comparison.
+  mutate(gtfs_date = as.Date(date, "%d-%b-%y")) %>%
+  rename(gtfs_status = status)
 
 ######### visualize change in market penetration over time ####
 adoption_rates <- tibble(Date = seq(ymd("2005-1-1"), 
