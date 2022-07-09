@@ -818,6 +818,7 @@ ID_ref <- ID_ref1 %>%
 dates <- dates %>%
   left_join(ID_ref) %>%
   arrange(ID) %>%
+  select(-query) %>%
   #### Since there are agencies named "Capital Area Transit" in both Raleigh, NC and Harrisburg, PA, you need to delete the mismatching lines and keep the one with the right ID. 
   slice((-c(126, 177)))
 
