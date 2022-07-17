@@ -834,10 +834,19 @@ all_data_2014 <- all_data %>%
   filter(year >= 2014) %>%
   left_join(dates_2014)
 
+#### Since the original Excel of region data has flipped "Region" and "Division" information, we need to flip it back here. 
 regions <- here("assembled-data",
                 "census-regions.csv") %>%
   read_csv() %>%
-  rename(State = State_Desc)
+  mutate(`Region` = str_replace_all(`Region`,
+                                    pattern = "r",
+                                    replacement = "d")) %>%
+  mutate(`Division` = str_replace_all(`Division`,
+                                    pattern = "d",
+                                    replacement = "r")) %>%
+  rename(State = State_Desc,
+         Division = Region,
+         Region = Division)
 
 final_data <- rbind(all_data_2005, all_data_2014) %>%
   left_join(regions) %>%
