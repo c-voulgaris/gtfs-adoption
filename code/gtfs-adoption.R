@@ -319,8 +319,8 @@ long_data <- here("assembled-data",
   select(-X1) %>%
   mutate(Region = as_factor(Region),
          Division = as_factor(Division)) %>%
-  mutate(Region = relevel(Region, ref = "r9"),
-         Division = relevel(Division, ref = "d3"))
+  mutate(Region = relevel(Region, ref = "r4"),
+         Division = relevel(Division, ref = "d9"))
 
 # Clustering by transit agency (ID, NTDID, Company_Nm)
 
@@ -358,7 +358,7 @@ long_data <- here("assembled-data",
 
 ## Model 1 is the one with one variable from each category
 model_1 <-glm(adopted_yet ~
-                Region +
+                Division +
                 scale(Population) +
                 scale(VRM_UZA_share) +
                 scale(year) +
@@ -371,7 +371,7 @@ model_1 <-glm(adopted_yet ~
 
 ## Model 2 is the best fit model. Even though VOMS, ridership, op_exp come from the same category, including them all increase the model fit. 
 model_2 <-glm(adopted_yet ~
-                Region +
+                Division +
                 scale(Population) +
                 scale(VRM_UZA_share) +
                 scale(year) +
@@ -386,7 +386,7 @@ model_2 <-glm(adopted_yet ~
 
 ## Model 3 is a very different model to serve as a comparison. 
 model_3 <-glm(adopted_yet ~
-                Division +
+                Region +
                 scale(`Population Density`) +
                 scale(n_in_uza) +
                 scale(penetration) +
@@ -483,9 +483,9 @@ effect_plot(model_2,
             interval = TRUE,
             pred = fare_recovery)
 
-# Show variation in probability of adoption by region
+# Show variation in probability of adoption by division
 effect_plot(model_2, 
             robust = "HC3", 
             cluster = "ID",
             interval = TRUE,
-            pred = Region)
+            pred = Division)
