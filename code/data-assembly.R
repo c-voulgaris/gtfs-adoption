@@ -897,6 +897,23 @@ final_data <- final_data %>%
   left_join(ID_ref3) %>%
   relocate(NTDID, .after = ID)
 
+#### Since there are many missing values for three variables describing the agency type (agency type, organization type, institution type), which is troublesome for regression analysis, we pick "organization type" information from 2014 and apply it to every year. 
+agency_2014 <- agencies_2014 %>%
+  filter(year == 2014) %>%
+  select(ID, Org_Type)
+
+#### Since there are missing values from 2014's agency information spreadsheet (some organizations closed before 2014), we manually checked the organization type data from other years, and stored them in a csv. 
+agency_type <- here("assembled-data",
+                    "agency-type.csv") %>%
+  read_csv() %>%
+  rbind(agency_2014)
+
+final_data <- final_data %>%
+  select(-Org_Type, 
+         -Agency_Type_Desc, 
+         -Institution_Type_Desc) %>%
+  left_join(agency_type)
+
 ## Export csv file
 ### CTV note: updated so it will work regardless of whose computer is running it
 write.csv(final_data, 
