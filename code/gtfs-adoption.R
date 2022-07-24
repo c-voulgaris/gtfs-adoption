@@ -318,9 +318,11 @@ long_data <- here("assembled-data",
   rename(penetration = `Percent adoption of GTFS data standard`) %>%
   select(-X1) %>%
   mutate(Region = as_factor(Region),
-         Division = as_factor(Division)) %>%
+         Division = as_factor(Division),
+         Org_Type = as_factor(Org_Type)) %>%
   mutate(Region = relevel(Region, ref = "r4"),
-         Division = relevel(Division, ref = "d9"))
+         Division = relevel(Division, ref = "d9"),
+         Org_Type = relevel(Org_Type, ref = "Area Agency on Aging"))
 
 # Clustering by transit agency (ID, NTDID, Company_Nm)
 
@@ -347,6 +349,7 @@ long_data <- here("assembled-data",
 # estimate a logistic regression model
 ## We may divide the variables into several categories, and it's better not to include variables from the same category to one model.
 ### Region, Division
+### Org_Type
 ### Population, Population Density
 ### n_in_uza, VRM_UZA_share
 ### year, penetration, num_adopted
@@ -359,9 +362,10 @@ long_data <- here("assembled-data",
 ## Model 1 is the one with one variable from each category
 model_1 <-glm(adopted_yet ~
                 Division +
-                scale(Population) +
+                Org_Type +
+                scale(`Population Density`) +
                 scale(VRM_UZA_share) +
-                scale(year) +
+                scale(num_adopted) +
                 scale(VRM) +
                 scale(pct_rented) +
                 scale(overhead) +
@@ -369,12 +373,15 @@ model_1 <-glm(adopted_yet ~
               data = long_data,
               family = binomial)
 
-## Model 2 is the best fit model. Even though VOMS, ridership, op_exp come from the same category, including them all increase the model fit. 
+## Model 2 is the best fit model. Even though year, penetration, num_adopted come from the same category; VOMS, ridership, op_exp come from the same category, including them all increase the model fit. 
 model_2 <-glm(adopted_yet ~
                 Division +
-                scale(Population) +
+                Org_Type +
+                scale(`Population Density`) +
                 scale(VRM_UZA_share) +
                 scale(year) +
+                scale(penetration) +
+                scale(num_adopted) +
                 scale(VOMS) +
                 scale(ridership) +
                 scale(op_exp) +
@@ -387,38 +394,36 @@ model_2 <-glm(adopted_yet ~
 ## Model 3 is a very different model to serve as a comparison. 
 model_3 <-glm(adopted_yet ~
                 Region +
-                scale(`Population Density`) +
+                Org_Type +
+                scale(Population) +
                 scale(n_in_uza) +
-                scale(penetration) +
-                scale(fare_rev) +
+                scale(num_adopted) +
+                scale(VOMS) +
                 scale(pct_rented) +
-                scale(overhead) +
                 scale(fare_recovery),
               data = long_data,
               family = binomial)
-  
+
 # Display regression results with cluster-robust standard errors
-export_summs(model_1, model_2, model_3, 
+export_summs(model_1, model_2, model_3,
              robust = "HC3", cluster = "ID")
 
-# Show variation in probability of adoption by Vehicle revenue miles (Using Model 2)
-## Note: Except for year, pct_rented, overhead, and fare_recovery variable, x-axis is log-transformed.
+# Show variation in probability of adoption by numeric variables (Using Model 2)
+## Note: some variables are log-transformed.
 
-## Population
+## Population Density
 effect_plot(model_2, 
             robust = "HC3", 
             cluster = "ID",
             interval = TRUE,
-            pred = Population) +
-  scale_x_continuous(trans = "log")
+            pred = `Population Density`)
 
 ## VRM_UZA_share
 effect_plot(model_2, 
             robust = "HC3", 
             cluster = "ID",
             interval = TRUE,
-            pred = VRM_UZA_share) +
-  scale_x_continuous(trans = "log")
+            pred = VRM_UZA_share)
 
 ## year
 effect_plot(model_2, 
@@ -427,6 +432,20 @@ effect_plot(model_2,
             interval = TRUE,
             pred = year)
 
+## penetration
+effect_plot(model_2, 
+            robust = "HC3", 
+            cluster = "ID",
+            interval = TRUE,
+            pred = penetration)
+
+## num_adopted
+effect_plot(model_2, 
+            robust = "HC3", 
+            cluster = "ID",
+            interval = TRUE,
+            pred = num_adopted)
+
 ## VOMS
 effect_plot(model_2, 
             robust = "HC3", 
@@ -434,7 +453,7 @@ effect_plot(model_2,
             interval = TRUE,
             pred = VOMS) +
   scale_x_continuous(trans = "log",
-                     breaks = c(5,10,100,1000,3000))
+                     breaks = c(5,10,100,1000))
 
 ## ridership
 effect_plot(model_2, 
@@ -483,9 +502,17 @@ effect_plot(model_2,
             interval = TRUE,
             pred = fare_recovery)
 
-# Show variation in probability of adoption by division
+# Show variation in probability of adoption by categorical variables
+## division
 effect_plot(model_2, 
             robust = "HC3", 
             cluster = "ID",
             interval = TRUE,
             pred = Division)
+
+## org_type
+effect_plot(model_2, 
+            robust = "HC3", 
+            cluster = "ID",
+            interval = TRUE,
+            pred = Org_Type)
